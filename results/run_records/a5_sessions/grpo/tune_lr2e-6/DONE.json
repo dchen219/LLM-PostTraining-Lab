@@ -1,0 +1,83 @@
+{
+ "finished": 1795670054.5326471,
+ "wall_s": 3510.147202730179,
+ "steps": 30,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 676,
+   "accuracy": 0.676,
+   "ci95": [
+    0.6463672482447502,
+    0.7042856834528404
+   ],
+   "format_rate": 0.937,
+   "clean_format_rate": 0.937,
+   "mean_tokens": 136.634,
+   "truncated": 5,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "format_fail_answer_right": 45,
+    "correct": 676,
+    "format_ok_answer_wrong": 261,
+    "format_fail_answer_wrong": 13,
+    "format_fail_truncated": 5
+   },
+   "gen_s": 27.19949245452881,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 87,
+   "accuracy": 0.174,
+   "ci95": [
+    0.14328895399220098,
+    0.20968229728994797
+   ],
+   "format_rate": 0.69,
+   "clean_format_rate": 0.69,
+   "mean_tokens": 387.704,
+   "truncated": 59,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 87,
+    "format_ok_answer_wrong": 258,
+    "format_fail_answer_wrong": 58,
+    "format_fail_answer_right": 41,
+    "format_fail_truncated": 56
+   },
+   "gen_s": 30.712398290634155,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "grpo",
+  "chain": [
+   "base",
+   "grpo"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "c75ca51e83a5efbc49cd0a5731c0a72bbf8d467c4840c448ad009d0c3f3f703b"
+  },
+  "config_sha256": "a910f7466b65cb8924bb165da62eb6c6bd68efda5af0eaf2daae0996aca96dce",
+  "code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+  "created": 1795670048.6713305,
+  "extra": {
+   "steps": 30
+  }
+ }
+}

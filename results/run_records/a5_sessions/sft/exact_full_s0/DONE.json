@@ -1,0 +1,80 @@
+{
+ "finished": 1795655467.2193115,
+ "wall_s": 3293.1450622081757,
+ "steps": 214,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 888,
+   "accuracy": 0.888,
+   "ci95": [
+    0.8669495617556403,
+    0.9060807649413208
+   ],
+   "format_rate": 0.999,
+   "clean_format_rate": 0.999,
+   "mean_tokens": 133.334,
+   "truncated": 1,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 888,
+    "format_ok_answer_wrong": 111,
+    "format_fail_truncated": 1
+   },
+   "gen_s": 30.145115613937378,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 158,
+   "accuracy": 0.316,
+   "ci95": [
+    0.2767829376901094,
+    0.358022921929263
+   ],
+   "format_rate": 0.954,
+   "clean_format_rate": 0.954,
+   "mean_tokens": 425.094,
+   "truncated": 23,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 158,
+    "format_ok_answer_wrong": 319,
+    "format_fail_truncated": 23
+   },
+   "gen_s": 39.50610017776489,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "sft",
+  "chain": [
+   "base",
+   "sft"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "02c6ba5396a4d113e5b46e9452d748339c39e9d65724aa60187c9e3add7683b1"
+  },
+  "config_sha256": "ab644b5f3e59a0734d9dacafb980be60e7da37103abe2d782009f49a51871638",
+  "code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+  "created": 1795655460.9408255,
+  "extra": {
+   "steps": 214,
+   "n_train": 3420
+  }
+ }
+}

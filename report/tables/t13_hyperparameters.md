@@ -1,0 +1,19 @@
+| Stage | Setting | Value (as run) |
+|---|---|---|
+| SFT | optimizer | AdamW β=(0.9, 0.95), weight decay 0.0 |
+| SFT | learning rate / warm-up | 1e-05 constant after 4 warm-up steps (selected on dev) |
+| SFT | batch / micro-batch | 32 sequences / 2 (gradient accumulation) |
+| SFT | epochs / max length | 2 / 1536 tokens |
+| SFT | loss | token-mean NLL over response tokens of the whole optimizer batch; EOS appended |
+| SFT | precision | fp32 master weights, bf16 autocast |
+| GRPO | rollouts per step | 32 prompts × 8 samples = 256, temperature 1.0, max 1024 new tokens |
+| GRPO | steps / learning rate | 100 / 1e-05 constant after 5 warm-up steps (selected on dev) |
+| GRPO | loss | grpo_clip (clip 0.2), length normalisation 'const' (1024), std normalisation False, no KL term |
+| GRPO | updates per batch | 1 epoch, update batch 256 (one optimizer step per rollout batch: ratio = 1) |
+| GRPO | gradient clipping | max norm 1.0 |
+| GRPO | micro-batching | micro-batch 2, token budget 3300 padded tokens (memory only; gradient unchanged) |
+| GRPO | gates | exact weight-sync check every step; rollout log-prob gate: mean absolute sampling-vs-policy gap ≤ 0.05 |
+| GRPO | precision / devices | fp32 master weights on cuda:1; vLLM engine on cuda:0 (gpu_mem 0.8, prefix caching False) |
+| Evaluation | decoding | greedy, 1,024 new tokens, vLLM 0.7.2, max_model_len 2,048, prefix caching off, seed 2026, RTX A6000 |
+
+Source: run.json of SFT-reverified_n512_s0 and GRPO-B_sft512_s2026 (identical across arms except data, size, seed and init); evaluation: final/freeze_v1.yaml.

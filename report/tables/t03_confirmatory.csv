@@ -1,0 +1,9 @@
+Comparison (a → b),Set,a only,b only,"b − a, pp [95% CI]",relaxed b − a,p (exact McNemar),Holm p,Reading
+"C1 data quality, full",GSM8K,182,59,"−9.3 [−11.6, −7.1]",−9.0,8.9e-16,2.7e-15,difference detected: re-verified worse than exact-match
+"C2 data quality, matched 512",GSM8K,171,58,"−8.6 [−10.8, −6.4]",−6.4,4.0e-14,8.0e-14,difference detected: re-verified worse than exact-match
+C3 pathway B vs its SFT parent,GSM8K,60,237,"+13.4 [+11.0, +15.9]",+11.2,4.8e-26,1.9e-25,difference detected: GRPO better than its SFT parent
+C4 pathway A vs base,GSM8K,–,–,–,–,–,1 (counted),unavailable: pre-registered run failed
+"C1 data quality, full",MATH,492,392,"−2.0 [−3.2, −0.8]",−2.0,8.6e-4,0.003,difference detected: re-verified worse than exact-match
+"C2 data quality, matched 512",MATH,470,414,"−1.1 [−2.3, +0.0]",−0.8,0.064,0.129,no difference detected (not evidence of equivalence)
+C3 pathway B vs its SFT parent,MATH,256,843,"+11.7 [+10.5, +13.0]",+10.5,1.4e-73,5.7e-73,difference detected: GRPO better than its SFT parent
+C4 pathway A vs base,MATH,–,–,–,–,–,1 (counted),unavailable: pre-registered run failed

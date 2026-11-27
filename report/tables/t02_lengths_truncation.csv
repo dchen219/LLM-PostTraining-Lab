@@ -1,0 +1,25 @@
+Checkpoint,Set,Mean tokens,Tokens (correct),Tokens (wrong),Truncated %,Truncated share of errors %,Second-verifier acc. %,Doubled `</think>`
+"Base, r1_zero prompt",GSM8K,152,121,159,0.6,0.7,32.1,0
+"Base, r1_zero prompt",MATH,322,153,358,8.1,9.9,23.3,7
+"Base, question-only prompt",GSM8K,349,349,348,1.1,3.3,65.7,0
+"Base, question-only prompt",MATH,566,496,665,12.7,29.5,58.6,0
+SFT re-verified n128,GSM8K,188,135,271,2.9,7.5,61.7,0
+SFT re-verified n128,MATH,342,216,467,7.2,14.2,50.4,0
+SFT re-verified n512,GSM8K,138,126,168,0.4,1.4,74.9,0
+SFT re-verified n512,MATH,295,208,429,4.5,11.4,62.7,0
+SFT exact n512,GSM8K,139,127,190,0.5,2.8,81.3,0
+SFT exact n512,MATH,302,215,445,4.6,12.1,63.1,0
+SFT re-verified n2048,GSM8K,134,128,156,0.0,0.0,76.3,0
+SFT re-verified n2048,MATH,285,206,417,2.5,6.7,63.4,0
+SFT re-verified size control,GSM8K,142,132,171,0.2,0.6,75.4,0
+SFT re-verified size control,MATH,284,206,410,1.7,4.6,63.0,0
+SFT exact full,GSM8K,139,131,176,0.2,0.8,81.6,0
+SFT exact full,MATH,272,198,395,1.9,5.1,63.1,0
+SFT re-verified full,GSM8K,134,125,157,0.1,0.3,72.6,0
+SFT re-verified full,MATH,264,191,377,1.6,4.1,61.1,0
+GRPO-B (sequential),GSM8K,253,244,310,0.1,0.5,86.1,0
+GRPO-B (sequential),MATH,460,384,662,5.7,20.6,73.1,0
+"A1 (post-hoc, lr 1e-5)",GSM8K,198,193,232,0.0,0.0,85.5,0
+"A1 (post-hoc, lr 1e-5)",MATH,384,326,522,2.4,8.1,71.3,1
+"A2 (post-hoc, lr 5e-6)",GSM8K,225,217,268,0.1,0.5,84.5,1233
+"A2 (post-hoc, lr 5e-6)",MATH,431,360,600,4.1,13.9,71.4,4406

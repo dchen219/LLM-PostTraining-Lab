@@ -1,0 +1,37 @@
+# secrets and private access notes (never commit)
+*id_rsa*
+*id_ed25519*
+*.ppk
+*.pem
+*.key
+*pwd*
+*passw*
+*credential*
+*secret*
+.env*
+!.env.example
+.netrc
+*GPU steps*
+# personal documents
+resume*
+docs/RESUME.md
+docs/INTERVIEW_GUIDE.md
+# environments and caches
+.venv*/
+__pycache__/
+.pytest_cache/
+wandb/
+# large or regenerable artifacts
+runs/
+dist/
+review/
+report/build/
+results/*_rerun/
+data/stage0/*.jsonl
+!data/stage0/recovery_decisions.jsonl
+*.safetensors
+*.pt
+*.pt.*
+*.bin
+env.sh
+.public_staging

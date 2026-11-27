@@ -1,0 +1,151 @@
+{
+ "kind": "grpo",
+ "config": {
+  "run_dir": "/srv/research/posttrain-v2/runs/recovery/A_replay80_lr1e-5_s2026",
+  "stage": "grpo",
+  "seed": 2026,
+  "device": "cuda:1",
+  "dtype": "fp32",
+  "init": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "revision": "4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "expect_stage": "base"
+  },
+  "engine": {
+   "name": "vllm",
+   "device": "cuda:0",
+   "gpu_mem": 0.8,
+   "max_model_len": 2048,
+   "prefix_caching": false
+  },
+  "data": {
+   "path": "/srv/research/posttrain-v2/a5/data/stage0/rl_train_pool.jsonl"
+  },
+  "grpo": {
+   "steps": 100,
+   "prompts_per_step": 32,
+   "group_size": 8,
+   "temperature": 1.0,
+   "max_tokens": 1024,
+   "loss": "grpo_clip",
+   "clip": 0.2,
+   "length_norm": "const",
+   "norm_const": 1024,
+   "std_norm": false,
+   "epochs": 1,
+   "update_batch": 256,
+   "group_filter": "none",
+   "difficulty_sampling": false,
+   "sync_check_every": 10,
+   "sync_tol": 0.05,
+   "save_rollouts_every": 1,
+   "check_rollout_logprobs": true,
+   "rollout_tol": 0.05
+  },
+  "train": {
+   "lr": 1e-05,
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "weight_decay": 0.0,
+   "micro_batch": 2,
+   "token_budget": 3300,
+   "warmup": 5,
+   "max_grad_norm": 1.0,
+   "max_len": 2064,
+   "save_every": 5,
+   "grad_ckpt": false
+  },
+  "eval": {
+   "sets": {
+    "gsm8k_dev": "/srv/research/posttrain-v2/a5/data/stage0/eval_gsm8k_dev_1000.jsonl",
+    "math_dev": "/srv/research/posttrain-v2/a5/data/stage0/eval_math_dev_500.jsonl"
+   },
+   "max_tokens": 1024,
+   "every": 25,
+   "at_start": true,
+   "limit": null
+  },
+  "cost": {
+   "usd_per_hour": ""
+  },
+  "fork": {
+   "id": "GRPO-A-replay80-lr1e-5-s2026",
+   "purpose": "reproduce the late-stage failure from the verified step-80 state with every training setting unchanged",
+   "posthoc": true,
+   "replaces_registered_run": false,
+   "source_experiment": "GRPO-A_base_s2026",
+   "source_run_dir": "/srv/research/posttrain-v2/runs/grpo/A_base_s2026",
+   "source_config_sha256": "6cb057c285626c201a0bc653ecd5f61efdd32bf0b0cd969edf39d34d418a6d2d",
+   "source_code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+   "source_state": "/srv/research/posttrain-v2/incident_backups/A_base_s2026_failed_step97/state.pt",
+   "source_state_sha256": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+   "source_step": 80,
+   "source_completed_updates": 97,
+   "source_logged_train_steps": [
+    1,
+    97,
+    97
+   ],
+   "source_folder": {
+    "files": 21,
+    "sha256": "f72f6ce7a8830e998931a8f38bba51ff7d63f2bc1f6c85b1644e65e489db5304"
+   },
+   "differences": [
+    {
+     "key": "grpo.save_rollouts_every",
+     "source": 10,
+     "branch": 1,
+     "why": "instrumentation: every step's rollouts are written to disk; no effect on any update or random number"
+    },
+    {
+     "key": "run_dir",
+     "source": "/srv/research/posttrain-v2/runs/grpo/A_base_s2026",
+     "branch": "/srv/research/posttrain-v2/runs/recovery/A_replay80_lr1e-5_s2026",
+     "why": "new folder"
+    },
+    {
+     "key": "train.save_every",
+     "source": 20,
+     "branch": 5,
+     "why": "operational: more resume points inside the branch; no effect on any update"
+    }
+   ],
+   "criteria": {
+    "file": "recovery/diagnostic_criteria.yaml",
+    "sha256": "fa062543327005ae47dbaf13f2a8a8ca064c2ca20c354891c76dea5956e0db98",
+    "version": 1,
+    "frozen": "2026-11-26"
+   }
+  }
+ },
+ "verifier": {
+  "version": "2.0.0",
+  "verify_py": "b905bcaa4945be2e94286664a5fe9659c30c364ca973b4d90007463de89df106",
+  "grader_py": "f4fa06fed4950d6bd66a2fc40faaa67943327c2064e9d7ced1accdaa19ed25f0"
+ },
+ "config_sha256": "9db468f1c576fae386dcd3d9ba71ec618eb0299790da879816e4164659ba2160",
+ "code_sha256": "c80348598ca8a1f078b36684038447bd8b282c27e3e9246b76e428f862eceb25",
+ "env": {
+  "python": "3.12.14",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "torch": "2.5.1+cu124",
+  "cuda": "12.4",
+  "gpus": [
+   "NVIDIA RTX A6000",
+   "NVIDIA RTX A6000"
+  ],
+  "transformers": "4.51.3",
+  "vllm": "0.7.2",
+  "math-verify": "0.7.0",
+  "sympy": "1.13.1",
+  "numpy": "1.26.4"
+ },
+ "started": 1795725820.186371,
+ "argv": [
+  "/srv/research/posttrain-v2/a5/posttrain/fork_grpo.py",
+  "--spec",
+  "recovery/A_replay80_lr1e-5_s2026.yaml"
+ ]
+}

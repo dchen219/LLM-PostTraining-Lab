@@ -1,0 +1,82 @@
+{
+ "finished": 1795676845.6803517,
+ "wall_s": 3465.989313840866,
+ "steps": 30,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 875,
+   "accuracy": 0.875,
+   "ci95": [
+    0.8530557319763017,
+    0.8940740940839056
+   ],
+   "format_rate": 0.997,
+   "clean_format_rate": 0.997,
+   "mean_tokens": 146.86,
+   "truncated": 2,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 875,
+    "format_ok_answer_wrong": 122,
+    "format_fail_truncated": 2,
+    "format_fail_answer_right": 1
+   },
+   "gen_s": 30.420499324798584,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 139,
+   "accuracy": 0.278,
+   "ci95": [
+    0.24053595389789068,
+    0.31884937672983044
+   ],
+   "format_rate": 0.936,
+   "clean_format_rate": 0.936,
+   "mean_tokens": 341.474,
+   "truncated": 28,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "format_ok_answer_wrong": 329,
+    "correct": 139,
+    "format_fail_truncated": 28,
+    "format_fail_answer_wrong": 2,
+    "format_fail_answer_right": 2
+   },
+   "gen_s": 32.48329138755798,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "grpo",
+  "chain": [
+   "base",
+   "grpo"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "41ce3ff86d3dbac95fce23de5868b3755ed6f6a463fa015c3ee6ecc9400f3035"
+  },
+  "config_sha256": "de8cca08f77bce3f6d88c09f414bdb403407c5b3101abe305084e01d74f8fb0f",
+  "code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+  "created": 1795676838.7950335,
+  "extra": {
+   "steps": 30
+  }
+ }
+}

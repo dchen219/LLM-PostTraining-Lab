@@ -1,0 +1,16 @@
+| Dataset | n | Role |
+|---|---|---|
+| Teacher traces (gpt-oss-120b on math12k) | 4,836 | all SFT candidates |
+| Exact-match (dataset's published string-match filter) | 3,496 | SFT exact-match arms |
+| Re-verified (strict verifier on all traces; this project) | 4,545 | exact-match plus 1,049 recovered traces |
+| Exact-match after de-duplication / decontamination | 3,420 | SFT exact full |
+| Re-verified after de-duplication / decontamination | 4,423 | SFT re-verified full |
+| Size control (re-verified pool, exact-match size) | 3,420 | volume vs composition |
+| Matched subsets | 512 | exact_n512_s0, reverified_n512_s0 (nested, shared ordering) |
+| RL training pool (math12k problems) | 6,832 | GRPO prompts |
+| GSM8K dev (from GSM8K train) | 1,000 | all tuning and monitoring |
+| MATH dev (untraced math12k problems) | 500 | secondary dev |
+| GSM8K test (held-out, primary) | 1,319 | evaluated once per frozen checkpoint |
+| MATH val (held-out, secondary) | 5,000 | evaluated once per frozen checkpoint |
+
+Source: `data/stage0/MANIFEST.json`.

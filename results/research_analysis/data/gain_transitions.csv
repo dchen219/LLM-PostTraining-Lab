@@ -1,0 +1,75 @@
+transition,set,kind,category,count
+C3: SFT parent -> GRPO-B,gsm8k_test_final,gained: category before,format_fail_truncated,3
+C3: SFT parent -> GRPO-B,gsm8k_test_final,gained: category before,format_ok_answer_wrong,234
+C3: SFT parent -> GRPO-B,gsm8k_test_final,lost: category after,format_fail_truncated,1
+C3: SFT parent -> GRPO-B,gsm8k_test_final,lost: category after,format_ok_answer_wrong,59
+C3: SFT parent -> GRPO-B,math_val_final,gained: category before,format_fail_answer_right,4
+C3: SFT parent -> GRPO-B,math_val_final,gained: category before,format_fail_answer_wrong,11
+C3: SFT parent -> GRPO-B,math_val_final,gained: category before,format_fail_truncated,56
+C3: SFT parent -> GRPO-B,math_val_final,gained: category before,format_ok_answer_wrong,772
+C3: SFT parent -> GRPO-B,math_val_final,lost: category after,format_fail_answer_right,3
+C3: SFT parent -> GRPO-B,math_val_final,lost: category after,format_fail_truncated,37
+C3: SFT parent -> GRPO-B,math_val_final,lost: category after,format_ok_answer_wrong,216
+Base r1_zero -> base question-only,gsm8k_test_final,gained: category before,format_fail_answer_right,128
+Base r1_zero -> base question-only,gsm8k_test_final,gained: category before,format_fail_answer_wrong,271
+Base r1_zero -> base question-only,gsm8k_test_final,gained: category before,format_fail_truncated,4
+Base r1_zero -> base question-only,gsm8k_test_final,gained: category before,format_ok_answer_wrong,286
+Base r1_zero -> base question-only,gsm8k_test_final,lost: category after,format_fail_answer_right,13
+Base r1_zero -> base question-only,gsm8k_test_final,lost: category after,format_fail_answer_wrong,6
+Base r1_zero -> base question-only,gsm8k_test_final,lost: category after,format_ok_answer_wrong,38
+Base r1_zero -> base question-only,math_val_final,gained: category before,format_fail_answer_right,793
+Base r1_zero -> base question-only,math_val_final,gained: category before,format_fail_answer_wrong,691
+Base r1_zero -> base question-only,math_val_final,gained: category before,format_fail_truncated,84
+Base r1_zero -> base question-only,math_val_final,gained: category before,format_ok_answer_wrong,659
+Base r1_zero -> base question-only,math_val_final,lost: category after,format_fail_answer_right,33
+Base r1_zero -> base question-only,math_val_final,lost: category after,format_fail_answer_wrong,13
+Base r1_zero -> base question-only,math_val_final,lost: category after,format_fail_truncated,28
+Base r1_zero -> base question-only,math_val_final,lost: category after,format_ok_answer_wrong,95
+Base question-only -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_fail_answer_right,86
+Base question-only -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_fail_answer_wrong,28
+Base question-only -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_fail_truncated,10
+Base question-only -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_ok_answer_wrong,138
+Base question-only -> SFT re-verified n512,gsm8k_test_final,lost: category after,format_fail_truncated,3
+Base question-only -> SFT re-verified n512,gsm8k_test_final,lost: category after,format_ok_answer_wrong,166
+Base question-only -> SFT re-verified n512,math_val_final,gained: category before,format_fail_answer_right,111
+Base question-only -> SFT re-verified n512,math_val_final,gained: category before,format_fail_answer_wrong,74
+Base question-only -> SFT re-verified n512,math_val_final,gained: category before,format_fail_truncated,139
+Base question-only -> SFT re-verified n512,math_val_final,gained: category before,format_ok_answer_wrong,405
+Base question-only -> SFT re-verified n512,math_val_final,lost: category after,format_fail_answer_right,3
+Base question-only -> SFT re-verified n512,math_val_final,lost: category after,format_fail_answer_wrong,9
+Base question-only -> SFT re-verified n512,math_val_final,lost: category after,format_fail_truncated,32
+Base question-only -> SFT re-verified n512,math_val_final,lost: category after,format_ok_answer_wrong,573
+Base r1_zero -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_fail_answer_right,141
+Base r1_zero -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_fail_answer_wrong,302
+Base r1_zero -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_fail_truncated,4
+Base r1_zero -> SFT re-verified n512,gsm8k_test_final,gained: category before,format_ok_answer_wrong,308
+Base r1_zero -> SFT re-verified n512,gsm8k_test_final,lost: category after,format_ok_answer_wrong,30
+Base r1_zero -> SFT re-verified n512,math_val_final,gained: category before,format_fail_answer_right,781
+Base r1_zero -> SFT re-verified n512,math_val_final,gained: category before,format_fail_answer_wrong,739
+Base r1_zero -> SFT re-verified n512,math_val_final,gained: category before,format_fail_truncated,114
+Base r1_zero -> SFT re-verified n512,math_val_final,gained: category before,format_ok_answer_wrong,675
+Base r1_zero -> SFT re-verified n512,math_val_final,lost: category after,format_fail_answer_right,1
+Base r1_zero -> SFT re-verified n512,math_val_final,lost: category after,format_fail_answer_wrong,4
+Base r1_zero -> SFT re-verified n512,math_val_final,lost: category after,format_fail_truncated,3
+Base r1_zero -> SFT re-verified n512,math_val_final,lost: category after,format_ok_answer_wrong,131
+SFT exact n512 -> SFT re-verified n512 (C2),gsm8k_test_final,gained: category before,format_fail_truncated,3
+SFT exact n512 -> SFT re-verified n512 (C2),gsm8k_test_final,gained: category before,format_ok_answer_wrong,55
+SFT exact n512 -> SFT re-verified n512 (C2),gsm8k_test_final,lost: category after,format_fail_truncated,2
+SFT exact n512 -> SFT re-verified n512 (C2),gsm8k_test_final,lost: category after,format_ok_answer_wrong,169
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,gained: category before,format_fail_answer_right,10
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,gained: category before,format_fail_answer_wrong,14
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,gained: category before,format_fail_truncated,28
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,gained: category before,format_ok_answer_wrong,362
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,lost: category after,format_fail_answer_right,2
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,lost: category after,format_fail_answer_wrong,8
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,lost: category after,format_fail_truncated,30
+SFT exact n512 -> SFT re-verified n512 (C2),math_val_final,lost: category after,format_ok_answer_wrong,430
+A1 -> GRPO-B,gsm8k_test_final,gained: category before,format_ok_answer_wrong,88
+A1 -> GRPO-B,gsm8k_test_final,lost: category after,format_fail_truncated,1
+A1 -> GRPO-B,gsm8k_test_final,lost: category after,format_ok_answer_wrong,79
+A1 -> GRPO-B,math_val_final,gained: category before,format_fail_answer_right,1
+A1 -> GRPO-B,math_val_final,gained: category before,format_fail_truncated,20
+A1 -> GRPO-B,math_val_final,gained: category before,format_ok_answer_wrong,405
+A1 -> GRPO-B,math_val_final,lost: category after,format_fail_answer_right,6
+A1 -> GRPO-B,math_val_final,lost: category after,format_fail_truncated,54
+A1 -> GRPO-B,math_val_final,lost: category after,format_ok_answer_wrong,262

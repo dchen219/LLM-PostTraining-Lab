@@ -1,0 +1,26 @@
+| Contrast | Set | Diff pp | Item SE pp | Seed SD pp (heuristic) | Combined SE pp | Diff / combined SE |
+|---|---|---|---|---|---|---|
+| C1 data quality, full | GSM8K | −9.3 | 1.15 | 3.97 | 4.13 | −2.3 |
+| C2 data quality, matched 512 | GSM8K | −8.6 | 1.12 | 3.97 | 4.12 | −2.1 |
+| C3 pathway B vs its SFT parent | GSM8K | +13.4 | 1.25 | unknown | 1.25 | +10.7 |
+| C1 data quality, full | MATH | −2.0 | 0.59 | 2.53 | 2.60 | −0.8 |
+| C2 data quality, matched 512 | MATH | −1.1 | 0.59 | 2.53 | 2.60 | −0.4 |
+| C3 pathway B vs its SFT parent | MATH | +11.7 | 0.64 | unknown | 0.64 | +18.3 |
+| composition at matched size | GSM8K | −6.4 | 1.07 | 3.97 | 4.11 | −1.6 |
+| volume | GSM8K | −2.9 | 1.03 | 3.97 | 4.10 | −0.7 |
+| sample efficiency 128 -> 512 | GSM8K | +11.2 | 1.53 | 3.97 | 4.25 | +2.6 |
+| sample efficiency 512 -> 2048 | GSM8K | +3.3 | 1.14 | 3.97 | 4.13 | +0.8 |
+| sample efficiency 2048 -> full | GSM8K | −3.9 | 1.05 | 3.97 | 4.10 | −1.0 |
+| pathway B vs base question-only | GSM8K | +20.5 | 1.35 | unknown | 1.35 | +15.2 |
+| pathway B vs base r1_zero | GSM8K | +68.4 | 1.33 | unknown | 1.33 | +51.5 |
+| base prompts: question-only vs r1_zero | GSM8K | +47.9 | 1.60 | unknown | 1.60 | +30.0 |
+| composition at matched size | MATH | −0.4 | 0.60 | 2.53 | 2.60 | −0.1 |
+| volume | MATH | −1.6 | 0.60 | 2.53 | 2.60 | −0.6 |
+| sample efficiency 128 -> 512 | MATH | +11.1 | 0.74 | 2.53 | 2.64 | +4.2 |
+| sample efficiency 512 -> 2048 | MATH | +1.8 | 0.64 | 2.53 | 2.61 | +0.7 |
+| sample efficiency 2048 -> full | MATH | −2.1 | 0.61 | 2.53 | 2.61 | −0.8 |
+| pathway B vs base question-only | MATH | +14.0 | 0.65 | unknown | 0.65 | +21.4 |
+| pathway B vs base r1_zero | MATH | +55.1 | 0.74 | unknown | 0.74 | +74.8 |
+| base prompts: question-only vs r1_zero | MATH | +41.2 | 0.79 | unknown | 0.79 | +52.3 |
+
+Heuristic: seed SD from one dev seed pair (SFT re-verified 512, seed 0 vs 100; 1 df). Not a test. Source: `data/seed_sensitivity.csv`.

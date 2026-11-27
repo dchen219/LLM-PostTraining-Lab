@@ -1,0 +1,101 @@
+{
+ "sft_4836 vs gsm8k_dev": {
+  "exact": 0,
+  "ngram": 0,
+  "fuzzy": 0,
+  "top_pairs": []
+ },
+ "sft_4836 vs gsm8k_test": {
+  "exact": 0,
+  "ngram": 0,
+  "fuzzy": 0,
+  "top_pairs": []
+ },
+ "sft_4836 vs math_final": {
+  "exact": 6,
+  "ngram": 425,
+  "fuzzy": 119,
+  "top_pairs": [
+   [
+    1.0,
+    "What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ r",
+    "What is the smallest positive integer $n$ such that all the roots of $z^4 + z^2 + 1 = 0$ are $n^{\\text{th}}$ r"
+   ],
+   [
+    1.0,
+    "The graph of $y = f(x)$ is shown below.\n\n[asy]\nunitsize(0.5 cm);\n\nreal func(real x) {\n  real y;\n  if (x >= -3 ",
+    "The graph of $y = f(x)$ is shown below.\n\n[asy]\nunitsize(0.5 cm);\n\nreal func(real x) {\n  real y;\n  if (x >= -3 "
+   ],
+   [
+    1.0,
+    "Let $f$ be a linear function for which $f(6)-f(2)=12$. What is $f(12)-f(2)?$",
+    "Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)?$"
+   ],
+   [
+    1.0,
+    "Let $d$ and $e$ denote the solutions of $2x^{2}+3x-5=0$. What is the value of $(d-1)(e-1)$?",
+    "Let $d$ and $e$ denote the solutions of $2x^2 + 3x - 5=0$. What is the value of $(d-1)(e-1)$?"
+   ],
+   [
+    1.0,
+    "A parabola with equation  $y = x^2 + bx + c$ passes through the points $(2,3)$ and $(4,3)$. What is $c$?",
+    "A parabola with equation $y=x^2+bx+c$ passes through the points $(2,3)$ and $(4,3)$. What is $c$?"
+   ]
+  ]
+ },
+ "rl_pool vs gsm8k_dev": {
+  "exact": 0,
+  "ngram": 0,
+  "fuzzy": 0,
+  "top_pairs": []
+ },
+ "rl_pool vs gsm8k_test": {
+  "exact": 0,
+  "ngram": 0,
+  "fuzzy": 0,
+  "top_pairs": []
+ },
+ "rl_pool vs math_final": {
+  "exact": 9,
+  "ngram": 741,
+  "fuzzy": 160,
+  "top_pairs": [
+   [
+    1.0,
+    "What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ r",
+    "What is the smallest positive integer $n$ such that all the roots of $z^4 + z^2 + 1 = 0$ are $n^{\\text{th}}$ r"
+   ],
+   [
+    1.0,
+    "The graph of $y = f(x)$ is shown below.\n\n[asy]\nunitsize(0.5 cm);\n\nreal func(real x) {\n  real y;\n  if (x >= -3 ",
+    "The graph of $y = f(x)$ is shown below.\n\n[asy]\nunitsize(0.5 cm);\n\nreal func(real x) {\n  real y;\n  if (x >= -3 "
+   ],
+   [
+    1.0,
+    "Let $x$ and $y$ be positive real numbers.  Find the minimum value of\n\\[\\left( x + \\frac{1}{y} \\right) \\left( x",
+    "Let $x$ and $y$ be positive real numbers.  Find the minimum value of\n\\[\\left( x + \\frac{1}{y} \\right) \\left( x"
+   ],
+   [
+    1.0,
+    "Let $f$ be a linear function for which $f(6)-f(2)=12$. What is $f(12)-f(2)?$",
+    "Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)?$"
+   ],
+   [
+    1.0,
+    "Let $d$ and $e$ denote the solutions of $2x^{2}+3x-5=0$. What is the value of $(d-1)(e-1)$?",
+    "Let $d$ and $e$ denote the solutions of $2x^2 + 3x - 5=0$. What is the value of $(d-1)(e-1)$?"
+   ]
+  ]
+ },
+ "gsm8k_dev vs gsm8k_test": {
+  "exact": 0,
+  "ngram": 0,
+  "fuzzy": 0,
+  "top_pairs": []
+ },
+ "sft_4836 internal exact duplicates": 7,
+ "rl_pool internal exact duplicates": 9,
+ "gsm8k_dev internal exact duplicates": 0,
+ "gsm8k_test internal exact duplicates": 0,
+ "math_final internal exact duplicates": 3
+}

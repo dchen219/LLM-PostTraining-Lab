@@ -1,0 +1,950 @@
+panel,run,step,value
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",1.0,0.009508841975355689
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",2.0,0.009472437672254
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",3.0,0.011127493777902595
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",4.0,0.011314394149346369
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",5.0,0.01197559126780141
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",6.0,0.011156688185587809
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",7.0,0.011459897596615462
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",8.0,0.011395323309334278
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",9.0,0.010883299335430434
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",10.0,0.009898174052278493
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",11.0,0.01103218232493174
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",12.0,0.010511164808746063
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",13.0,0.010241451242008235
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",14.0,0.011576452185297771
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",15.0,0.009547526594621667
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",16.0,0.009131273963885887
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",17.0,0.007836682603625
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",18.0,0.006637697110819203
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",19.0,0.006291555920045403
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",20.0,0.006542194605195653
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",21.0,0.006194214414120517
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",22.0,0.007180902936087846
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",23.0,0.006803315881627746
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",24.0,0.005698926139460316
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",25.0,0.00497724758118591
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",26.0,0.005223697061885241
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",27.0,0.005769864308999701
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",28.0,0.00477469693052794
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",29.0,0.0053983345958490865
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",30.0,0.004510726297101932
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",31.0,0.0042518087401118435
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",32.0,0.004231491216051934
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",33.0,0.0038683109446291538
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",34.0,0.00405429223704599
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",35.0,0.003589899736059491
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",36.0,0.0041234668662710776
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",37.0,0.004231559828328624
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",38.0,0.004470594415583178
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",39.0,0.0044108673253491285
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",40.0,0.00446768887729863
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",41.0,0.004151019844626413
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",42.0,0.004872914493995525
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",43.0,0.004101947050247906
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",44.0,0.004471867691922887
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",45.0,0.004499582072287135
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",46.0,0.00409215033202317
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",47.0,0.0035717255503615727
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",48.0,0.004058714048329325
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",49.0,0.004069109227695075
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",50.0,0.003629901594710983
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",51.0,0.004993611803908997
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",52.0,0.004116619098105494
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",53.0,0.004149435748389203
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",54.0,0.0036115083792248605
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",55.0,0.0040247508182410605
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",56.0,0.004155442474041471
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",57.0,0.003285116331336095
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",58.0,0.0035321669030627784
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",59.0,0.0037032021555037007
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",60.0,0.0028060639209945702
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",61.0,0.003987243910920618
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",62.0,0.0033737652411978025
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",63.0,0.0029363498471714562
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",64.0,0.0029963951804942305
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",65.0,0.002701617013542456
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",66.0,0.0031432275552457046
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",67.0,0.0034563864728519057
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",68.0,0.0032003889615574207
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",69.0,0.0033708922577172693
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",70.0,0.003406189004982247
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",71.0,0.003628004570575831
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",72.0,0.0037802859471699926
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",73.0,0.003143125197423163
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",74.0,0.003288868865936043
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",75.0,0.0035060232123688487
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",76.0,0.003464854500284507
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",77.0,0.003239762280177021
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",78.0,0.0036662528099729967
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",79.0,0.0031927883321389602
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",80.0,0.003585035729444283
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",81.0,0.003308605090744327
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",82.0,0.003762815218054652
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",83.0,0.003284570283811156
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",84.0,0.003477578578952476
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",85.0,0.00374263840419543
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",86.0,0.0034098547523911844
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",87.0,0.0031848535975577998
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",88.0,0.003577846293355113
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",89.0,0.0032076996097803617
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",90.0,0.0031233982744335183
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",91.0,0.003754374087104138
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",92.0,0.00372552538726333
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",93.0,0.004062746834330809
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",94.0,0.004529758758701777
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",95.0,0.004609107949468297
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",96.0,0.005717963601390787
+rollout_logprob_mad,"GRPO-A (direct, FAILED at 98)",97.0,0.038779067174115514
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",81.0,0.003308605090744327
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",82.0,0.003701289270337727
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",83.0,0.0032544916655228447
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",84.0,0.0035737863464184966
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",85.0,0.003560021055214555
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",86.0,0.0036353335868938644
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",87.0,0.003104365530879149
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",88.0,0.00382237949569312
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",89.0,0.003394087400910905
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",90.0,0.0039062173705741213
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",91.0,0.0036752249246092376
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",92.0,0.003730017504497894
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",93.0,0.0034028547042859463
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",94.0,0.004243110764237671
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",95.0,0.0034946212922827317
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",96.0,0.003922536669811397
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",97.0,0.0033737568879991424
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",98.0,0.0040883700415279695
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",99.0,0.003966237910559033
+rollout_logprob_mad,"A1 (post-hoc, lr 1e-5)",100.0,0.003652627374281366
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",81.0,0.003308605090744327
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",82.0,0.003583521190927467
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",83.0,0.003031388192248106
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",84.0,0.003492038119322213
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",85.0,0.0034719560436103757
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",86.0,0.003549352046676914
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",87.0,0.0030547052018527797
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",88.0,0.0034968198473854
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",89.0,0.003080943333889432
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",90.0,0.003518075673607264
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",91.0,0.0036925967870368977
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",92.0,0.0037980189452271637
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",93.0,0.0034740745865291947
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",94.0,0.004006746320966206
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",95.0,0.003346092830019826
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",96.0,0.0034127125921759403
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",97.0,0.0033340368565621804
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",98.0,0.003834209457116696
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",99.0,0.0039490407118406064
+rollout_logprob_mad,"A2 (post-hoc, lr 5e-6)",100.0,0.003407775715125034
+rollout_logprob_mad,GRPO-B (sequential),1.0,0.012447923098778449
+rollout_logprob_mad,GRPO-B (sequential),2.0,0.011348075691158945
+rollout_logprob_mad,GRPO-B (sequential),3.0,0.012401310788684857
+rollout_logprob_mad,GRPO-B (sequential),4.0,0.012739206737273082
+rollout_logprob_mad,GRPO-B (sequential),5.0,0.010800111992514858
+rollout_logprob_mad,GRPO-B (sequential),6.0,0.009084083716447762
+rollout_logprob_mad,GRPO-B (sequential),7.0,0.007927439226707191
+rollout_logprob_mad,GRPO-B (sequential),8.0,0.007934257182940748
+rollout_logprob_mad,GRPO-B (sequential),9.0,0.006869102249946123
+rollout_logprob_mad,GRPO-B (sequential),10.0,0.0062744246972301805
+rollout_logprob_mad,GRPO-B (sequential),11.0,0.006293723660087441
+rollout_logprob_mad,GRPO-B (sequential),12.0,0.005708792121129446
+rollout_logprob_mad,GRPO-B (sequential),13.0,0.005726479434391923
+rollout_logprob_mad,GRPO-B (sequential),14.0,0.006457338726543757
+rollout_logprob_mad,GRPO-B (sequential),15.0,0.005120740547026093
+rollout_logprob_mad,GRPO-B (sequential),16.0,0.005526110253871383
+rollout_logprob_mad,GRPO-B (sequential),17.0,0.00533967433156458
+rollout_logprob_mad,GRPO-B (sequential),18.0,0.004264886472084777
+rollout_logprob_mad,GRPO-B (sequential),19.0,0.004728049393692853
+rollout_logprob_mad,GRPO-B (sequential),20.0,0.004019495457748283
+rollout_logprob_mad,GRPO-B (sequential),21.0,0.004304665975389151
+rollout_logprob_mad,GRPO-B (sequential),22.0,0.004139111092214904
+rollout_logprob_mad,GRPO-B (sequential),23.0,0.0047877207768299845
+rollout_logprob_mad,GRPO-B (sequential),24.0,0.003892998263100522
+rollout_logprob_mad,GRPO-B (sequential),25.0,0.0044072718367568426
+rollout_logprob_mad,GRPO-B (sequential),26.0,0.003891633704066119
+rollout_logprob_mad,GRPO-B (sequential),27.0,0.004931956494492025
+rollout_logprob_mad,GRPO-B (sequential),28.0,0.0041516325392766795
+rollout_logprob_mad,GRPO-B (sequential),29.0,0.004273429356847585
+rollout_logprob_mad,GRPO-B (sequential),30.0,0.0036595703639790865
+rollout_logprob_mad,GRPO-B (sequential),31.0,0.003517132012051091
+rollout_logprob_mad,GRPO-B (sequential),32.0,0.004113369037915788
+rollout_logprob_mad,GRPO-B (sequential),33.0,0.00371906189444023
+rollout_logprob_mad,GRPO-B (sequential),34.0,0.0042044632013854
+rollout_logprob_mad,GRPO-B (sequential),35.0,0.0031310390200399814
+rollout_logprob_mad,GRPO-B (sequential),36.0,0.0041494839334468726
+rollout_logprob_mad,GRPO-B (sequential),37.0,0.004020219247255339
+rollout_logprob_mad,GRPO-B (sequential),38.0,0.003926313178260979
+rollout_logprob_mad,GRPO-B (sequential),39.0,0.003443318360330862
+rollout_logprob_mad,GRPO-B (sequential),40.0,0.004793196739384588
+rollout_logprob_mad,GRPO-B (sequential),41.0,0.004024413042734602
+rollout_logprob_mad,GRPO-B (sequential),42.0,0.004188252348351872
+rollout_logprob_mad,GRPO-B (sequential),43.0,0.004350651361159904
+rollout_logprob_mad,GRPO-B (sequential),44.0,0.003991531342805253
+rollout_logprob_mad,GRPO-B (sequential),45.0,0.004982714688602987
+rollout_logprob_mad,GRPO-B (sequential),46.0,0.004232908971518813
+rollout_logprob_mad,GRPO-B (sequential),47.0,0.003694766531751675
+rollout_logprob_mad,GRPO-B (sequential),48.0,0.0044068912148360236
+rollout_logprob_mad,GRPO-B (sequential),49.0,0.004528176529653872
+rollout_logprob_mad,GRPO-B (sequential),50.0,0.0038882835547594994
+rollout_logprob_mad,GRPO-B (sequential),51.0,0.004105815281431486
+rollout_logprob_mad,GRPO-B (sequential),52.0,0.003581433009307305
+rollout_logprob_mad,GRPO-B (sequential),53.0,0.003649231251272631
+rollout_logprob_mad,GRPO-B (sequential),54.0,0.003635557670764433
+rollout_logprob_mad,GRPO-B (sequential),55.0,0.003915928523236478
+rollout_logprob_mad,GRPO-B (sequential),56.0,0.0038206921440976757
+rollout_logprob_mad,GRPO-B (sequential),57.0,0.003915141870474659
+rollout_logprob_mad,GRPO-B (sequential),58.0,0.0032528431794499623
+rollout_logprob_mad,GRPO-B (sequential),59.0,0.004122403481659941
+rollout_logprob_mad,GRPO-B (sequential),60.0,0.0029508288534712463
+rollout_logprob_mad,GRPO-B (sequential),61.0,0.004201349415814412
+rollout_logprob_mad,GRPO-B (sequential),62.0,0.003564742048956839
+rollout_logprob_mad,GRPO-B (sequential),63.0,0.0034345573941475297
+rollout_logprob_mad,GRPO-B (sequential),64.0,0.0035735092211898584
+rollout_logprob_mad,GRPO-B (sequential),65.0,0.0031116007912987648
+rollout_logprob_mad,GRPO-B (sequential),66.0,0.0031726037783215517
+rollout_logprob_mad,GRPO-B (sequential),67.0,0.003925342343328145
+rollout_logprob_mad,GRPO-B (sequential),68.0,0.003133679316396203
+rollout_logprob_mad,GRPO-B (sequential),69.0,0.0037083387473045384
+rollout_logprob_mad,GRPO-B (sequential),70.0,0.003994107617713629
+rollout_logprob_mad,GRPO-B (sequential),71.0,0.003939445230021928
+rollout_logprob_mad,GRPO-B (sequential),72.0,0.004126798721875533
+rollout_logprob_mad,GRPO-B (sequential),73.0,0.0033702093916087167
+rollout_logprob_mad,GRPO-B (sequential),74.0,0.003383439122163514
+rollout_logprob_mad,GRPO-B (sequential),75.0,0.0035299301745042666
+rollout_logprob_mad,GRPO-B (sequential),76.0,0.0037839799462887802
+rollout_logprob_mad,GRPO-B (sequential),77.0,0.00397299625555657
+rollout_logprob_mad,GRPO-B (sequential),78.0,0.00514030967936685
+rollout_logprob_mad,GRPO-B (sequential),79.0,0.003985209155632578
+rollout_logprob_mad,GRPO-B (sequential),80.0,0.004366911107419653
+rollout_logprob_mad,GRPO-B (sequential),81.0,0.004402868038632921
+rollout_logprob_mad,GRPO-B (sequential),82.0,0.00458566519540829
+rollout_logprob_mad,GRPO-B (sequential),83.0,0.004112534198370267
+rollout_logprob_mad,GRPO-B (sequential),84.0,0.004695861119290848
+rollout_logprob_mad,GRPO-B (sequential),85.0,0.004340859902304434
+rollout_logprob_mad,GRPO-B (sequential),86.0,0.004149548009902612
+rollout_logprob_mad,GRPO-B (sequential),87.0,0.0036157861372654605
+rollout_logprob_mad,GRPO-B (sequential),88.0,0.0040778896336232644
+rollout_logprob_mad,GRPO-B (sequential),89.0,0.003699363744986503
+rollout_logprob_mad,GRPO-B (sequential),90.0,0.004118215243392455
+rollout_logprob_mad,GRPO-B (sequential),91.0,0.004125041505252063
+rollout_logprob_mad,GRPO-B (sequential),92.0,0.004335007533500722
+rollout_logprob_mad,GRPO-B (sequential),93.0,0.003801203333602378
+rollout_logprob_mad,GRPO-B (sequential),94.0,0.004887046784374349
+rollout_logprob_mad,GRPO-B (sequential),95.0,0.0037521328534413567
+rollout_logprob_mad,GRPO-B (sequential),96.0,0.004902660093929605
+rollout_logprob_mad,GRPO-B (sequential),97.0,0.0039049145071501576
+rollout_logprob_mad,GRPO-B (sequential),98.0,0.0044664931493727834
+rollout_logprob_mad,GRPO-B (sequential),99.0,0.004639245877688844
+rollout_logprob_mad,GRPO-B (sequential),100.0,0.004703270373988274
+rollout_logprob_mad,GRPO-A rejected step,98.0,0.0794
+reward_mean,"GRPO-A (direct, FAILED at 98)",1.0,0.01953125
+reward_mean,"GRPO-A (direct, FAILED at 98)",2.0,0.0390625
+reward_mean,"GRPO-A (direct, FAILED at 98)",3.0,0.0390625
+reward_mean,"GRPO-A (direct, FAILED at 98)",4.0,0.05859375
+reward_mean,"GRPO-A (direct, FAILED at 98)",5.0,0.1484375
+reward_mean,"GRPO-A (direct, FAILED at 98)",6.0,0.140625
+reward_mean,"GRPO-A (direct, FAILED at 98)",7.0,0.28515625
+reward_mean,"GRPO-A (direct, FAILED at 98)",8.0,0.265625
+reward_mean,"GRPO-A (direct, FAILED at 98)",9.0,0.359375
+reward_mean,"GRPO-A (direct, FAILED at 98)",10.0,0.4375
+reward_mean,"GRPO-A (direct, FAILED at 98)",11.0,0.5546875
+reward_mean,"GRPO-A (direct, FAILED at 98)",12.0,0.390625
+reward_mean,"GRPO-A (direct, FAILED at 98)",13.0,0.51953125
+reward_mean,"GRPO-A (direct, FAILED at 98)",14.0,0.4140625
+reward_mean,"GRPO-A (direct, FAILED at 98)",15.0,0.48828125
+reward_mean,"GRPO-A (direct, FAILED at 98)",16.0,0.4296875
+reward_mean,"GRPO-A (direct, FAILED at 98)",17.0,0.65625
+reward_mean,"GRPO-A (direct, FAILED at 98)",18.0,0.4609375
+reward_mean,"GRPO-A (direct, FAILED at 98)",19.0,0.53515625
+reward_mean,"GRPO-A (direct, FAILED at 98)",20.0,0.62109375
+reward_mean,"GRPO-A (direct, FAILED at 98)",21.0,0.53125
+reward_mean,"GRPO-A (direct, FAILED at 98)",22.0,0.71875
+reward_mean,"GRPO-A (direct, FAILED at 98)",23.0,0.546875
+reward_mean,"GRPO-A (direct, FAILED at 98)",24.0,0.6796875
+reward_mean,"GRPO-A (direct, FAILED at 98)",25.0,0.55859375
+reward_mean,"GRPO-A (direct, FAILED at 98)",26.0,0.6953125
+reward_mean,"GRPO-A (direct, FAILED at 98)",27.0,0.57421875
+reward_mean,"GRPO-A (direct, FAILED at 98)",28.0,0.6171875
+reward_mean,"GRPO-A (direct, FAILED at 98)",29.0,0.65625
+reward_mean,"GRPO-A (direct, FAILED at 98)",30.0,0.67578125
+reward_mean,"GRPO-A (direct, FAILED at 98)",31.0,0.66796875
+reward_mean,"GRPO-A (direct, FAILED at 98)",32.0,0.6640625
+reward_mean,"GRPO-A (direct, FAILED at 98)",33.0,0.734375
+reward_mean,"GRPO-A (direct, FAILED at 98)",34.0,0.6953125
+reward_mean,"GRPO-A (direct, FAILED at 98)",35.0,0.765625
+reward_mean,"GRPO-A (direct, FAILED at 98)",36.0,0.609375
+reward_mean,"GRPO-A (direct, FAILED at 98)",37.0,0.60546875
+reward_mean,"GRPO-A (direct, FAILED at 98)",38.0,0.83984375
+reward_mean,"GRPO-A (direct, FAILED at 98)",39.0,0.66796875
+reward_mean,"GRPO-A (direct, FAILED at 98)",40.0,0.57421875
+reward_mean,"GRPO-A (direct, FAILED at 98)",41.0,0.734375
+reward_mean,"GRPO-A (direct, FAILED at 98)",42.0,0.73046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",43.0,0.6328125
+reward_mean,"GRPO-A (direct, FAILED at 98)",44.0,0.6796875
+reward_mean,"GRPO-A (direct, FAILED at 98)",45.0,0.76171875
+reward_mean,"GRPO-A (direct, FAILED at 98)",46.0,0.6328125
+reward_mean,"GRPO-A (direct, FAILED at 98)",47.0,0.69921875
+reward_mean,"GRPO-A (direct, FAILED at 98)",48.0,0.69140625
+reward_mean,"GRPO-A (direct, FAILED at 98)",49.0,0.64453125
+reward_mean,"GRPO-A (direct, FAILED at 98)",50.0,0.78515625
+reward_mean,"GRPO-A (direct, FAILED at 98)",51.0,0.62109375
+reward_mean,"GRPO-A (direct, FAILED at 98)",52.0,0.73046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",53.0,0.7109375
+reward_mean,"GRPO-A (direct, FAILED at 98)",54.0,0.8359375
+reward_mean,"GRPO-A (direct, FAILED at 98)",55.0,0.765625
+reward_mean,"GRPO-A (direct, FAILED at 98)",56.0,0.7265625
+reward_mean,"GRPO-A (direct, FAILED at 98)",57.0,0.73046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",58.0,0.828125
+reward_mean,"GRPO-A (direct, FAILED at 98)",59.0,0.66015625
+reward_mean,"GRPO-A (direct, FAILED at 98)",60.0,0.7578125
+reward_mean,"GRPO-A (direct, FAILED at 98)",61.0,0.67578125
+reward_mean,"GRPO-A (direct, FAILED at 98)",62.0,0.7734375
+reward_mean,"GRPO-A (direct, FAILED at 98)",63.0,0.78125
+reward_mean,"GRPO-A (direct, FAILED at 98)",64.0,0.71875
+reward_mean,"GRPO-A (direct, FAILED at 98)",65.0,0.8359375
+reward_mean,"GRPO-A (direct, FAILED at 98)",66.0,0.69140625
+reward_mean,"GRPO-A (direct, FAILED at 98)",67.0,0.73046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",68.0,0.75390625
+reward_mean,"GRPO-A (direct, FAILED at 98)",69.0,0.7578125
+reward_mean,"GRPO-A (direct, FAILED at 98)",70.0,0.71875
+reward_mean,"GRPO-A (direct, FAILED at 98)",71.0,0.66796875
+reward_mean,"GRPO-A (direct, FAILED at 98)",72.0,0.76953125
+reward_mean,"GRPO-A (direct, FAILED at 98)",73.0,0.78125
+reward_mean,"GRPO-A (direct, FAILED at 98)",74.0,0.6953125
+reward_mean,"GRPO-A (direct, FAILED at 98)",75.0,0.8046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",76.0,0.72265625
+reward_mean,"GRPO-A (direct, FAILED at 98)",77.0,0.609375
+reward_mean,"GRPO-A (direct, FAILED at 98)",78.0,0.58984375
+reward_mean,"GRPO-A (direct, FAILED at 98)",79.0,0.7109375
+reward_mean,"GRPO-A (direct, FAILED at 98)",80.0,0.73046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",81.0,0.64453125
+reward_mean,"GRPO-A (direct, FAILED at 98)",82.0,0.67578125
+reward_mean,"GRPO-A (direct, FAILED at 98)",83.0,0.67578125
+reward_mean,"GRPO-A (direct, FAILED at 98)",84.0,0.75390625
+reward_mean,"GRPO-A (direct, FAILED at 98)",85.0,0.73046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",86.0,0.68359375
+reward_mean,"GRPO-A (direct, FAILED at 98)",87.0,0.8046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",88.0,0.72265625
+reward_mean,"GRPO-A (direct, FAILED at 98)",89.0,0.859375
+reward_mean,"GRPO-A (direct, FAILED at 98)",90.0,0.734375
+reward_mean,"GRPO-A (direct, FAILED at 98)",91.0,0.609375
+reward_mean,"GRPO-A (direct, FAILED at 98)",92.0,0.73046875
+reward_mean,"GRPO-A (direct, FAILED at 98)",93.0,0.76953125
+reward_mean,"GRPO-A (direct, FAILED at 98)",94.0,0.765625
+reward_mean,"GRPO-A (direct, FAILED at 98)",95.0,0.70703125
+reward_mean,"GRPO-A (direct, FAILED at 98)",96.0,0.6171875
+reward_mean,"GRPO-A (direct, FAILED at 98)",97.0,0.0546875
+reward_mean,"A1 (post-hoc, lr 1e-5)",81.0,0.64453125
+reward_mean,"A1 (post-hoc, lr 1e-5)",82.0,0.6640625
+reward_mean,"A1 (post-hoc, lr 1e-5)",83.0,0.6875
+reward_mean,"A1 (post-hoc, lr 1e-5)",84.0,0.7578125
+reward_mean,"A1 (post-hoc, lr 1e-5)",85.0,0.71484375
+reward_mean,"A1 (post-hoc, lr 1e-5)",86.0,0.69140625
+reward_mean,"A1 (post-hoc, lr 1e-5)",87.0,0.7890625
+reward_mean,"A1 (post-hoc, lr 1e-5)",88.0,0.70703125
+reward_mean,"A1 (post-hoc, lr 1e-5)",89.0,0.859375
+reward_mean,"A1 (post-hoc, lr 1e-5)",90.0,0.75390625
+reward_mean,"A1 (post-hoc, lr 1e-5)",91.0,0.62890625
+reward_mean,"A1 (post-hoc, lr 1e-5)",92.0,0.72265625
+reward_mean,"A1 (post-hoc, lr 1e-5)",93.0,0.78125
+reward_mean,"A1 (post-hoc, lr 1e-5)",94.0,0.7421875
+reward_mean,"A1 (post-hoc, lr 1e-5)",95.0,0.74609375
+reward_mean,"A1 (post-hoc, lr 1e-5)",96.0,0.671875
+reward_mean,"A1 (post-hoc, lr 1e-5)",97.0,0.703125
+reward_mean,"A1 (post-hoc, lr 1e-5)",98.0,0.69140625
+reward_mean,"A1 (post-hoc, lr 1e-5)",99.0,0.62109375
+reward_mean,"A1 (post-hoc, lr 1e-5)",100.0,0.65625
+reward_mean,"A2 (post-hoc, lr 5e-6)",81.0,0.64453125
+reward_mean,"A2 (post-hoc, lr 5e-6)",82.0,0.67578125
+reward_mean,"A2 (post-hoc, lr 5e-6)",83.0,0.68359375
+reward_mean,"A2 (post-hoc, lr 5e-6)",84.0,0.76953125
+reward_mean,"A2 (post-hoc, lr 5e-6)",85.0,0.73828125
+reward_mean,"A2 (post-hoc, lr 5e-6)",86.0,0.7109375
+reward_mean,"A2 (post-hoc, lr 5e-6)",87.0,0.7734375
+reward_mean,"A2 (post-hoc, lr 5e-6)",88.0,0.734375
+reward_mean,"A2 (post-hoc, lr 5e-6)",89.0,0.859375
+reward_mean,"A2 (post-hoc, lr 5e-6)",90.0,0.75390625
+reward_mean,"A2 (post-hoc, lr 5e-6)",91.0,0.65234375
+reward_mean,"A2 (post-hoc, lr 5e-6)",92.0,0.74609375
+reward_mean,"A2 (post-hoc, lr 5e-6)",93.0,0.80078125
+reward_mean,"A2 (post-hoc, lr 5e-6)",94.0,0.7421875
+reward_mean,"A2 (post-hoc, lr 5e-6)",95.0,0.76171875
+reward_mean,"A2 (post-hoc, lr 5e-6)",96.0,0.671875
+reward_mean,"A2 (post-hoc, lr 5e-6)",97.0,0.72265625
+reward_mean,"A2 (post-hoc, lr 5e-6)",98.0,0.66796875
+reward_mean,"A2 (post-hoc, lr 5e-6)",99.0,0.68359375
+reward_mean,"A2 (post-hoc, lr 5e-6)",100.0,0.6796875
+reward_mean,GRPO-B (sequential),1.0,0.453125
+reward_mean,GRPO-B (sequential),2.0,0.5546875
+reward_mean,GRPO-B (sequential),3.0,0.45703125
+reward_mean,GRPO-B (sequential),4.0,0.35546875
+reward_mean,GRPO-B (sequential),5.0,0.56640625
+reward_mean,GRPO-B (sequential),6.0,0.6171875
+reward_mean,GRPO-B (sequential),7.0,0.671875
+reward_mean,GRPO-B (sequential),8.0,0.5546875
+reward_mean,GRPO-B (sequential),9.0,0.54296875
+reward_mean,GRPO-B (sequential),10.0,0.6953125
+reward_mean,GRPO-B (sequential),11.0,0.75390625
+reward_mean,GRPO-B (sequential),12.0,0.609375
+reward_mean,GRPO-B (sequential),13.0,0.7109375
+reward_mean,GRPO-B (sequential),14.0,0.64453125
+reward_mean,GRPO-B (sequential),15.0,0.70703125
+reward_mean,GRPO-B (sequential),16.0,0.62109375
+reward_mean,GRPO-B (sequential),17.0,0.828125
+reward_mean,GRPO-B (sequential),18.0,0.796875
+reward_mean,GRPO-B (sequential),19.0,0.67578125
+reward_mean,GRPO-B (sequential),20.0,0.78125
+reward_mean,GRPO-B (sequential),21.0,0.7265625
+reward_mean,GRPO-B (sequential),22.0,0.8359375
+reward_mean,GRPO-B (sequential),23.0,0.74609375
+reward_mean,GRPO-B (sequential),24.0,0.80859375
+reward_mean,GRPO-B (sequential),25.0,0.65625
+reward_mean,GRPO-B (sequential),26.0,0.7890625
+reward_mean,GRPO-B (sequential),27.0,0.69921875
+reward_mean,GRPO-B (sequential),28.0,0.734375
+reward_mean,GRPO-B (sequential),29.0,0.7578125
+reward_mean,GRPO-B (sequential),30.0,0.765625
+reward_mean,GRPO-B (sequential),31.0,0.734375
+reward_mean,GRPO-B (sequential),32.0,0.7578125
+reward_mean,GRPO-B (sequential),33.0,0.81640625
+reward_mean,GRPO-B (sequential),34.0,0.703125
+reward_mean,GRPO-B (sequential),35.0,0.87109375
+reward_mean,GRPO-B (sequential),36.0,0.70703125
+reward_mean,GRPO-B (sequential),37.0,0.7265625
+reward_mean,GRPO-B (sequential),38.0,0.88671875
+reward_mean,GRPO-B (sequential),39.0,0.8046875
+reward_mean,GRPO-B (sequential),40.0,0.64453125
+reward_mean,GRPO-B (sequential),41.0,0.78125
+reward_mean,GRPO-B (sequential),42.0,0.80078125
+reward_mean,GRPO-B (sequential),43.0,0.68359375
+reward_mean,GRPO-B (sequential),44.0,0.734375
+reward_mean,GRPO-B (sequential),45.0,0.8203125
+reward_mean,GRPO-B (sequential),46.0,0.70703125
+reward_mean,GRPO-B (sequential),47.0,0.72265625
+reward_mean,GRPO-B (sequential),48.0,0.734375
+reward_mean,GRPO-B (sequential),49.0,0.66015625
+reward_mean,GRPO-B (sequential),50.0,0.875
+reward_mean,GRPO-B (sequential),51.0,0.72265625
+reward_mean,GRPO-B (sequential),52.0,0.83203125
+reward_mean,GRPO-B (sequential),53.0,0.77734375
+reward_mean,GRPO-B (sequential),54.0,0.8125
+reward_mean,GRPO-B (sequential),55.0,0.8125
+reward_mean,GRPO-B (sequential),56.0,0.7265625
+reward_mean,GRPO-B (sequential),57.0,0.7890625
+reward_mean,GRPO-B (sequential),58.0,0.859375
+reward_mean,GRPO-B (sequential),59.0,0.73046875
+reward_mean,GRPO-B (sequential),60.0,0.7109375
+reward_mean,GRPO-B (sequential),61.0,0.73046875
+reward_mean,GRPO-B (sequential),62.0,0.80078125
+reward_mean,GRPO-B (sequential),63.0,0.80078125
+reward_mean,GRPO-B (sequential),64.0,0.78515625
+reward_mean,GRPO-B (sequential),65.0,0.8671875
+reward_mean,GRPO-B (sequential),66.0,0.68359375
+reward_mean,GRPO-B (sequential),67.0,0.75
+reward_mean,GRPO-B (sequential),68.0,0.8203125
+reward_mean,GRPO-B (sequential),69.0,0.77734375
+reward_mean,GRPO-B (sequential),70.0,0.77734375
+reward_mean,GRPO-B (sequential),71.0,0.69921875
+reward_mean,GRPO-B (sequential),72.0,0.76953125
+reward_mean,GRPO-B (sequential),73.0,0.78515625
+reward_mean,GRPO-B (sequential),74.0,0.69921875
+reward_mean,GRPO-B (sequential),75.0,0.81640625
+reward_mean,GRPO-B (sequential),76.0,0.7734375
+reward_mean,GRPO-B (sequential),77.0,0.671875
+reward_mean,GRPO-B (sequential),78.0,0.6015625
+reward_mean,GRPO-B (sequential),79.0,0.7578125
+reward_mean,GRPO-B (sequential),80.0,0.76171875
+reward_mean,GRPO-B (sequential),81.0,0.6640625
+reward_mean,GRPO-B (sequential),82.0,0.69921875
+reward_mean,GRPO-B (sequential),83.0,0.703125
+reward_mean,GRPO-B (sequential),84.0,0.78125
+reward_mean,GRPO-B (sequential),85.0,0.73046875
+reward_mean,GRPO-B (sequential),86.0,0.6328125
+reward_mean,GRPO-B (sequential),87.0,0.8203125
+reward_mean,GRPO-B (sequential),88.0,0.72265625
+reward_mean,GRPO-B (sequential),89.0,0.84375
+reward_mean,GRPO-B (sequential),90.0,0.8046875
+reward_mean,GRPO-B (sequential),91.0,0.69140625
+reward_mean,GRPO-B (sequential),92.0,0.73046875
+reward_mean,GRPO-B (sequential),93.0,0.8203125
+reward_mean,GRPO-B (sequential),94.0,0.734375
+reward_mean,GRPO-B (sequential),95.0,0.796875
+reward_mean,GRPO-B (sequential),96.0,0.68359375
+reward_mean,GRPO-B (sequential),97.0,0.76953125
+reward_mean,GRPO-B (sequential),98.0,0.74609375
+reward_mean,GRPO-B (sequential),99.0,0.6953125
+reward_mean,GRPO-B (sequential),100.0,0.6328125
+entropy,"GRPO-A (direct, FAILED at 98)",1.0,0.5355603779636207
+entropy,"GRPO-A (direct, FAILED at 98)",2.0,0.5768552993489661
+entropy,"GRPO-A (direct, FAILED at 98)",3.0,0.6307053882682889
+entropy,"GRPO-A (direct, FAILED at 98)",4.0,0.6553101777205496
+entropy,"GRPO-A (direct, FAILED at 98)",5.0,0.6829705939640279
+entropy,"GRPO-A (direct, FAILED at 98)",6.0,0.5547030696677017
+entropy,"GRPO-A (direct, FAILED at 98)",7.0,0.38899410334210927
+entropy,"GRPO-A (direct, FAILED at 98)",8.0,0.4238619749810531
+entropy,"GRPO-A (direct, FAILED at 98)",9.0,0.26989216246410114
+entropy,"GRPO-A (direct, FAILED at 98)",10.0,0.24351100125736116
+entropy,"GRPO-A (direct, FAILED at 98)",11.0,0.22195354036223186
+entropy,"GRPO-A (direct, FAILED at 98)",12.0,0.21101879947568006
+entropy,"GRPO-A (direct, FAILED at 98)",13.0,0.1960475726243539
+entropy,"GRPO-A (direct, FAILED at 98)",14.0,0.2433479672378263
+entropy,"GRPO-A (direct, FAILED at 98)",15.0,0.18210711287957132
+entropy,"GRPO-A (direct, FAILED at 98)",16.0,0.18308983129409198
+entropy,"GRPO-A (direct, FAILED at 98)",17.0,0.14428890853552548
+entropy,"GRPO-A (direct, FAILED at 98)",18.0,0.13526833436267327
+entropy,"GRPO-A (direct, FAILED at 98)",19.0,0.12482733331621382
+entropy,"GRPO-A (direct, FAILED at 98)",20.0,0.11379018374941864
+entropy,"GRPO-A (direct, FAILED at 98)",21.0,0.12724706640906908
+entropy,"GRPO-A (direct, FAILED at 98)",22.0,0.12394213092959702
+entropy,"GRPO-A (direct, FAILED at 98)",23.0,0.09180141971527794
+entropy,"GRPO-A (direct, FAILED at 98)",24.0,0.05623696774118546
+entropy,"GRPO-A (direct, FAILED at 98)",25.0,0.055699728155440456
+entropy,"GRPO-A (direct, FAILED at 98)",26.0,0.05242100195266175
+entropy,"GRPO-A (direct, FAILED at 98)",27.0,0.0657489969594831
+entropy,"GRPO-A (direct, FAILED at 98)",28.0,0.0676292542093747
+entropy,"GRPO-A (direct, FAILED at 98)",29.0,0.08157798967543316
+entropy,"GRPO-A (direct, FAILED at 98)",30.0,0.06326172144505884
+entropy,"GRPO-A (direct, FAILED at 98)",31.0,0.06371169804866778
+entropy,"GRPO-A (direct, FAILED at 98)",32.0,0.0666029362097435
+entropy,"GRPO-A (direct, FAILED at 98)",33.0,0.05555743794039699
+entropy,"GRPO-A (direct, FAILED at 98)",34.0,0.052974662130196255
+entropy,"GRPO-A (direct, FAILED at 98)",35.0,0.040160906571753266
+entropy,"GRPO-A (direct, FAILED at 98)",36.0,0.042524478906627305
+entropy,"GRPO-A (direct, FAILED at 98)",37.0,0.03371349354673353
+entropy,"GRPO-A (direct, FAILED at 98)",38.0,0.03369910011681182
+entropy,"GRPO-A (direct, FAILED at 98)",39.0,0.03350469107338895
+entropy,"GRPO-A (direct, FAILED at 98)",40.0,0.03854450080193567
+entropy,"GRPO-A (direct, FAILED at 98)",41.0,0.032260454297921605
+entropy,"GRPO-A (direct, FAILED at 98)",42.0,0.038148969374749216
+entropy,"GRPO-A (direct, FAILED at 98)",43.0,0.03474135084520077
+entropy,"GRPO-A (direct, FAILED at 98)",44.0,0.04295605301672451
+entropy,"GRPO-A (direct, FAILED at 98)",45.0,0.04290235365401631
+entropy,"GRPO-A (direct, FAILED at 98)",46.0,0.036285612914781634
+entropy,"GRPO-A (direct, FAILED at 98)",47.0,0.02607916753028469
+entropy,"GRPO-A (direct, FAILED at 98)",48.0,0.028789244354363825
+entropy,"GRPO-A (direct, FAILED at 98)",49.0,0.03487096799807411
+entropy,"GRPO-A (direct, FAILED at 98)",50.0,0.03012528751916195
+entropy,"GRPO-A (direct, FAILED at 98)",51.0,0.04161205482354771
+entropy,"GRPO-A (direct, FAILED at 98)",52.0,0.03218243129758413
+entropy,"GRPO-A (direct, FAILED at 98)",53.0,0.02994659556724037
+entropy,"GRPO-A (direct, FAILED at 98)",54.0,0.028177839439157727
+entropy,"GRPO-A (direct, FAILED at 98)",55.0,0.030805352339858132
+entropy,"GRPO-A (direct, FAILED at 98)",56.0,0.030033878374587656
+entropy,"GRPO-A (direct, FAILED at 98)",57.0,0.025311293405002183
+entropy,"GRPO-A (direct, FAILED at 98)",58.0,0.028013615993667338
+entropy,"GRPO-A (direct, FAILED at 98)",59.0,0.038397215425517724
+entropy,"GRPO-A (direct, FAILED at 98)",60.0,0.02527324032722466
+entropy,"GRPO-A (direct, FAILED at 98)",61.0,0.04224093170997537
+entropy,"GRPO-A (direct, FAILED at 98)",62.0,0.0378322578125333
+entropy,"GRPO-A (direct, FAILED at 98)",63.0,0.032726974872144994
+entropy,"GRPO-A (direct, FAILED at 98)",64.0,0.04291643163895478
+entropy,"GRPO-A (direct, FAILED at 98)",65.0,0.03430615352184236
+entropy,"GRPO-A (direct, FAILED at 98)",66.0,0.04846599319889928
+entropy,"GRPO-A (direct, FAILED at 98)",67.0,0.05720167965227175
+entropy,"GRPO-A (direct, FAILED at 98)",68.0,0.05471171056266182
+entropy,"GRPO-A (direct, FAILED at 98)",69.0,0.05893596062758856
+entropy,"GRPO-A (direct, FAILED at 98)",70.0,0.0632354284986277
+entropy,"GRPO-A (direct, FAILED at 98)",71.0,0.06999192651124221
+entropy,"GRPO-A (direct, FAILED at 98)",72.0,0.07039749420078807
+entropy,"GRPO-A (direct, FAILED at 98)",73.0,0.05651275044737726
+entropy,"GRPO-A (direct, FAILED at 98)",74.0,0.05869140529649484
+entropy,"GRPO-A (direct, FAILED at 98)",75.0,0.05867028389401043
+entropy,"GRPO-A (direct, FAILED at 98)",76.0,0.05076586218284129
+entropy,"GRPO-A (direct, FAILED at 98)",77.0,0.050444629507930036
+entropy,"GRPO-A (direct, FAILED at 98)",78.0,0.05390188251565041
+entropy,"GRPO-A (direct, FAILED at 98)",79.0,0.041806829755202064
+entropy,"GRPO-A (direct, FAILED at 98)",80.0,0.046792979695338605
+entropy,"GRPO-A (direct, FAILED at 98)",81.0,0.03830495891360461
+entropy,"GRPO-A (direct, FAILED at 98)",82.0,0.039314142206380784
+entropy,"GRPO-A (direct, FAILED at 98)",83.0,0.032935992831913244
+entropy,"GRPO-A (direct, FAILED at 98)",84.0,0.029480946605678994
+entropy,"GRPO-A (direct, FAILED at 98)",85.0,0.03511161116019972
+entropy,"GRPO-A (direct, FAILED at 98)",86.0,0.0323402509721106
+entropy,"GRPO-A (direct, FAILED at 98)",87.0,0.024892343778775926
+entropy,"GRPO-A (direct, FAILED at 98)",88.0,0.03342614163110066
+entropy,"GRPO-A (direct, FAILED at 98)",89.0,0.027243682556854974
+entropy,"GRPO-A (direct, FAILED at 98)",90.0,0.02749505907866659
+entropy,"GRPO-A (direct, FAILED at 98)",91.0,0.03360052634139305
+entropy,"GRPO-A (direct, FAILED at 98)",92.0,0.03248434114126346
+entropy,"GRPO-A (direct, FAILED at 98)",93.0,0.030519303126838003
+entropy,"GRPO-A (direct, FAILED at 98)",94.0,0.03833550714322668
+entropy,"GRPO-A (direct, FAILED at 98)",95.0,0.0405102360974763
+entropy,"GRPO-A (direct, FAILED at 98)",96.0,0.043544971062182455
+entropy,"GRPO-A (direct, FAILED at 98)",97.0,0.41496132037653566
+entropy,"A1 (post-hoc, lr 1e-5)",81.0,0.03830495891360461
+entropy,"A1 (post-hoc, lr 1e-5)",82.0,0.03996889251685993
+entropy,"A1 (post-hoc, lr 1e-5)",83.0,0.03160681352298713
+entropy,"A1 (post-hoc, lr 1e-5)",84.0,0.02935596545473102
+entropy,"A1 (post-hoc, lr 1e-5)",85.0,0.03433809960169723
+entropy,"A1 (post-hoc, lr 1e-5)",86.0,0.031080132598957578
+entropy,"A1 (post-hoc, lr 1e-5)",87.0,0.022963252381544785
+entropy,"A1 (post-hoc, lr 1e-5)",88.0,0.032190972630974646
+entropy,"A1 (post-hoc, lr 1e-5)",89.0,0.0246770040122294
+entropy,"A1 (post-hoc, lr 1e-5)",90.0,0.028661231453547573
+entropy,"A1 (post-hoc, lr 1e-5)",91.0,0.030141532636072065
+entropy,"A1 (post-hoc, lr 1e-5)",92.0,0.029106510593144667
+entropy,"A1 (post-hoc, lr 1e-5)",93.0,0.026855799649992563
+entropy,"A1 (post-hoc, lr 1e-5)",94.0,0.034918083079901914
+entropy,"A1 (post-hoc, lr 1e-5)",95.0,0.025564830365977682
+entropy,"A1 (post-hoc, lr 1e-5)",96.0,0.026678197792475152
+entropy,"A1 (post-hoc, lr 1e-5)",97.0,0.024865176454459497
+entropy,"A1 (post-hoc, lr 1e-5)",98.0,0.028887400848889574
+entropy,"A1 (post-hoc, lr 1e-5)",99.0,0.030218208247543753
+entropy,"A1 (post-hoc, lr 1e-5)",100.0,0.026650444052693283
+entropy,"A2 (post-hoc, lr 5e-6)",81.0,0.03830495891360461
+entropy,"A2 (post-hoc, lr 5e-6)",82.0,0.04225599081024183
+entropy,"A2 (post-hoc, lr 5e-6)",83.0,0.03283089650360057
+entropy,"A2 (post-hoc, lr 5e-6)",84.0,0.031955021131073416
+entropy,"A2 (post-hoc, lr 5e-6)",85.0,0.037569601488140154
+entropy,"A2 (post-hoc, lr 5e-6)",86.0,0.034022457567976505
+entropy,"A2 (post-hoc, lr 5e-6)",87.0,0.025972529243115862
+entropy,"A2 (post-hoc, lr 5e-6)",88.0,0.036462570301291373
+entropy,"A2 (post-hoc, lr 5e-6)",89.0,0.026075675994024432
+entropy,"A2 (post-hoc, lr 5e-6)",90.0,0.028234890326803954
+entropy,"A2 (post-hoc, lr 5e-6)",91.0,0.034405304537596985
+entropy,"A2 (post-hoc, lr 5e-6)",92.0,0.03203262258970825
+entropy,"A2 (post-hoc, lr 5e-6)",93.0,0.027803847679907776
+entropy,"A2 (post-hoc, lr 5e-6)",94.0,0.03660389932624532
+entropy,"A2 (post-hoc, lr 5e-6)",95.0,0.027727647766311026
+entropy,"A2 (post-hoc, lr 5e-6)",96.0,0.029175668442403983
+entropy,"A2 (post-hoc, lr 5e-6)",97.0,0.026435513863210466
+entropy,"A2 (post-hoc, lr 5e-6)",98.0,0.030733122121353186
+entropy,"A2 (post-hoc, lr 5e-6)",99.0,0.03265612803007427
+entropy,"A2 (post-hoc, lr 5e-6)",100.0,0.029439129904969583
+entropy,GRPO-B (sequential),1.0,0.6519748007015886
+entropy,GRPO-B (sequential),2.0,0.5466206087771243
+entropy,GRPO-B (sequential),3.0,0.6179646269363913
+entropy,GRPO-B (sequential),4.0,0.7129768430102065
+entropy,GRPO-B (sequential),5.0,0.5255351772318877
+entropy,GRPO-B (sequential),6.0,0.43962186678154125
+entropy,GRPO-B (sequential),7.0,0.3681589159946644
+entropy,GRPO-B (sequential),8.0,0.38241975219063257
+entropy,GRPO-B (sequential),9.0,0.32840384608542805
+entropy,GRPO-B (sequential),10.0,0.261558886362323
+entropy,GRPO-B (sequential),11.0,0.23622542253466203
+entropy,GRPO-B (sequential),12.0,0.22072374914381676
+entropy,GRPO-B (sequential),13.0,0.20823167047154822
+entropy,GRPO-B (sequential),14.0,0.24240071631955412
+entropy,GRPO-B (sequential),15.0,0.18389450428147247
+entropy,GRPO-B (sequential),16.0,0.1960952098704789
+entropy,GRPO-B (sequential),17.0,0.1732820407235739
+entropy,GRPO-B (sequential),18.0,0.12833438102091105
+entropy,GRPO-B (sequential),19.0,0.1445958624047264
+entropy,GRPO-B (sequential),20.0,0.11592199763050741
+entropy,GRPO-B (sequential),21.0,0.12221008157726442
+entropy,GRPO-B (sequential),22.0,0.11055927483681746
+entropy,GRPO-B (sequential),23.0,0.13505503082645165
+entropy,GRPO-B (sequential),24.0,0.10460989766374997
+entropy,GRPO-B (sequential),25.0,0.11679303400905265
+entropy,GRPO-B (sequential),26.0,0.09570510414329453
+entropy,GRPO-B (sequential),27.0,0.12850292191197474
+entropy,GRPO-B (sequential),28.0,0.09873376834279675
+entropy,GRPO-B (sequential),29.0,0.09459627706787528
+entropy,GRPO-B (sequential),30.0,0.07548981855203918
+entropy,GRPO-B (sequential),31.0,0.06785451112426588
+entropy,GRPO-B (sequential),32.0,0.08377043072887431
+entropy,GRPO-B (sequential),33.0,0.07022189975685776
+entropy,GRPO-B (sequential),34.0,0.0746346329892837
+entropy,GRPO-B (sequential),35.0,0.04347593534037463
+entropy,GRPO-B (sequential),36.0,0.05766008530629622
+entropy,GRPO-B (sequential),37.0,0.04910746022399432
+entropy,GRPO-B (sequential),38.0,0.0403627694432059
+entropy,GRPO-B (sequential),39.0,0.0362774780866986
+entropy,GRPO-B (sequential),40.0,0.05648993137587892
+entropy,GRPO-B (sequential),41.0,0.0455844437482943
+entropy,GRPO-B (sequential),42.0,0.03972763841540961
+entropy,GRPO-B (sequential),43.0,0.045554405045205
+entropy,GRPO-B (sequential),44.0,0.044265306720132444
+entropy,GRPO-B (sequential),45.0,0.04751783281075653
+entropy,GRPO-B (sequential),46.0,0.041680519497942124
+entropy,GRPO-B (sequential),47.0,0.03374279394541116
+entropy,GRPO-B (sequential),48.0,0.0397060139292013
+entropy,GRPO-B (sequential),49.0,0.04335667360574348
+entropy,GRPO-B (sequential),50.0,0.033843984965964434
+entropy,GRPO-B (sequential),51.0,0.04312502096076479
+entropy,GRPO-B (sequential),52.0,0.03250444491285038
+entropy,GRPO-B (sequential),53.0,0.03679050811756891
+entropy,GRPO-B (sequential),54.0,0.04084004919594567
+entropy,GRPO-B (sequential),55.0,0.04967915513561446
+entropy,GRPO-B (sequential),56.0,0.04969594928516338
+entropy,GRPO-B (sequential),57.0,0.047972999870712296
+entropy,GRPO-B (sequential),58.0,0.037449654325341815
+entropy,GRPO-B (sequential),59.0,0.05730926933659856
+entropy,GRPO-B (sequential),60.0,0.037073872205463536
+entropy,GRPO-B (sequential),61.0,0.05788697139879969
+entropy,GRPO-B (sequential),62.0,0.04516339081071763
+entropy,GRPO-B (sequential),63.0,0.04676848360261876
+entropy,GRPO-B (sequential),64.0,0.0521762699022432
+entropy,GRPO-B (sequential),65.0,0.04461042226639365
+entropy,GRPO-B (sequential),66.0,0.05490273303721664
+entropy,GRPO-B (sequential),67.0,0.076877651275497
+entropy,GRPO-B (sequential),68.0,0.056020844217993665
+entropy,GRPO-B (sequential),69.0,0.06819324386491142
+entropy,GRPO-B (sequential),70.0,0.0751495114579878
+entropy,GRPO-B (sequential),71.0,0.08046306049711684
+entropy,GRPO-B (sequential),72.0,0.0883100243766072
+entropy,GRPO-B (sequential),73.0,0.06433058336758211
+entropy,GRPO-B (sequential),74.0,0.07263647616821878
+entropy,GRPO-B (sequential),75.0,0.07306334619338083
+entropy,GRPO-B (sequential),76.0,0.08315517786032556
+entropy,GRPO-B (sequential),77.0,0.09361807430182328
+entropy,GRPO-B (sequential),78.0,0.12387049259292374
+entropy,GRPO-B (sequential),79.0,0.09643359848641424
+entropy,GRPO-B (sequential),80.0,0.11400228351551868
+entropy,GRPO-B (sequential),81.0,0.1196380389897248
+entropy,GRPO-B (sequential),82.0,0.12695363794162273
+entropy,GRPO-B (sequential),83.0,0.1166999677251467
+entropy,GRPO-B (sequential),84.0,0.12328807794425335
+entropy,GRPO-B (sequential),85.0,0.11833152107966258
+entropy,GRPO-B (sequential),86.0,0.10730075864954103
+entropy,GRPO-B (sequential),87.0,0.08564230002932786
+entropy,GRPO-B (sequential),88.0,0.10301037490802058
+entropy,GRPO-B (sequential),89.0,0.08692170618812191
+entropy,GRPO-B (sequential),90.0,0.10273377416534366
+entropy,GRPO-B (sequential),91.0,0.1136463326216381
+entropy,GRPO-B (sequential),92.0,0.11898834535233829
+entropy,GRPO-B (sequential),93.0,0.09889186115558705
+entropy,GRPO-B (sequential),94.0,0.13236624571366537
+entropy,GRPO-B (sequential),95.0,0.1015868421989418
+entropy,GRPO-B (sequential),96.0,0.1297892682941583
+entropy,GRPO-B (sequential),97.0,0.1067283264311968
+entropy,GRPO-B (sequential),98.0,0.12760169655851458
+entropy,GRPO-B (sequential),99.0,0.13144238400965705
+entropy,GRPO-B (sequential),100.0,0.1408318232481764
+grad_norm,"GRPO-A (direct, FAILED at 98)",1.0,0.006328829564154148
+grad_norm,"GRPO-A (direct, FAILED at 98)",2.0,0.008223498240113258
+grad_norm,"GRPO-A (direct, FAILED at 98)",3.0,0.008797496557235718
+grad_norm,"GRPO-A (direct, FAILED at 98)",4.0,0.016509778797626495
+grad_norm,"GRPO-A (direct, FAILED at 98)",5.0,0.02126549556851387
+grad_norm,"GRPO-A (direct, FAILED at 98)",6.0,0.0174467284232378
+grad_norm,"GRPO-A (direct, FAILED at 98)",7.0,0.027088824659585953
+grad_norm,"GRPO-A (direct, FAILED at 98)",8.0,0.026069650426506996
+grad_norm,"GRPO-A (direct, FAILED at 98)",9.0,0.03401761129498482
+grad_norm,"GRPO-A (direct, FAILED at 98)",10.0,0.03275103494524956
+grad_norm,"GRPO-A (direct, FAILED at 98)",11.0,0.03599901869893074
+grad_norm,"GRPO-A (direct, FAILED at 98)",12.0,0.035111479461193085
+grad_norm,"GRPO-A (direct, FAILED at 98)",13.0,0.038651447743177414
+grad_norm,"GRPO-A (direct, FAILED at 98)",14.0,0.029563752934336662
+grad_norm,"GRPO-A (direct, FAILED at 98)",15.0,0.03664647787809372
+grad_norm,"GRPO-A (direct, FAILED at 98)",16.0,0.027589598670601845
+grad_norm,"GRPO-A (direct, FAILED at 98)",17.0,0.0317513532936573
+grad_norm,"GRPO-A (direct, FAILED at 98)",18.0,0.025683000683784485
+grad_norm,"GRPO-A (direct, FAILED at 98)",19.0,0.037138812243938446
+grad_norm,"GRPO-A (direct, FAILED at 98)",20.0,0.029886046424508095
+grad_norm,"GRPO-A (direct, FAILED at 98)",21.0,0.032771091908216476
+grad_norm,"GRPO-A (direct, FAILED at 98)",22.0,0.030221914872527122
+grad_norm,"GRPO-A (direct, FAILED at 98)",23.0,0.03593800216913223
+grad_norm,"GRPO-A (direct, FAILED at 98)",24.0,0.036940351128578186
+grad_norm,"GRPO-A (direct, FAILED at 98)",25.0,0.03186250478029251
+grad_norm,"GRPO-A (direct, FAILED at 98)",26.0,0.03684289753437042
+grad_norm,"GRPO-A (direct, FAILED at 98)",27.0,0.041683949530124664
+grad_norm,"GRPO-A (direct, FAILED at 98)",28.0,0.038560859858989716
+grad_norm,"GRPO-A (direct, FAILED at 98)",29.0,0.02707921341061592
+grad_norm,"GRPO-A (direct, FAILED at 98)",30.0,0.023475073277950287
+grad_norm,"GRPO-A (direct, FAILED at 98)",31.0,0.026016131043434143
+grad_norm,"GRPO-A (direct, FAILED at 98)",32.0,0.022685153409838676
+grad_norm,"GRPO-A (direct, FAILED at 98)",33.0,0.03235305845737457
+grad_norm,"GRPO-A (direct, FAILED at 98)",34.0,0.024752814322710037
+grad_norm,"GRPO-A (direct, FAILED at 98)",35.0,0.03804068639874458
+grad_norm,"GRPO-A (direct, FAILED at 98)",36.0,0.02936212159693241
+grad_norm,"GRPO-A (direct, FAILED at 98)",37.0,0.03672429919242859
+grad_norm,"GRPO-A (direct, FAILED at 98)",38.0,0.03665803372859955
+grad_norm,"GRPO-A (direct, FAILED at 98)",39.0,0.0500439889729023
+grad_norm,"GRPO-A (direct, FAILED at 98)",40.0,0.030572660267353058
+grad_norm,"GRPO-A (direct, FAILED at 98)",41.0,0.04708341509103775
+grad_norm,"GRPO-A (direct, FAILED at 98)",42.0,0.051009923219680786
+grad_norm,"GRPO-A (direct, FAILED at 98)",43.0,0.038598619401454926
+grad_norm,"GRPO-A (direct, FAILED at 98)",44.0,0.040929533541202545
+grad_norm,"GRPO-A (direct, FAILED at 98)",45.0,0.025792010128498077
+grad_norm,"GRPO-A (direct, FAILED at 98)",46.0,0.03181564807891846
+grad_norm,"GRPO-A (direct, FAILED at 98)",47.0,0.02705029584467411
+grad_norm,"GRPO-A (direct, FAILED at 98)",48.0,0.03976305574178696
+grad_norm,"GRPO-A (direct, FAILED at 98)",49.0,0.02882229909300804
+grad_norm,"GRPO-A (direct, FAILED at 98)",50.0,0.03895840793848038
+grad_norm,"GRPO-A (direct, FAILED at 98)",51.0,0.04688161239027977
+grad_norm,"GRPO-A (direct, FAILED at 98)",52.0,0.03272951394319534
+grad_norm,"GRPO-A (direct, FAILED at 98)",53.0,0.037350598722696304
+grad_norm,"GRPO-A (direct, FAILED at 98)",54.0,0.027639204636216164
+grad_norm,"GRPO-A (direct, FAILED at 98)",55.0,0.032825078815221786
+grad_norm,"GRPO-A (direct, FAILED at 98)",56.0,0.045519135892391205
+grad_norm,"GRPO-A (direct, FAILED at 98)",57.0,0.03709063678979874
+grad_norm,"GRPO-A (direct, FAILED at 98)",58.0,0.02061309665441513
+grad_norm,"GRPO-A (direct, FAILED at 98)",59.0,0.03207388520240784
+grad_norm,"GRPO-A (direct, FAILED at 98)",60.0,0.026283705607056618
+grad_norm,"GRPO-A (direct, FAILED at 98)",61.0,0.03500688076019287
+grad_norm,"GRPO-A (direct, FAILED at 98)",62.0,0.03038902021944523
+grad_norm,"GRPO-A (direct, FAILED at 98)",63.0,0.02215120755136013
+grad_norm,"GRPO-A (direct, FAILED at 98)",64.0,0.0237846951931715
+grad_norm,"GRPO-A (direct, FAILED at 98)",65.0,0.020241737365722656
+grad_norm,"GRPO-A (direct, FAILED at 98)",66.0,0.020938938483595848
+grad_norm,"GRPO-A (direct, FAILED at 98)",67.0,0.0167387668043375
+grad_norm,"GRPO-A (direct, FAILED at 98)",68.0,0.02207018993794918
+grad_norm,"GRPO-A (direct, FAILED at 98)",69.0,0.02435186319053173
+grad_norm,"GRPO-A (direct, FAILED at 98)",70.0,0.021068260073661804
+grad_norm,"GRPO-A (direct, FAILED at 98)",71.0,0.020684747025370598
+grad_norm,"GRPO-A (direct, FAILED at 98)",72.0,0.01712379977107048
+grad_norm,"GRPO-A (direct, FAILED at 98)",73.0,0.018739832565188408
+grad_norm,"GRPO-A (direct, FAILED at 98)",74.0,0.021894514560699463
+grad_norm,"GRPO-A (direct, FAILED at 98)",75.0,0.021032966673374176
+grad_norm,"GRPO-A (direct, FAILED at 98)",76.0,0.0224238783121109
+grad_norm,"GRPO-A (direct, FAILED at 98)",77.0,0.024170521646738052
+grad_norm,"GRPO-A (direct, FAILED at 98)",78.0,0.02137858420610428
+grad_norm,"GRPO-A (direct, FAILED at 98)",79.0,0.02222634293138981
+grad_norm,"GRPO-A (direct, FAILED at 98)",80.0,0.023430226370692253
+grad_norm,"GRPO-A (direct, FAILED at 98)",81.0,0.02842751331627369
+grad_norm,"GRPO-A (direct, FAILED at 98)",82.0,0.024205172434449196
+grad_norm,"GRPO-A (direct, FAILED at 98)",83.0,0.01958383619785309
+grad_norm,"GRPO-A (direct, FAILED at 98)",84.0,0.039242133498191833
+grad_norm,"GRPO-A (direct, FAILED at 98)",85.0,0.023620963096618652
+grad_norm,"GRPO-A (direct, FAILED at 98)",86.0,0.02524072676897049
+grad_norm,"GRPO-A (direct, FAILED at 98)",87.0,0.03628690913319588
+grad_norm,"GRPO-A (direct, FAILED at 98)",88.0,0.02056105248630047
+grad_norm,"GRPO-A (direct, FAILED at 98)",89.0,0.026461144909262657
+grad_norm,"GRPO-A (direct, FAILED at 98)",90.0,0.029037779197096825
+grad_norm,"GRPO-A (direct, FAILED at 98)",91.0,0.03026103973388672
+grad_norm,"GRPO-A (direct, FAILED at 98)",92.0,0.02655855007469654
+grad_norm,"GRPO-A (direct, FAILED at 98)",93.0,0.02378220483660698
+grad_norm,"GRPO-A (direct, FAILED at 98)",94.0,0.03911939263343811
+grad_norm,"GRPO-A (direct, FAILED at 98)",95.0,0.03787856176495552
+grad_norm,"GRPO-A (direct, FAILED at 98)",96.0,0.08075182139873505
+grad_norm,"GRPO-A (direct, FAILED at 98)",97.0,0.2082439661026001
+grad_norm,"A1 (post-hoc, lr 1e-5)",81.0,0.02842547558248043
+grad_norm,"A1 (post-hoc, lr 1e-5)",82.0,0.025945786386728287
+grad_norm,"A1 (post-hoc, lr 1e-5)",83.0,0.02163316123187542
+grad_norm,"A1 (post-hoc, lr 1e-5)",84.0,0.042089227586984634
+grad_norm,"A1 (post-hoc, lr 1e-5)",85.0,0.02634389139711857
+grad_norm,"A1 (post-hoc, lr 1e-5)",86.0,0.025127317756414413
+grad_norm,"A1 (post-hoc, lr 1e-5)",87.0,0.03632541745901108
+grad_norm,"A1 (post-hoc, lr 1e-5)",88.0,0.01913050189614296
+grad_norm,"A1 (post-hoc, lr 1e-5)",89.0,0.024764584377408028
+grad_norm,"A1 (post-hoc, lr 1e-5)",90.0,0.03731997311115265
+grad_norm,"A1 (post-hoc, lr 1e-5)",91.0,0.030548546463251114
+grad_norm,"A1 (post-hoc, lr 1e-5)",92.0,0.0215359665453434
+grad_norm,"A1 (post-hoc, lr 1e-5)",93.0,0.02726965770125389
+grad_norm,"A1 (post-hoc, lr 1e-5)",94.0,0.04364955052733421
+grad_norm,"A1 (post-hoc, lr 1e-5)",95.0,0.03447949141263962
+grad_norm,"A1 (post-hoc, lr 1e-5)",96.0,0.04935475438833237
+grad_norm,"A1 (post-hoc, lr 1e-5)",97.0,0.034904927015304565
+grad_norm,"A1 (post-hoc, lr 1e-5)",98.0,0.046073853969573975
+grad_norm,"A1 (post-hoc, lr 1e-5)",99.0,0.028258107602596283
+grad_norm,"A1 (post-hoc, lr 1e-5)",100.0,0.03415101766586304
+grad_norm,"A2 (post-hoc, lr 5e-6)",81.0,0.028425950556993484
+grad_norm,"A2 (post-hoc, lr 5e-6)",82.0,0.018691077828407288
+grad_norm,"A2 (post-hoc, lr 5e-6)",83.0,0.020699558779597282
+grad_norm,"A2 (post-hoc, lr 5e-6)",84.0,0.03605291247367859
+grad_norm,"A2 (post-hoc, lr 5e-6)",85.0,0.019229797646403313
+grad_norm,"A2 (post-hoc, lr 5e-6)",86.0,0.021149322390556335
+grad_norm,"A2 (post-hoc, lr 5e-6)",87.0,0.03243858367204666
+grad_norm,"A2 (post-hoc, lr 5e-6)",88.0,0.023377062752842903
+grad_norm,"A2 (post-hoc, lr 5e-6)",89.0,0.02480582892894745
+grad_norm,"A2 (post-hoc, lr 5e-6)",90.0,0.03187348321080208
+grad_norm,"A2 (post-hoc, lr 5e-6)",91.0,0.0319053940474987
+grad_norm,"A2 (post-hoc, lr 5e-6)",92.0,0.022120391950011253
+grad_norm,"A2 (post-hoc, lr 5e-6)",93.0,0.024052299559116364
+grad_norm,"A2 (post-hoc, lr 5e-6)",94.0,0.034375883638858795
+grad_norm,"A2 (post-hoc, lr 5e-6)",95.0,0.033752210438251495
+grad_norm,"A2 (post-hoc, lr 5e-6)",96.0,0.03391383960843086
+grad_norm,"A2 (post-hoc, lr 5e-6)",97.0,0.02509954757988453
+grad_norm,"A2 (post-hoc, lr 5e-6)",98.0,0.035528190433979034
+grad_norm,"A2 (post-hoc, lr 5e-6)",99.0,0.03766825795173645
+grad_norm,"A2 (post-hoc, lr 5e-6)",100.0,0.03665146231651306
+grad_norm,GRPO-B (sequential),1.0,0.02106396295130253
+grad_norm,GRPO-B (sequential),2.0,0.027345754206180573
+grad_norm,GRPO-B (sequential),3.0,0.023890037089586258
+grad_norm,GRPO-B (sequential),4.0,0.022128527984023094
+grad_norm,GRPO-B (sequential),5.0,0.02645518071949482
+grad_norm,GRPO-B (sequential),6.0,0.0222327820956707
+grad_norm,GRPO-B (sequential),7.0,0.021051490679383278
+grad_norm,GRPO-B (sequential),8.0,0.029147513210773468
+grad_norm,GRPO-B (sequential),9.0,0.023384595289826393
+grad_norm,GRPO-B (sequential),10.0,0.01796860061585903
+grad_norm,GRPO-B (sequential),11.0,0.017142953351140022
+grad_norm,GRPO-B (sequential),12.0,0.02558235079050064
+grad_norm,GRPO-B (sequential),13.0,0.022210385650396347
+grad_norm,GRPO-B (sequential),14.0,0.014650557190179825
+grad_norm,GRPO-B (sequential),15.0,0.015744909644126892
+grad_norm,GRPO-B (sequential),16.0,0.01632632315158844
+grad_norm,GRPO-B (sequential),17.0,0.01752532087266445
+grad_norm,GRPO-B (sequential),18.0,0.02190248668193817
+grad_norm,GRPO-B (sequential),19.0,0.01545578334480524
+grad_norm,GRPO-B (sequential),20.0,0.01725935749709606
+grad_norm,GRPO-B (sequential),21.0,0.018231432884931564
+grad_norm,GRPO-B (sequential),22.0,0.015815801918506622
+grad_norm,GRPO-B (sequential),23.0,0.01443429198116064
+grad_norm,GRPO-B (sequential),24.0,0.01631355844438076
+grad_norm,GRPO-B (sequential),25.0,0.01605704054236412
+grad_norm,GRPO-B (sequential),26.0,0.019220279529690742
+grad_norm,GRPO-B (sequential),27.0,0.019722729921340942
+grad_norm,GRPO-B (sequential),28.0,0.02113308198750019
+grad_norm,GRPO-B (sequential),29.0,0.02274053357541561
+grad_norm,GRPO-B (sequential),30.0,0.015976818278431892
+grad_norm,GRPO-B (sequential),31.0,0.011352038010954857
+grad_norm,GRPO-B (sequential),32.0,0.017194028943777084
+grad_norm,GRPO-B (sequential),33.0,0.023151101544499397
+grad_norm,GRPO-B (sequential),34.0,0.01971353217959404
+grad_norm,GRPO-B (sequential),35.0,0.023742305114865303
+grad_norm,GRPO-B (sequential),36.0,0.028160808607935905
+grad_norm,GRPO-B (sequential),37.0,0.03126438707113266
+grad_norm,GRPO-B (sequential),38.0,0.01874937303364277
+grad_norm,GRPO-B (sequential),39.0,0.027597373351454735
+grad_norm,GRPO-B (sequential),40.0,0.033735860139131546
+grad_norm,GRPO-B (sequential),41.0,0.028050603345036507
+grad_norm,GRPO-B (sequential),42.0,0.025137819349765778
+grad_norm,GRPO-B (sequential),43.0,0.034068867564201355
+grad_norm,GRPO-B (sequential),44.0,0.031259726732969284
+grad_norm,GRPO-B (sequential),45.0,0.023461783304810524
+grad_norm,GRPO-B (sequential),46.0,0.03190985321998596
+grad_norm,GRPO-B (sequential),47.0,0.034107573330402374
+grad_norm,GRPO-B (sequential),48.0,0.0387071818113327
+grad_norm,GRPO-B (sequential),49.0,0.04229430854320526
+grad_norm,GRPO-B (sequential),50.0,0.028824569657444954
+grad_norm,GRPO-B (sequential),51.0,0.04120485857129097
+grad_norm,GRPO-B (sequential),52.0,0.02600954659283161
+grad_norm,GRPO-B (sequential),53.0,0.029235823079943657
+grad_norm,GRPO-B (sequential),54.0,0.029391800984740257
+grad_norm,GRPO-B (sequential),55.0,0.024277273565530777
+grad_norm,GRPO-B (sequential),56.0,0.023948516696691513
+grad_norm,GRPO-B (sequential),57.0,0.02437821589410305
+grad_norm,GRPO-B (sequential),58.0,0.017458558082580566
+grad_norm,GRPO-B (sequential),59.0,0.0252576544880867
+grad_norm,GRPO-B (sequential),60.0,0.01654548943042755
+grad_norm,GRPO-B (sequential),61.0,0.02597903087735176
+grad_norm,GRPO-B (sequential),62.0,0.026605788618326187
+grad_norm,GRPO-B (sequential),63.0,0.022197918966412544
+grad_norm,GRPO-B (sequential),64.0,0.01869502104818821
+grad_norm,GRPO-B (sequential),65.0,0.014734958298504353
+grad_norm,GRPO-B (sequential),66.0,0.0346849150955677
+grad_norm,GRPO-B (sequential),67.0,0.02021264098584652
+grad_norm,GRPO-B (sequential),68.0,0.012233459390699863
+grad_norm,GRPO-B (sequential),69.0,0.020661761984229088
+grad_norm,GRPO-B (sequential),70.0,0.02149243652820587
+grad_norm,GRPO-B (sequential),71.0,0.02333362028002739
+grad_norm,GRPO-B (sequential),72.0,0.021045418456196785
+grad_norm,GRPO-B (sequential),73.0,0.01106676459312439
+grad_norm,GRPO-B (sequential),74.0,0.02234414778649807
+grad_norm,GRPO-B (sequential),75.0,0.01814122498035431
+grad_norm,GRPO-B (sequential),76.0,0.021777743473649025
+grad_norm,GRPO-B (sequential),77.0,0.023792067542672157
+grad_norm,GRPO-B (sequential),78.0,0.022057106718420982
+grad_norm,GRPO-B (sequential),79.0,0.01727692037820816
+grad_norm,GRPO-B (sequential),80.0,0.01723499782383442
+grad_norm,GRPO-B (sequential),81.0,0.02171175181865692
+grad_norm,GRPO-B (sequential),82.0,0.021636806428432465
+grad_norm,GRPO-B (sequential),83.0,0.018285565078258514
+grad_norm,GRPO-B (sequential),84.0,0.026285817846655846
+grad_norm,GRPO-B (sequential),85.0,0.01876986026763916
+grad_norm,GRPO-B (sequential),86.0,0.014066919684410095
+grad_norm,GRPO-B (sequential),87.0,0.018439993262290955
+grad_norm,GRPO-B (sequential),88.0,0.019103700295090675
+grad_norm,GRPO-B (sequential),89.0,0.017570190131664276
+grad_norm,GRPO-B (sequential),90.0,0.019355323165655136
+grad_norm,GRPO-B (sequential),91.0,0.018322110176086426
+grad_norm,GRPO-B (sequential),92.0,0.015918871387839317
+grad_norm,GRPO-B (sequential),93.0,0.017716610804200172
+grad_norm,GRPO-B (sequential),94.0,0.021402698010206223
+grad_norm,GRPO-B (sequential),95.0,0.015873949974775314
+grad_norm,GRPO-B (sequential),96.0,0.02429460734128952
+grad_norm,GRPO-B (sequential),97.0,0.02014421671628952
+grad_norm,GRPO-B (sequential),98.0,0.021141545847058296
+grad_norm,GRPO-B (sequential),99.0,0.022780321538448334
+grad_norm,GRPO-B (sequential),100.0,0.02533864974975586

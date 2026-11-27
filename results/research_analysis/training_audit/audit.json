@@ -1,0 +1,1407 @@
+{
+ "trees": [
+  "~/a5_sessions",
+  "~/a5_recovery"
+ ],
+ "runs": [
+  {
+   "id": "SFT-tune_lr1e-5",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [],
+   "train_rows": 32,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 32,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 32,
+   "gpu_h": 0.36845872415436637,
+   "weights_sha256": "e5957bb836ca0cff",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "e5957bb836ca0cff45c85089cfbfe44befe35a448c978dbc2e1048a3a2ddf44e",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_n512_s0 n=512",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-tune_lr2e-5",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [],
+   "train_rows": 32,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 32,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 32,
+   "gpu_h": 0.4360843320687612,
+   "weights_sha256": "5a366b209d2801c9",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "5a366b209d2801c9d87e6fb9304a506a5fb539f739242702dc4585bb89481347",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_n512_s0 n=512",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-tune_lr5e-5",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [],
+   "train_rows": 32,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 32,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 32,
+   "gpu_h": 0.6201875069406297,
+   "weights_sha256": "aae6c56fb1c426b3",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "aae6c56fb1c426b3e8bb67018fb779bf55f7333f3074d819fd8d9e25e78d8642",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_n512_s0 n=512",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-exact_full_s0",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 2e-05,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 214,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 214,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 214,
+   "gpu_h": 1.8295250345600975,
+   "weights_sha256": "02c6ba5396a4d113",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "02c6ba5396a4d113e5b46e9452d748339c39e9d65724aa60187c9e3add7683b1",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "exact_full n=3420",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-reverified_full_s0",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 2e-05,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 303,
+   "duplicated_step_rows": 25,
+   "first_step": 1,
+   "last_step": 278,
+   "resumes": 1,
+   "superseded_rows": 0,
+   "duplicates": {
+    "steps": [
+     151,
+     175
+    ],
+    "resumed_from": 150,
+    "first_replayed_identical": true,
+    "max_loss_diff": 0.0007069023574505784,
+    "benign": true
+   },
+   "steps": 278,
+   "gpu_h": 2.69364829632971,
+   "weights_sha256": "02ecf90239277d41",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "02ecf90239277d41f4a2946c115ac9403ba1dd023b29666826b1041d2744b16c",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_full n=4423",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-reverified_sizecontrol_s0",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 2e-05,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 214,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 214,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 214,
+   "gpu_h": 1.5689749320348103,
+   "weights_sha256": "765bcbcbc2daa37d",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "765bcbcbc2daa37d6c2a911f64dc1386920c5d99b6132137326f14e143e2739c",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_sizecontrol_s0 n=3420",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-exact_n512_s0",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 2e-05,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 32,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 32,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 32,
+   "gpu_h": 0.4438746570216285,
+   "weights_sha256": "c4f4b4e94efa551a",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "c4f4b4e94efa551a7eb428bfb8375bc6ea22aa3a2c725bfe6ec7f6af28ebae79",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "exact_n512_s0 n=512",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-reverified_n512_s0",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 2e-05,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 32,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 32,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 32,
+   "gpu_h": 0.44360598471429613,
+   "weights_sha256": "f57b1af68b655397",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "f57b1af68b655397ad2b685781106f4029503cd03d065dd7ad8fd2228d6c5dc4",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_n512_s0 n=512",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-reverified_n128_s0",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 2e-05,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 8,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 8,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 8,
+   "gpu_h": 0.12369340499242147,
+   "weights_sha256": "622f1201d8ae8f7b",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "622f1201d8ae8f7b1d3237bc2b920e5ba46f188523b4b9a2cb804a7a23c2cc34",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_n128_s0 n=128",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "SFT-reverified_n2048_s0",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 2e-05,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 128,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 128,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 128,
+   "gpu_h": 1.0253282264868417,
+   "weights_sha256": "65f61e4c0f5e830b",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "65f61e4c0f5e830bd9dfaa0f2cc7c1a84d7a5b65faddd30705c2d16f574fed31",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>sft",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "reverified_n2048_s0 n=2048",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "GRPO-tune_lr2e-6",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [],
+   "train_rows": 30,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 30,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 30,
+   "gpu_h": 1.9500817792945437,
+   "weights_sha256": "c75ca51e83a5efbc",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "c75ca51e83a5efbc49cd0a5731c0a72bbf8d467c4840c448ad009d0c3f3f703b",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>grpo",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "rl_train_pool n=6832",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "GRPO-tune_lr5e-6",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [],
+   "train_rows": 30,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 30,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 30,
+   "gpu_h": 1.8308346585432689,
+   "weights_sha256": "fb03a43fd99f8a35",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "fb03a43fd99f8a359fb21057d43b4369c390ce08051faf5502781a46797e096c",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>grpo",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "rl_train_pool n=6832",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "GRPO-tune_lr1e-5",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [],
+   "train_rows": 30,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 30,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 30,
+   "gpu_h": 1.9255496188004813,
+   "weights_sha256": "41ce3ff86d3dbac9",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "41ce3ff86d3dbac95fce23de5868b3755ed6f6a463fa015c3ee6ecc9400f3035",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>grpo",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "rl_train_pool n=6832",
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "GRPO-A_base_s2026",
+   "expected": "failed",
+   "folder": true,
+   "status": "failed",
+   "incident_record": true,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 5e-06,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 97,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 97,
+   "resumes": 0,
+   "superseded_rows": 0
+  },
+  {
+   "id": "GRPO-B_sft512_s2026",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "739a2df9e838",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "config_diffs": [
+    {
+     "key": "train.lr",
+     "registered": 5e-06,
+     "recorded": 1e-05,
+     "why": "main runs take the learning rate chosen by scripts/choose_lr.py from the tuning runs; re-derived below from the tuning dev results"
+    }
+   ],
+   "train_rows": 100,
+   "duplicated_step_rows": 0,
+   "first_step": 1,
+   "last_step": 100,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 100,
+   "gpu_h": 7.349341740078397,
+   "weights_sha256": "83dd404abf349f3a",
+   "parent_sha256": "f57b1af68b655397",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "83dd404abf349f3acc955272b74e6349b873566adb5ca78feda4f55e4836e0ca",
+   "parent_full": "f57b1af68b655397ad2b685781106f4029503cd03d065dd7ad8fd2228d6c5dc4",
+   "chain": "base>sft>grpo",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "rl_train_pool n=6832",
+   "parent_is_registered_sft": true,
+   "weights_in_before_recovery": true
+  },
+  {
+   "id": "GRPO-A-replay80-lr1e-5-s2026",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "c80348598ca8",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "train_rows": 20,
+   "duplicated_step_rows": 0,
+   "first_step": 81,
+   "last_step": 100,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 100,
+   "gpu_h": 2.283048604594337,
+   "weights_sha256": "bf3453c6c71da3a3",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "bf3453c6c71da3a38e3d835dbeda4fa099d59ab698de96522c80ac8cfb347ce1",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>grpo",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "rl_train_pool n=6832"
+  },
+  {
+   "id": "GRPO-A-recovery80-lr5e-6-s2026",
+   "expected": "done",
+   "folder": true,
+   "status": "done",
+   "incident_record": false,
+   "config_sha256_ok": true,
+   "code_sha256": "c80348598ca8",
+   "verifier": "2.0.0",
+   "verifier_hashes_ok": true,
+   "train_rows": 20,
+   "duplicated_step_rows": 0,
+   "first_step": 81,
+   "last_step": 100,
+   "resumes": 0,
+   "superseded_rows": 0,
+   "steps": 100,
+   "gpu_h": 2.507452921205097,
+   "weights_sha256": "a4055bd25156cf73",
+   "parent_sha256": "f7aa8d665ab44d3b",
+   "lineage_config_ok": true,
+   "checkpoint_lineage_ok": true,
+   "weights_full": "a4055bd25156cf738005631f7e7d60d453fe5317ddcf8b60eb9d0ec47860a006",
+   "parent_full": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "chain": "base>grpo",
+   "data_file_ok": true,
+   "data_ids_ok": true,
+   "data": "rl_train_pool n=6832"
+  }
+ ],
+ "manifests": [
+  {
+   "tree": "~/a5_sessions",
+   "file": "BEFORE_RECOVERY.sha256",
+   "entries": 273,
+   "verified": 258,
+   "missing": 0,
+   "changed": 0,
+   "weights_not_downloaded": 15
+  },
+  {
+   "tree": "~/a5_sessions",
+   "file": "SESSION_A.sha256",
+   "entries": 151,
+   "verified": 151,
+   "missing": 0,
+   "changed": 0,
+   "weights_not_downloaded": 0
+  },
+  {
+   "tree": "~/a5_sessions",
+   "file": "SESSION_B.sha256",
+   "entries": 107,
+   "verified": 107,
+   "missing": 0,
+   "changed": 0,
+   "weights_not_downloaded": 0
+  },
+  {
+   "tree": "~/a5_recovery",
+   "file": "RECOVERY.sha256",
+   "entries": 74,
+   "verified": 74,
+   "missing": 0,
+   "changed": 0,
+   "weights_not_downloaded": 0
+  }
+ ],
+ "cross_checks": {
+  "SESSION_A.sha256": {
+   "entries": 151,
+   "also_in_before_recovery": 151,
+   "only_in_session_manifest": [],
+   "differing": []
+  },
+  "SESSION_B.sha256": {
+   "entries": 107,
+   "also_in_before_recovery": 107,
+   "only_in_session_manifest": [],
+   "differing": []
+  },
+  "before_recovery_not_in_session_manifests": [],
+  "weights": [
+   {
+    "id": "SFT-tune_lr1e-5",
+    "manifest": "e5957bb836ca0cff",
+    "done": "e5957bb836ca0cff",
+    "match": true
+   },
+   {
+    "id": "SFT-tune_lr2e-5",
+    "manifest": "5a366b209d2801c9",
+    "done": "5a366b209d2801c9",
+    "match": true
+   },
+   {
+    "id": "SFT-tune_lr5e-5",
+    "manifest": "aae6c56fb1c426b3",
+    "done": "aae6c56fb1c426b3",
+    "match": true
+   },
+   {
+    "id": "SFT-exact_full_s0",
+    "manifest": "02c6ba5396a4d113",
+    "done": "02c6ba5396a4d113",
+    "match": true
+   },
+   {
+    "id": "SFT-reverified_full_s0",
+    "manifest": "02ecf90239277d41",
+    "done": "02ecf90239277d41",
+    "match": true
+   },
+   {
+    "id": "SFT-reverified_sizecontrol_s0",
+    "manifest": "765bcbcbc2daa37d",
+    "done": "765bcbcbc2daa37d",
+    "match": true
+   },
+   {
+    "id": "SFT-exact_n512_s0",
+    "manifest": "c4f4b4e94efa551a",
+    "done": "c4f4b4e94efa551a",
+    "match": true
+   },
+   {
+    "id": "SFT-reverified_n512_s0",
+    "manifest": "f57b1af68b655397",
+    "done": "f57b1af68b655397",
+    "match": true
+   },
+   {
+    "id": "SFT-reverified_n128_s0",
+    "manifest": "622f1201d8ae8f7b",
+    "done": "622f1201d8ae8f7b",
+    "match": true
+   },
+   {
+    "id": "SFT-reverified_n2048_s0",
+    "manifest": "65f61e4c0f5e830b",
+    "done": "65f61e4c0f5e830b",
+    "match": true
+   },
+   {
+    "id": "GRPO-tune_lr2e-6",
+    "manifest": "c75ca51e83a5efbc",
+    "done": "c75ca51e83a5efbc",
+    "match": true
+   },
+   {
+    "id": "GRPO-tune_lr5e-6",
+    "manifest": "fb03a43fd99f8a35",
+    "done": "fb03a43fd99f8a35",
+    "match": true
+   },
+   {
+    "id": "GRPO-tune_lr1e-5",
+    "manifest": "41ce3ff86d3dbac9",
+    "done": "41ce3ff86d3dbac9",
+    "match": true
+   },
+   {
+    "id": "GRPO-B_sft512_s2026",
+    "manifest": "83dd404abf349f3a",
+    "done": "83dd404abf349f3a",
+    "match": true
+   }
+  ],
+  "original_state_pt": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+  "original_copies": {
+   "files": 20,
+   "compared": 20,
+   "differing": []
+  }
+ },
+ "lr_rule": {
+  "SFT": {
+   "tuning": {
+    "1e-05": 0.861,
+    "2e-05": 0.85,
+    "5e-05": 0.818
+   },
+   "rule_choice": 1e-05,
+   "recorded": {
+    "SFT-exact_full_s0": 1e-05,
+    "SFT-reverified_full_s0": 1e-05,
+    "SFT-reverified_sizecontrol_s0": 1e-05,
+    "SFT-exact_n512_s0": 1e-05,
+    "SFT-reverified_n512_s0": 1e-05,
+    "SFT-reverified_n128_s0": 1e-05,
+    "SFT-reverified_n2048_s0": 1e-05
+   }
+  },
+  "GRPO": {
+   "tuning": {
+    "2e-06": 0.676,
+    "5e-06": 0.846,
+    "1e-05": 0.875
+   },
+   "rule_choice": 1e-05,
+   "recorded": {
+    "GRPO-A_base_s2026": 1e-05,
+    "GRPO-B_sft512_s2026": 1e-05
+   }
+  }
+ },
+ "provenance": {
+  "SESSION_MANIFEST_PROVENANCE.txt": "Created retrospectively for artifact transfer.\nHistorical session manifests were missing.\nHistorical integrity checked against BEFORE_RECOVERY.sha256.\nCreated at: 2026-11-26T16:29:05-08:00"
+ },
+ "dev": [
+  {
+   "id": "SFT-tune_lr1e-5",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 0.36845872415436637,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.861,
+    "ci95": [
+     0.8381730246613444,
+     0.8810639545592818
+    ],
+    "second": 0.874,
+    "relaxed": 0.874,
+    "format": 0.999,
+    "clean_format": 0.999,
+    "double_think": 0,
+    "tokens": 141.379,
+    "truncated": 1
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.334,
+    "ci95": [
+     0.2940631065718404,
+     0.37646826678041956
+    ],
+    "second": 0.352,
+    "relaxed": 0.364,
+    "format": 0.808,
+    "clean_format": 0.808,
+    "double_think": 0,
+    "tokens": 545.026,
+    "truncated": 82
+   }
+  },
+  {
+   "id": "SFT-tune_lr2e-5",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 2e-05,
+   "gpu_h": 0.4360843320687612,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.85,
+    "ci95": [
+     0.8265308859716873,
+     0.8707902850178393
+    ],
+    "second": 0.856,
+    "relaxed": 0.856,
+    "format": 0.997,
+    "clean_format": 0.997,
+    "double_think": 0,
+    "tokens": 139.485,
+    "truncated": 3
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.278,
+    "ci95": [
+     0.24053595389789068,
+     0.31884937672983044
+    ],
+    "second": 0.286,
+    "relaxed": 0.286,
+    "format": 0.904,
+    "clean_format": 0.904,
+    "double_think": 0,
+    "tokens": 480.79,
+    "truncated": 44
+   }
+  },
+  {
+   "id": "SFT-tune_lr5e-5",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 5e-05,
+   "gpu_h": 0.6201875069406297,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.818,
+    "ci95": [
+     0.792882955656012,
+     0.8406831368430436
+    ],
+    "second": 0.824,
+    "relaxed": 0.824,
+    "format": 0.999,
+    "clean_format": 0.999,
+    "double_think": 0,
+    "tokens": 140.958,
+    "truncated": 1
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.302,
+    "ci95": [
+     0.26339087332996447,
+     0.34362847560827325
+    ],
+    "second": 0.312,
+    "relaxed": 0.314,
+    "format": 0.892,
+    "clean_format": 0.892,
+    "double_think": 0,
+    "tokens": 486.162,
+    "truncated": 47
+   }
+  },
+  {
+   "id": "SFT-exact_full_s0",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 1.8295250345600975,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.888,
+    "ci95": [
+     0.8669495617556403,
+     0.9060807649413208
+    ],
+    "second": 0.888,
+    "relaxed": 0.888,
+    "format": 0.999,
+    "clean_format": 0.999,
+    "double_think": 0,
+    "tokens": 133.334,
+    "truncated": 1
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.316,
+    "ci95": [
+     0.2767829376901094,
+     0.358022921929263
+    ],
+    "second": 0.32,
+    "relaxed": 0.32,
+    "format": 0.954,
+    "clean_format": 0.954,
+    "double_think": 0,
+    "tokens": 425.094,
+    "truncated": 23
+   }
+  },
+  {
+   "id": "SFT-reverified_full_s0",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 2.69364829632971,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.819,
+    "ci95": [
+     0.7939299861359917,
+     0.8416284525658911
+    ],
+    "second": 0.829,
+    "relaxed": 0.829,
+    "format": 1,
+    "clean_format": 1,
+    "double_think": 0,
+    "tokens": 127.856,
+    "truncated": 0
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.296,
+    "ci95": [
+     0.2576647234385832,
+     0.33744612092202536
+    ],
+    "second": 0.302,
+    "relaxed": 0.302,
+    "format": 0.954,
+    "clean_format": 0.954,
+    "double_think": 0,
+    "tokens": 424.286,
+    "truncated": 23
+   }
+  },
+  {
+   "id": "SFT-reverified_sizecontrol_s0",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 1.5689749320348103,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.836,
+    "ci95": [
+     0.8117721376883166,
+     0.8576561864616289
+    ],
+    "second": 0.84,
+    "relaxed": 0.84,
+    "format": 0.997,
+    "clean_format": 0.997,
+    "double_think": 0,
+    "tokens": 136.818,
+    "truncated": 3
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.302,
+    "ci95": [
+     0.26339087332996447,
+     0.34362847560827325
+    ],
+    "second": 0.302,
+    "relaxed": 0.302,
+    "format": 0.95,
+    "clean_format": 0.95,
+    "double_think": 0,
+    "tokens": 447.734,
+    "truncated": 24
+   }
+  },
+  {
+   "id": "SFT-exact_n512_s0",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 0.4438746570216285,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.889,
+    "ci95": [
+     0.8680215790175441,
+     0.9070010938822441
+    ],
+    "second": 0.891,
+    "relaxed": 0.891,
+    "format": 0.999,
+    "clean_format": 0.999,
+    "double_think": 0,
+    "tokens": 130.399,
+    "truncated": 1
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.324,
+    "ci95": [
+     0.2844545847826361,
+     0.3662292809402419
+    ],
+    "second": 0.334,
+    "relaxed": 0.346,
+    "format": 0.826,
+    "clean_format": 0.826,
+    "double_think": 0,
+    "tokens": 485.886,
+    "truncated": 49
+   }
+  },
+  {
+   "id": "SFT-reverified_n512_s0",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 0.44360598471429613,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.82,
+    "ci95": [
+     0.7949772854898887,
+     0.8425734994148213
+    ],
+    "second": 0.839,
+    "relaxed": 0.839,
+    "format": 0.999,
+    "clean_format": 0.999,
+    "double_think": 0,
+    "tokens": 129.468,
+    "truncated": 1
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.302,
+    "ci95": [
+     0.26339087332996447,
+     0.34362847560827325
+    ],
+    "second": 0.316,
+    "relaxed": 0.32,
+    "format": 0.842,
+    "clean_format": 0.842,
+    "double_think": 0,
+    "tokens": 480.602,
+    "truncated": 64
+   }
+  },
+  {
+   "id": "SFT-reverified_n128_s0",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 0.12369340499242147,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.68,
+    "ci95": [
+     0.6504458220300267,
+     0.7081764944788729
+    ],
+    "second": 0.685,
+    "relaxed": 0.805,
+    "format": 0.836,
+    "clean_format": 0.836,
+    "double_think": 0,
+    "tokens": 175.745,
+    "truncated": 17
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.236,
+    "ci95": [
+     0.20088068978132578,
+     0.27514510880299115
+    ],
+    "second": 0.244,
+    "relaxed": 0.368,
+    "format": 0.544,
+    "clean_format": 0.544,
+    "double_think": 0,
+    "tokens": 541.908,
+    "truncated": 95
+   }
+  },
+  {
+   "id": "SFT-reverified_n2048_s0",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 1.0253282264868417,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.842,
+    "ci95": [
+     0.8180896910880748,
+     0.8632927102788341
+    ],
+    "second": 0.847,
+    "relaxed": 0.847,
+    "format": 1,
+    "clean_format": 1,
+    "double_think": 0,
+    "tokens": 129.536,
+    "truncated": 0
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.326,
+    "ci95": [
+     0.2863746168691645,
+     0.36827875037958996
+    ],
+    "second": 0.334,
+    "relaxed": 0.336,
+    "format": 0.904,
+    "clean_format": 0.904,
+    "double_think": 0,
+    "tokens": 472.114,
+    "truncated": 45
+   }
+  },
+  {
+   "id": "GRPO-tune_lr2e-6",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 2e-06,
+   "gpu_h": 1.9500817792945437,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.676,
+    "ci95": [
+     0.6463672482447502,
+     0.7042856834528404
+    ],
+    "second": 0.707,
+    "relaxed": 0.752,
+    "format": 0.937,
+    "clean_format": 0.937,
+    "double_think": 1,
+    "tokens": 136.634,
+    "truncated": 5
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.174,
+    "ci95": [
+     0.14328895399220098,
+     0.20968229728994797
+    ],
+    "second": 0.198,
+    "relaxed": 0.28,
+    "format": 0.69,
+    "clean_format": 0.69,
+    "double_think": 0,
+    "tokens": 387.704,
+    "truncated": 59
+   }
+  },
+  {
+   "id": "GRPO-tune_lr5e-6",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 5e-06,
+   "gpu_h": 1.8308346585432689,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.846,
+    "ci95": [
+     0.8223076809446219,
+     0.8670441052335958
+    ],
+    "second": 0.85,
+    "relaxed": 0.875,
+    "format": 0.965,
+    "clean_format": 0.965,
+    "double_think": 0,
+    "tokens": 142.384,
+    "truncated": 1
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.296,
+    "ci95": [
+     0.2576647234385832,
+     0.33744612092202536
+    ],
+    "second": 0.306,
+    "relaxed": 0.33,
+    "format": 0.88,
+    "clean_format": 0.88,
+    "double_think": 0,
+    "tokens": 364.12,
+    "truncated": 43
+   }
+  },
+  {
+   "id": "GRPO-tune_lr1e-5",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 1.9255496188004813,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.875,
+    "ci95": [
+     0.8530557319763017,
+     0.8940740940839056
+    ],
+    "second": 0.877,
+    "relaxed": 0.878,
+    "format": 0.997,
+    "clean_format": 0.997,
+    "double_think": 0,
+    "tokens": 146.86,
+    "truncated": 2
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.278,
+    "ci95": [
+     0.24053595389789068,
+     0.31884937672983044
+    ],
+    "second": 0.298,
+    "relaxed": 0.302,
+    "format": 0.936,
+    "clean_format": 0.936,
+    "double_think": 0,
+    "tokens": 341.474,
+    "truncated": 28
+   }
+  },
+  {
+   "id": "GRPO-A_base_s2026",
+   "point": "step75",
+   "kind": "FAILED run, diagnostic",
+   "lr": 1e-05,
+   "gpu_h": null,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.929,
+    "ci95": [
+     0.9113859810064908,
+     0.9433305400063863
+    ],
+    "second": 0.929,
+    "relaxed": 0.929,
+    "format": 1,
+    "clean_format": 0.868,
+    "double_think": 132,
+    "tokens": 202.345,
+    "truncated": 0
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.398,
+    "ci95": [
+     0.35602922648461244,
+     0.44152619569569185
+    ],
+    "second": 0.406,
+    "relaxed": 0.41,
+    "format": 0.906,
+    "clean_format": 0.788,
+    "double_think": 59,
+    "tokens": 567.254,
+    "truncated": 47
+   }
+  },
+  {
+   "id": "GRPO-B_sft512_s2026",
+   "point": "final_step",
+   "kind": "registered",
+   "lr": 1e-05,
+   "gpu_h": 7.349341740078397,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.928,
+    "ci95": [
+     0.9102878591617453,
+     0.9424363156483045
+    ],
+    "second": 0.928,
+    "relaxed": 0.928,
+    "format": 0.998,
+    "clean_format": 0.998,
+    "double_think": 0,
+    "tokens": 247.219,
+    "truncated": 2
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.478,
+    "ci95": [
+     0.43455017112738104,
+     0.5217853120879786
+    ],
+    "second": 0.486,
+    "relaxed": 0.502,
+    "format": 0.85,
+    "clean_format": 0.85,
+    "double_think": 0,
+    "tokens": 650.744,
+    "truncated": 75
+   }
+  },
+  {
+   "id": "GRPO-A-replay80-lr1e-5-s2026",
+   "point": "final_step",
+   "kind": "post-hoc branch",
+   "lr": 1e-05,
+   "gpu_h": 2.283048604594337,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.927,
+    "ci95": [
+     0.9091906155334873,
+     0.9415412130737354
+    ],
+    "second": 0.927,
+    "relaxed": 0.927,
+    "format": 1,
+    "clean_format": 1,
+    "double_think": 0,
+    "tokens": 192.617,
+    "truncated": 0
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.416,
+    "ci95": [
+     0.37359670506840015,
+     0.4596842308447916
+    ],
+    "second": 0.422,
+    "relaxed": 0.424,
+    "format": 0.93,
+    "clean_format": 0.93,
+    "double_think": 0,
+    "tokens": 536.166,
+    "truncated": 35
+   }
+  },
+  {
+   "id": "GRPO-A-recovery80-lr5e-6-s2026",
+   "point": "final_step",
+   "kind": "post-hoc branch",
+   "lr": 5e-06,
+   "gpu_h": 2.507452921205097,
+   "gsm8k_dev": {
+    "n": 1000,
+    "strict": 0.919,
+    "ci95": [
+     0.9004424261087147,
+     0.9343506328758902
+    ],
+    "second": 0.919,
+    "relaxed": 0.919,
+    "format": 1,
+    "clean_format": 0.056,
+    "double_think": 944,
+    "tokens": 213.426,
+    "truncated": 0
+   },
+   "math_dev": {
+    "n": 500,
+    "strict": 0.412,
+    "ci95": [
+     0.3696877164049981,
+     0.4556542164564409
+    ],
+    "second": 0.414,
+    "relaxed": 0.422,
+    "format": 0.872,
+    "clean_format": 0.072,
+    "double_think": 404,
+    "tokens": 607.038,
+    "truncated": 64
+   }
+  }
+ ],
+ "problems": [],
+ "explained": [
+  "SFT-reverified_full_s0: 25 duplicated step rows = steps 151-175 replayed after one resume from the step-150 save (before the rewind fix); first replayed step identical, later losses differ by at most 7.1e-04 (GPU nondeterminism); reports keep the last row per step, which is the trajectory that produced the checkpoint",
+  "BEFORE_RECOVERY.sha256: 15 entries are model weights or optimizer states (model.safetensors, state.pt), excluded from the download by design; their recorded hashes are cross-checked against DONE.json below and must be confirmed on the server"
+ ]
+}

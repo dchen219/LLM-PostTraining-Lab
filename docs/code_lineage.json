@@ -1,0 +1,188 @@
+{
+ "description": "Original package layout -> public release layout. Reversing each file's edits reproduces its original bytes; scripts/verify_code_lineage.py does this and recomputes the original code hash.",
+ "original_code_hash_algorithm": "sha256 over, for d in (posttrain, cs336_alignment), sorted *.py names directly in d: name + content (CRLF->LF)",
+ "lock_code_sha256": "0e0b00141307ce2f33118c7a918ae2566b10b05e0a5d65078ad466dbd1e51af9",
+ "original_verifier": {
+  "verify_py": "b905bcaa4945be2e94286664a5fe9659c30c364ca973b4d90007463de89df106",
+  "grader_py": "f4fa06fed4950d6bd66a2fc40faaa67943327c2064e9d7ced1accdaa19ed25f0"
+ },
+ "release_verifier": {
+  "verify_py": "22ce23b849fb03bf71cf73e2fa86865dd8edf9a898c63e684b7baa11ffdf7639",
+  "grader_py": "f4fa06fed4950d6bd66a2fc40faaa67943327c2064e9d7ced1accdaa19ed25f0"
+ },
+ "files": [
+  {
+   "original": "posttrain/__init__.py",
+   "release": "posttrain/__init__.py",
+   "original_sha256": "a080d89506765b7e222bce465b817bc77f8586bab1e8a15ff50fe0ddb8660987",
+   "edits": [
+    {
+     "release": "\"\"\"Configurable SFT / Expert Iteration / GRPO post-training system.",
+     "original": "\"\"\"Configurable SFT / Expert Iteration / GRPO extension."
+    },
+    {
+     "release": "Third-party code reused: posttrain/verifiers/drgrpo_grader.py (Dr. GRPO grader, Apache-2.0); see THIRD_PARTY_NOTICES.md.",
+     "original": "Third-party code reused: cs336_alignment/drgrpo_grader.py (sail-sg/understand-r1-zero, Apache-2.0)."
+    }
+   ]
+  },
+  {
+   "original": "posttrain/batching.py",
+   "release": "posttrain/batching.py",
+   "original_sha256": "515539bbd5cafbfb9499a6ba6e74f0627f0e5b86db8cc4d44575727ea3bd9c72",
+   "edits": []
+  },
+  {
+   "original": "posttrain/common.py",
+   "release": "posttrain/common.py",
+   "original_sha256": "b8bcb26ca145df2100b13f65fad1b2e99e10f0e249afb713c42c3eacec5b3bdb",
+   "edits": [
+    {
+     "release": "    # Release layout: every .py under posttrain/ (subpackages included), keyed by its path. The hash of the original layout,\n    # recorded by the runs and the checkpoint lock, is reproduced by scripts/verify_code_lineage.py.\n    fs = sorted(os.path.relpath(os.path.join(d, n), ROOT).replace(os.sep, \"/\") for d, _, ns in os.walk(os.path.join(ROOT, \"posttrain\")) for n in ns if n.endswith(\".py\"))\n    for f in fs:\n        h.update(f.encode() + open(os.path.join(ROOT, f), \"rb\").read().replace(b\"\\r\\n\", b\"\\n\"))",
+     "original": "    for d in (\"posttrain\", \"cs336_alignment\"):\n        for f in sorted(os.listdir(os.path.join(ROOT, d))):\n            if f.endswith(\".py\"):\n                h.update(f.encode() + open(os.path.join(ROOT, d, f), \"rb\").read().replace(b\"\\r\\n\", b\"\\n\"))"
+    }
+   ]
+  },
+  {
+   "original": "posttrain/diagnostics.py",
+   "release": "posttrain/diagnostics.py",
+   "original_sha256": "90e9f8d174ef97e69d09cbf525805c5c88fbcadac3ecbc7e531468f5898a70fb",
+   "edits": []
+  },
+  {
+   "original": "posttrain/engines.py",
+   "release": "posttrain/engines.py",
+   "original_sha256": "04da5f70da49cbd1149f98327b79f6d9b7dd6cfc44a7f9ab6a084a64a9102deb",
+   "edits": []
+  },
+  {
+   "original": "posttrain/evaluate.py",
+   "release": "posttrain/evaluate.py",
+   "original_sha256": "e1352a4a27baf401ba1e243be88dba9bea85e69f52ac0098bd0ab35c50e1f2ef",
+   "edits": [
+    {
+     "release": "from .verify import clean_format, score\nfrom .prompts import load as load_prompt\n",
+     "original": "from .verify import clean_format, score\n"
+    },
+    {
+     "release": "    return load_prompt(name)",
+     "original": "    return open(os.path.join(ROOT, \"cs336_alignment\", \"prompts\", name + \".prompt\"), encoding=\"utf-8\").read().strip()"
+    },
+    {
+     "release": "    from .verifiers.drgrpo_grader import extract_answer, grade",
+     "original": "    from drgrpo_grader import extract_answer, grade"
+    }
+   ]
+  },
+  {
+   "original": "posttrain/final_eval.py",
+   "release": "posttrain/final_eval.py",
+   "original_sha256": "f2315db28e109f6bd373abc93cd1e7283d66f8c7582fb6274529b26cb3fb24a8",
+   "edits": []
+  },
+  {
+   "original": "posttrain/fork_grpo.py",
+   "release": "posttrain/fork_grpo.py",
+   "original_sha256": "b92b176d558f319263ede3e57403f3fb25df7eafe7180bda0e28360384b78609",
+   "edits": []
+  },
+  {
+   "original": "posttrain/hw.py",
+   "release": "posttrain/hw.py",
+   "original_sha256": "b457f0967bf85646d879b1459abf5738b906a2438b2d3543f4797f82f5f5b225",
+   "edits": []
+  },
+  {
+   "original": "posttrain/losses.py",
+   "release": "posttrain/losses.py",
+   "original_sha256": "dcf49978b614da5302e1becf628ba6b82bd779d354e3cb0ec577a0f1837bb798",
+   "edits": []
+  },
+  {
+   "original": "posttrain/model_io.py",
+   "release": "posttrain/model_io.py",
+   "original_sha256": "1e17ff5dea0c6ffcaf646116dc233bbfcb53fe3cb115203548ad7265f359aa2f",
+   "edits": []
+  },
+  {
+   "original": "posttrain/stats.py",
+   "release": "posttrain/stats.py",
+   "original_sha256": "9b22bc63021f2b25aeacd52e0753a61dab075ef52193cc4e54cec07a90371a70",
+   "edits": []
+  },
+  {
+   "original": "posttrain/train_ei.py",
+   "release": "posttrain/train_ei.py",
+   "original_sha256": "8f2b7b10a0b800293d0534beb65ddad24100834a69a7c28ea7f5f0c8827bd5a6",
+   "edits": []
+  },
+  {
+   "original": "posttrain/train_grpo.py",
+   "release": "posttrain/train_grpo.py",
+   "original_sha256": "4903cd45c835925e585d72368208ac37cbba7b080a14b020bf022fcb1af50416",
+   "edits": []
+  },
+  {
+   "original": "posttrain/train_sft.py",
+   "release": "posttrain/train_sft.py",
+   "original_sha256": "4cfdde569f96bcd1f9c2c12d4f26077c0347dff9d9283785164876772d916b5b",
+   "edits": []
+  },
+  {
+   "original": "posttrain/verifier_lock.py",
+   "release": "posttrain/verifier_lock.py",
+   "original_sha256": "6762a89c273e7d174c99f1880105e9c8b2e72a341b48ff1c65c9a60a7b39d3ee",
+   "edits": [
+    {
+     "release": "verify_py=\"22ce23b849fb03bf71cf73e2fa86865dd8edf9a898c63e684b7baa11ffdf7639\"",
+     "original": "verify_py=\"b905bcaa4945be2e94286664a5fe9659c30c364ca973b4d90007463de89df106\""
+    },
+    {
+     "release": "VERSION = \"2.0.0\"\n# Release identity. Every run in results/run_records was produced with ORIGINAL_SHA256 (original package layout). The two differ only\n# because posttrain/verify.py now imports the unchanged grader from posttrain/verifiers/; scripts/verify_code_lineage.py\n# reconstructs the original files from this release and checks both hashes.\nORIGINAL_SHA256 = dict(verify_py=\"b905bcaa4945be2e94286664a5fe9659c30c364ca973b4d90007463de89df106\", grader_py=\"f4fa06fed4950d6bd66a2fc40faaa67943327c2064e9d7ced1accdaa19ed25f0\")\n",
+     "original": "VERSION = \"2.0.0\"\n"
+    }
+   ]
+  },
+  {
+   "original": "posttrain/verify.py",
+   "release": "posttrain/verify.py",
+   "original_sha256": "b905bcaa4945be2e94286664a5fe9659c30c364ca973b4d90007463de89df106",
+   "edits": [
+    {
+     "release": "from .verifiers.drgrpo_grader import extract_answer, grade, question_only_reward_fn, r1_zero_reward_fn  # noqa: E402\n",
+     "original": "sys.path.insert(0, os.path.join(ROOT, \"cs336_alignment\"))\nfrom drgrpo_grader import extract_answer, grade, question_only_reward_fn, r1_zero_reward_fn  # noqa: E402\n"
+    },
+    {
+     "release": "grader_py=h(os.path.join(here, \"verifiers\", \"drgrpo_grader.py\"))",
+     "original": "grader_py=h(os.path.join(ROOT, \"cs336_alignment\", \"drgrpo_grader.py\"))"
+    }
+   ]
+  },
+  {
+   "original": "cs336_alignment/__init__.py",
+   "release": null,
+   "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "edits": []
+  },
+  {
+   "original": "cs336_alignment/drgrpo_grader.py",
+   "release": "posttrain/verifiers/drgrpo_grader.py",
+   "original_sha256": "f4fa06fed4950d6bd66a2fc40faaa67943327c2064e9d7ced1accdaa19ed25f0",
+   "edits": []
+  }
+ ],
+ "moved_unchanged": [
+  {
+   "original": "cs336_alignment/drgrpo_grader.py",
+   "release": "posttrain/verifiers/drgrpo_grader.py"
+  },
+  {
+   "original": "cs336_alignment/prompts/r1_zero.prompt",
+   "release": "posttrain/prompts/r1_zero.prompt"
+  },
+  {
+   "original": "cs336_alignment/prompts/question_only.prompt",
+   "release": "posttrain/prompts/question_only.prompt"
+  }
+ ]
+}

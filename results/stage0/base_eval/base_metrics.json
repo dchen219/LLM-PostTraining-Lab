@@ -1,0 +1,34 @@
+{
+  "r1_zero": {
+    "n": 1319,
+    "correct": 236,
+    "accuracy": 0.17892342683851403,
+    "format_ok": 669,
+    "format_rate": 0.5072024260803639,
+    "seconds": 1081.6,
+    "peak_mem_gib": 3.9,
+    "model": "Qwen/Qwen2.5-Math-1.5B",
+    "revision": "4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+    "batch_size": 24,
+    "torch": "2.13.0+cu130",
+    "transformers": "5.16.1",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "decoding": "greedy, max_new_tokens=1024, bf16"
+  },
+  "question_only": {
+    "n": 1319,
+    "correct": 861,
+    "accuracy": 0.6527672479150872,
+    "format_ok": 1161,
+    "format_rate": 0.8802122820318423,
+    "seconds": 2472.7,
+    "peak_mem_gib": 3.82,
+    "model": "Qwen/Qwen2.5-Math-1.5B",
+    "revision": "4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+    "batch_size": 24,
+    "torch": "2.13.0+cu130",
+    "transformers": "5.16.1",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "decoding": "greedy, max_new_tokens=1024, bf16"
+  }
+}

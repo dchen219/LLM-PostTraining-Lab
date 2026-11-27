@@ -1,0 +1,31 @@
+{
+ "experiment_id": "GRPO-A_base_s2026",
+ "run_dir_rel": "grpo/A_base_s2026",
+ "status": "FAILED",
+ "completed_updates": 97,
+ "attempted_step": 98,
+ "attempted_step_outcome": "rejected by the rollout log-probability gate before grpo_update(); no optimizer update was made",
+ "gate": {"name": "mean |vLLM sampling log-prob - policy log-prob| over all rollout tokens", "value": 0.0794, "tolerance": 0.05},
+ "learning_rate": 1e-05,
+ "evidence_reported": {
+  "step95_reward": 0.70703125,
+  "step96_reward": 0.6171875,
+  "step97_reward": 0.0546875,
+  "step97_entropy": 0.4149613,
+  "step97_grad_norm": 0.20824397,
+  "step97_rollout_logprob_mad": 0.03878,
+  "step97_rollout_logprob_max": 19.83,
+  "exact_weight_check_step97": "passed",
+  "gpu_memory_released": true,
+  "done_json": false
+ },
+ "last_saved_state": {
+  "step": 80,
+  "sha256": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+  "original": "runs/grpo/A_base_s2026/state.pt",
+  "backup": "incident_backups/A_base_s2026_failed_step97/state.pt",
+  "contents": ["model", "optimizer", "step", "sampler RNG", "sampler probabilities", "torch RNG", "CUDA RNG", "Python RNG", "NumPy RNG"]
+ },
+ "recorded": "2026-11-26, from the user's report; the server logs have not yet been copied to the laptop",
+ "policy": "Kept as evidence: never resumed, overwritten, truncated or marked complete. It is reported as a failed pre-registered run. Post-hoc branches (recovery/*.yaml) start from its step-80 state in new folders and do not replace it."
+}

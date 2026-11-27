@@ -1,0 +1,32 @@
+{
+ "1e-06": {
+  "changed_pct": 1.09,
+  "unchanged_pct": 98.91,
+  "sampled": 304164992
+ },
+ "5e-06": {
+  "changed_pct": 4.36,
+  "unchanged_pct": 95.64,
+  "sampled": 304164992
+ },
+ "1e-05": {
+  "changed_pct": 8.69,
+  "unchanged_pct": 91.31,
+  "sampled": 304164992
+ },
+ "2e-05": {
+  "changed_pct": 17.19,
+  "unchanged_pct": 82.81,
+  "sampled": 304164992
+ },
+ "5e-05": {
+  "changed_pct": 33.19,
+  "unchanged_pct": 66.81,
+  "sampled": 304164992
+ },
+ "0.0001": {
+  "changed_pct": 59.51,
+  "unchanged_pct": 40.49,
+  "sampled": 304164992
+ }
+}

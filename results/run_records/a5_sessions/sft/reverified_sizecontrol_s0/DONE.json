@@ -1,0 +1,81 @@
+{
+ "finished": 1795658309.0567102,
+ "wall_s": 2824.1548776626587,
+ "steps": 214,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 836,
+   "accuracy": 0.836,
+   "ci95": [
+    0.8117721376883166,
+    0.8576561864616289
+   ],
+   "format_rate": 0.997,
+   "clean_format_rate": 0.997,
+   "mean_tokens": 136.818,
+   "truncated": 3,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 836,
+    "format_ok_answer_wrong": 161,
+    "format_fail_truncated": 3
+   },
+   "gen_s": 28.66274118423462,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 151,
+   "accuracy": 0.302,
+   "ci95": [
+    0.26339087332996447,
+    0.34362847560827325
+   ],
+   "format_rate": 0.95,
+   "clean_format_rate": 0.95,
+   "mean_tokens": 447.734,
+   "truncated": 24,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 151,
+    "format_ok_answer_wrong": 324,
+    "format_fail_truncated": 24,
+    "format_fail_answer_wrong": 1
+   },
+   "gen_s": 36.8009135723114,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "sft",
+  "chain": [
+   "base",
+   "sft"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "765bcbcbc2daa37d6c2a911f64dc1386920c5d99b6132137326f14e143e2739c"
+  },
+  "config_sha256": "475ab8c59992c5887ee9a87a4bfdceb5da6d32e07a58ca54cb6ed493a4d07892",
+  "code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+  "created": 1795658303.945796,
+  "extra": {
+   "steps": 214,
+   "n_train": 3420
+  }
+ }
+}

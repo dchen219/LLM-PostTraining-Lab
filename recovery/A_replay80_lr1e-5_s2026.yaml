@@ -1,0 +1,22 @@
+# Post-hoc diagnostic branch, not a registered experiment and not a replacement for GRPO-A_base_s2026.
+id: GRPO-A-replay80-lr1e-5-s2026
+purpose: reproduce the late-stage failure from the verified step-80 state with every training setting unchanged
+run_dir: ${PT_RUNS}/recovery/A_replay80_lr1e-5_s2026
+source:
+  experiment_id: GRPO-A_base_s2026
+  run_dir: ${PT_RUNS}/grpo/A_base_s2026
+  state: ${A5_ROOT}/incident_backups/A_base_s2026_failed_step97/state.pt
+  state_sha256: 73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb
+  step: 80
+  completed_updates: 97
+expect_source:
+  train.lr: 1.0e-05
+  train.micro_batch: 2
+  train.token_budget: 3300
+  grpo.steps: 100
+  grpo.rollout_tol: 0.05
+  engine.prefix_caching: false
+changes:
+  train.lr: 1.0e-05
+  train.save_every: 5
+  grpo.save_rollouts_every: 1

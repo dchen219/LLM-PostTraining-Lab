@@ -1,0 +1,136 @@
+{
+ "finished": 1795729929.2959201,
+ "wall_s": 4109.487488269806,
+ "steps": 100,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 927,
+   "accuracy": 0.927,
+   "ci95": [
+    0.9091906155334873,
+    0.9415412130737354
+   ],
+   "format_rate": 1.0,
+   "clean_format_rate": 1.0,
+   "mean_tokens": 192.617,
+   "truncated": 0,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "format_ok_answer_wrong": 73,
+    "correct": 927
+   },
+   "gen_s": 72.80796265602112,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 208,
+   "accuracy": 0.416,
+   "ci95": [
+    0.37359670506840015,
+    0.4596842308447916
+   ],
+   "format_rate": 0.93,
+   "clean_format_rate": 0.93,
+   "mean_tokens": 536.166,
+   "truncated": 35,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 208,
+    "format_ok_answer_wrong": 257,
+    "format_fail_answer_right": 1,
+    "format_fail_truncated": 34
+   },
+   "gen_s": 74.54070901870728,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "grpo",
+  "chain": [
+   "base",
+   "grpo"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "bf3453c6c71da3a38e3d835dbeda4fa099d59ab698de96522c80ac8cfb347ce1"
+  },
+  "config_sha256": "9db468f1c576fae386dcd3d9ba71ec618eb0299790da879816e4164659ba2160",
+  "code_sha256": "c80348598ca8a1f078b36684038447bd8b282c27e3e9246b76e428f862eceb25",
+  "created": 1795729806.7496333,
+  "extra": {
+   "steps": 100,
+   "fork": {
+    "id": "GRPO-A-replay80-lr1e-5-s2026",
+    "purpose": "reproduce the late-stage failure from the verified step-80 state with every training setting unchanged",
+    "posthoc": true,
+    "replaces_registered_run": false,
+    "source_experiment": "GRPO-A_base_s2026",
+    "source_run_dir": "/srv/research/posttrain-v2/runs/grpo/A_base_s2026",
+    "source_config_sha256": "6cb057c285626c201a0bc653ecd5f61efdd32bf0b0cd969edf39d34d418a6d2d",
+    "source_code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+    "source_state": "/srv/research/posttrain-v2/incident_backups/A_base_s2026_failed_step97/state.pt",
+    "source_state_sha256": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+    "source_step": 80,
+    "source_completed_updates": 97,
+    "source_logged_train_steps": [
+     1,
+     97,
+     97
+    ],
+    "source_folder": {
+     "files": 21,
+     "sha256": "f72f6ce7a8830e998931a8f38bba51ff7d63f2bc1f6c85b1644e65e489db5304"
+    },
+    "differences": [
+     {
+      "key": "grpo.save_rollouts_every",
+      "source": 10,
+      "branch": 1,
+      "why": "instrumentation: every step's rollouts are written to disk; no effect on any update or random number"
+     },
+     {
+      "key": "run_dir",
+      "source": "/srv/research/posttrain-v2/runs/grpo/A_base_s2026",
+      "branch": "/srv/research/posttrain-v2/runs/recovery/A_replay80_lr1e-5_s2026",
+      "why": "new folder"
+     },
+     {
+      "key": "train.save_every",
+      "source": 20,
+      "branch": 5,
+      "why": "operational: more resume points inside the branch; no effect on any update"
+     }
+    ],
+    "criteria": {
+     "file": "recovery/diagnostic_criteria.yaml",
+     "sha256": "fa062543327005ae47dbaf13f2a8a8ca064c2ca20c354891c76dea5956e0db98",
+     "version": 1,
+     "frozen": "2026-11-26"
+    }
+   }
+  }
+ },
+ "source_check": {
+  "source_unchanged": true,
+  "source_state_sha256_after": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+  "source_folder_after": {
+   "files": 21,
+   "sha256": "f72f6ce7a8830e998931a8f38bba51ff7d63f2bc1f6c85b1644e65e489db5304"
+  }
+ }
+}

@@ -1,0 +1,7 @@
+# Keep every file byte-identical to PUBLIC_EXPORT_MANIFEST.sha256 and the frozen hashes:
+# no line-ending conversion on any platform.
+* -text
+*.md diff
+*.py diff=python
+*.png binary
+*.pdf binary

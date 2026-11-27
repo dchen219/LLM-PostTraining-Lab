@@ -1,0 +1,1316 @@
+{
+ "checks": [
+  {
+   "area": "freeze",
+   "check": "final/freeze_v1.yaml sha256 equals the frozen value",
+   "ok": true,
+   "detail": "ff0f0ce574bcb47c9dafedc77bab1654362bb955a81c593960108ca682b7a453"
+  },
+  {
+   "area": "freeze",
+   "check": "lock written for this freeze file",
+   "ok": true,
+   "detail": "ff0f0ce574bcb47c9dafedc77bab1654362bb955a81c593960108ca682b7a453"
+  },
+  {
+   "area": "freeze",
+   "check": "report.json written for this freeze file",
+   "ok": true,
+   "detail": "ff0f0ce574bcb47c9dafedc77bab1654362bb955a81c593960108ca682b7a453"
+  },
+  {
+   "area": "report",
+   "check": "report lists no missing evaluation and no problem",
+   "ok": true,
+   "detail": "missing=[] problems=[]"
+  },
+  {
+   "area": "manifest",
+   "check": "FINAL_EVAL.sha256 lists exactly the recovered files",
+   "ok": true,
+   "detail": "58 listed, 58 on disk"
+  },
+  {
+   "area": "manifest",
+   "check": "every recovered evaluation file matches FINAL_EVAL.sha256",
+   "ok": true,
+   "detail": "58/58 match; bad=[]"
+  },
+  {
+   "area": "manifest",
+   "check": "FINAL_CHECKPOINTS.json (the lock) is covered by FINAL_EVAL.sha256",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "lock lists exactly the frozen checkpoints",
+   "ok": true,
+   "detail": "['BASE', 'GRPO-A-recovery80-lr5e-6-s2026', 'GRPO-A-replay80-lr1e-5-s2026', 'GRPO-B_sft512_s2026', 'SFT-exact_full_s0', 'SFT-exact_n512_s0', 'SFT-reverified_full_s0', 'SFT-reverified_n128_s0', 'SFT-reverified_n2048_s0', 'SFT-reverified_n512_s0', 'SFT-reverified_sizecontrol_s0']"
+  },
+  {
+   "area": "lock",
+   "check": "failed GRPO-A_base_s2026 absent from the lock and from the evaluation folder",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-A_base_s2026 recorded FAILED (incident record) with no DONE.json",
+   "ok": true,
+   "detail": "incident status FAILED, attempted step 98, gate 0.0794 > 0.05"
+  },
+  {
+   "area": "lock",
+   "check": "BASE weights equal the registered base model",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "SFT-exact_full_s0: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "02c6ba5396a4d113"
+  },
+  {
+   "area": "lock",
+   "check": "SFT-exact_full_s0: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_full_s0: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "02ecf90239277d41"
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_full_s0: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_sizecontrol_s0: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "765bcbcbc2daa37d"
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_sizecontrol_s0: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "SFT-exact_n512_s0: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "c4f4b4e94efa551a"
+  },
+  {
+   "area": "lock",
+   "check": "SFT-exact_n512_s0: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_n512_s0: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "f57b1af68b655397"
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_n512_s0: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_n128_s0: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "622f1201d8ae8f7b"
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_n128_s0: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_n2048_s0: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "65f61e4c0f5e830b"
+  },
+  {
+   "area": "lock",
+   "check": "SFT-reverified_n2048_s0: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-B_sft512_s2026: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "83dd404abf349f3a"
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-B_sft512_s2026: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-B parent = SFT-reverified_n512_s0 weights (chain base>sft>grpo)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-A-replay80-lr1e-5-s2026: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "bf3453c6c71da3a3"
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-A-replay80-lr1e-5-s2026: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026: locked weights = training DONE.json lineage weights",
+   "ok": true,
+   "detail": "a4055bd25156cf73"
+  },
+  {
+   "area": "lock",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026: checkpoint/lineage.json agrees",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "base"
+  },
+  {
+   "area": "eval",
+   "check": "BASE: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "BASE: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero', 'question_only']"
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "234/1319"
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "870/5000"
+  },
+  {
+   "area": "eval",
+   "check": "BASE r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "866/1319"
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "2928/5000"
+  },
+  {
+   "area": "eval",
+   "check": "BASE question_only math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "sft"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "1073/1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3126/5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_full_s0 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "sft"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "950/1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3026/5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_full_s0 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "sft"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "988/1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3107/5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_sizecontrol_s0 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "sft"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "1072/1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3096/5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-exact_n512_s0 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "sft"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "959/1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3040/5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n512_s0 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "sft"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "811/1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "2487/5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n128_s0 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "sft"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "1002/1319"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3132/5000"
+  },
+  {
+   "area": "eval",
+   "check": "SFT-reverified_n2048_s0 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "grpo"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "1136/1319"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3627/5000"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-B_sft512_s2026 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "grpo"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "1128/1319"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3523/5000"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-replay80-lr1e-5-s2026 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026: evaluated weights = lock",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026: lineage stage = frozen stage",
+   "ok": true,
+   "detail": "grpo"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026: verifier 2.0.0 with locked file hashes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026: engine settings = freeze",
+   "ok": true,
+   "detail": "{'name': 'vllm', 'device': 'cuda:0', 'gpu_mem': 0.8, 'max_model_len': 2048, 'prefix_caching': False}"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026: prompts = freeze",
+   "ok": true,
+   "detail": "['r1_zero']"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero gsm8k_test_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "9b99a963e673829b"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero gsm8k_test_final: n = 1319, ids unique",
+   "ok": true,
+   "detail": "1319"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero gsm8k_test_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero gsm8k_test_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "1114/1319"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero gsm8k_test_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero math_val_final: data sha256 = MANIFEST.json",
+   "ok": true,
+   "detail": "526d04771664449c"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero math_val_final: n = 5000, ids unique",
+   "ok": true,
+   "detail": "5000"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero math_val_final: same item ids as every other evaluation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero math_val_final: item count = summary.json = DONE.json",
+   "ok": true,
+   "detail": "3531/5000"
+  },
+  {
+   "area": "eval",
+   "check": "GRPO-A-recovery80-lr5e-6-s2026 r1_zero math_val_final: no verifier errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "one code version for every evaluation, equal to the lock",
+   "ok": true,
+   "detail": "{'0e0b00141307ce2f33118c7a918ae2566b10b05e0a5d65078ad466dbd1e51af9'}"
+  },
+  {
+   "area": "eval",
+   "check": "identical evaluation config across checkpoints (apart from run folder, weights and prompts)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "eval",
+   "check": "lock written before the first evaluation started",
+   "ok": true,
+   "detail": "locked 1795743993, first start 1795744005"
+  },
+  {
+   "area": "isolation",
+   "check": "held-out item ids disjoint from development item ids",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "isolation",
+   "check": "held-out item ids disjoint from SFT training ids",
+   "ok": true,
+   "detail": "4423 SFT ids"
+  },
+  {
+   "area": "training manifests",
+   "check": "SESSION_A.sha256 re-verified",
+   "ok": true,
+   "detail": "151 entries OK"
+  },
+  {
+   "area": "training manifests",
+   "check": "SESSION_B.sha256 re-verified",
+   "ok": true,
+   "detail": "107 entries OK"
+  },
+  {
+   "area": "training manifests",
+   "check": "RECOVERY.sha256 re-verified",
+   "ok": true,
+   "detail": "74 entries OK"
+  },
+  {
+   "area": "training audit",
+   "check": "scripts/final_audit.py re-run: 0 unresolved problems",
+   "ok": true,
+   "detail": "problems=[], explained=2"
+  },
+  {
+   "area": "reproduction",
+   "check": "every metric and comparison in report.json reproduced by an independent implementation (scipy binomtest, numpy Holm)",
+   "ok": true,
+   "detail": "238 metric and 382 comparison fields; max |diff| 4.93e-07; mismatches: []"
+  }
+ ],
+ "problems": [],
+ "unverifiable": [
+  "Weight files are not on the laptop. Weight identity rests on the server-side `check` (11 hashes printed and matched before the run) and on every evaluation's summary.json recording the locked hash; it was not re-hashed locally.",
+  "Post-evaluation integrity of the trained runs (`sha256sum -c BEFORE_FINAL.sha256` on the server, expected output TRAINED_RUNS_UNCHANGED): neither BEFORE_FINAL.sha256 nor the terminal output was recovered to the laptop, so it is NOT verified here.",
+  "final_eval.log (launcher output) was not recovered; launch order and the absence of retries are inferred from run.json/DONE.json timestamps only."
+ ],
+ "notes": [
+  "Evaluation wall-clock span (first start to last finish): 1.49 h.",
+  "Held-out problem text was not compared with training text in this analysis; text-level decontamination is the Stage 0 result (data/stage0/contamination.json: GSM8K 0 exact / 0 13-gram / 0 fuzzy; MATH val near-duplicates removed from SFT and RL pools)."
+ ]
+}

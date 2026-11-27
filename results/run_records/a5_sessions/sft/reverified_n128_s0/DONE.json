@@ -1,0 +1,84 @@
+{
+ "finished": 1795658544.4512467,
+ "wall_s": 222.64812898635864,
+ "steps": 8,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 680,
+   "accuracy": 0.68,
+   "ci95": [
+    0.6504458220300267,
+    0.7081764944788729
+   ],
+   "format_rate": 0.836,
+   "clean_format_rate": 0.836,
+   "mean_tokens": 175.745,
+   "truncated": 17,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 680,
+    "format_ok_answer_wrong": 156,
+    "format_fail_truncated": 17,
+    "format_fail_answer_right": 120,
+    "format_fail_answer_wrong": 27
+   },
+   "gen_s": 34.231117248535156,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 118,
+   "accuracy": 0.236,
+   "ci95": [
+    0.20088068978132578,
+    0.27514510880299115
+   ],
+   "format_rate": 0.544,
+   "clean_format_rate": 0.544,
+   "mean_tokens": 541.908,
+   "truncated": 95,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 118,
+    "format_fail_answer_wrong": 72,
+    "format_ok_answer_wrong": 154,
+    "format_fail_truncated": 94,
+    "format_fail_answer_right": 62
+   },
+   "gen_s": 45.578169107437134,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "sft",
+  "chain": [
+   "base",
+   "sft"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "622f1201d8ae8f7b1d3237bc2b920e5ba46f188523b4b9a2cb804a7a23c2cc34"
+  },
+  "config_sha256": "6f1304c08bd14da0d82ae3d0f9dc301753f7dc835dba913b7f50f72579733161",
+  "code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+  "created": 1795658544.3920088,
+  "extra": {
+   "steps": 8,
+   "n_train": 128
+  }
+ }
+}

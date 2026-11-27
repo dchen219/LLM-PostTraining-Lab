@@ -1,0 +1,46 @@
+{
+ "r1_zero": {
+  "n": 1319,
+  "strict_correct": 236,
+  "format_ok": 669,
+  "relaxed_correct": 399,
+  "format_fail_and_wrong": 487,
+  "hit_1024": 6,
+  "format_ok_wrong": 433,
+  "format_fail_but_right:boxed": 60,
+  "format_fail_but_right:last_number": 50,
+  "format_fail_but_right:answer_tag": 53,
+  "strict_acc_pct": 17.89,
+  "strict_ci95": [
+   15.92,
+   20.05
+  ],
+  "format_pct": 50.72,
+  "relaxed_acc_pct": 30.25,
+  "mean_tokens": 150.8
+ },
+ "question_only": {
+  "n": 1319,
+  "strict_correct": 861,
+  "format_ok": 1161,
+  "relaxed_correct": 960,
+  "format_ok_wrong": 300,
+  "hit_1024": 14,
+  "format_fail_but_right:last_number": 99,
+  "format_fail_and_wrong": 59,
+  "strict_acc_pct": 65.28,
+  "strict_ci95": [
+   62.67,
+   67.8
+  ],
+  "format_pct": 88.02,
+  "relaxed_acc_pct": 72.78,
+  "mean_tokens": 347.4
+ },
+ "paired": {
+  "both": 177,
+  "r1_only": 59,
+  "qonly_only": 684,
+  "neither": 399
+ }
+}

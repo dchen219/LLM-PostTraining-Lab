@@ -1,0 +1,35 @@
+name,family,set,final_pp,dev_pp,same_sign
+"C1 data quality, full",confirmatory,gsm8k_test_final,-9.32524639878696,-6.9,True
+"C2 data quality, matched 512",confirmatory,gsm8k_test_final,-8.567096285064443,-6.9,True
+C3 pathway B vs its SFT parent,confirmatory,gsm8k_test_final,13.419257012888552,10.8,True
+"C1 data quality, full",confirmatory,math_val_final,-2.0,-2.0,True
+"C2 data quality, matched 512",confirmatory,math_val_final,-1.1199999999999999,-2.1999999999999997,True
+C3 pathway B vs its SFT parent,confirmatory,math_val_final,11.74,17.599999999999998,True
+composition at matched size,descriptive,gsm8k_test_final,-6.444275966641396,-5.2,True
+volume,descriptive,gsm8k_test_final,-2.8809704321455647,-1.7000000000000002,True
+sample efficiency 128 -> 512,descriptive,gsm8k_test_final,11.220621683093253,14.000000000000002,True
+sample efficiency 512 -> 2048,descriptive,gsm8k_test_final,3.2600454890068233,2.1999999999999997,True
+sample efficiency 2048 -> full,descriptive,gsm8k_test_final,-3.9423805913570886,-2.3,True
+pathway B vs base r1_zero,descriptive,gsm8k_test_final,68.38514025777104,71.0,True
+composition at matched size,descriptive,math_val_final,-0.38,-1.4000000000000001,True
+volume,descriptive,math_val_final,-1.6199999999999999,-0.6,True
+sample efficiency 128 -> 512,descriptive,math_val_final,11.06,6.6000000000000005,True
+sample efficiency 512 -> 2048,descriptive,math_val_final,1.8399999999999999,2.4,True
+sample efficiency 2048 -> full,descriptive,math_val_final,-2.12,-3.0,True
+pathway B vs base r1_zero,descriptive,math_val_final,55.14,40.6,True
+A1 (lr 1e-5) vs base r1_zero,post-hoc (frozen),gsm8k_test_final,67.77862016679302,70.89999999999999,True
+A2 (lr 5e-6) vs base r1_zero,post-hoc (frozen),gsm8k_test_final,66.71721000758151,70.1,True
+A2 vs A1,post-hoc (frozen),gsm8k_test_final,-1.061410159211524,-0.8,True
+A1 (lr 1e-5) vs base r1_zero,post-hoc (frozen),math_val_final,53.059999999999995,34.4,True
+A2 (lr 5e-6) vs base r1_zero,post-hoc (frozen),math_val_final,53.22,34.0,True
+A2 vs A1,post-hoc (frozen),math_val_final,0.16,-0.4,False
+"Direct (A1, post-hoc branch) vs sequential (GRPO-B)",post-hoc (unregistered),gsm8k_test_final,0.6065200909780136,0.1,True
+"Direct (A2, post-hoc branch) vs sequential (GRPO-B)",post-hoc (unregistered),gsm8k_test_final,1.6679302501895377,0.8999999999999999,True
+"GRPO-B vs SFT exact n512 (other data source, same size)",post-hoc (unregistered),gsm8k_test_final,4.852160727824109,3.9,True
+"Exact-match scaling 512 -> 3,420",post-hoc (unregistered),gsm8k_test_final,0.0758150113722517,-0.1,False
+Composition at 512 vs at full size: exact n512 -> re-verified n2048,post-hoc (unregistered),gsm8k_test_final,-5.307050796057619,-4.7,True
+"Direct (A1, post-hoc branch) vs sequential (GRPO-B)",post-hoc (unregistered),math_val_final,2.08,6.2,True
+"Direct (A2, post-hoc branch) vs sequential (GRPO-B)",post-hoc (unregistered),math_val_final,1.92,6.6000000000000005,True
+"GRPO-B vs SFT exact n512 (other data source, same size)",post-hoc (unregistered),math_val_final,10.620000000000001,15.4,True
+"Exact-match scaling 512 -> 3,420",post-hoc (unregistered),math_val_final,0.6,-0.8,False
+Composition at 512 vs at full size: exact n512 -> re-verified n2048,post-hoc (unregistered),math_val_final,0.72,0.2,True

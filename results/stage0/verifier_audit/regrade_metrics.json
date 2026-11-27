@@ -1,0 +1,18 @@
+{
+ "kept": {
+  "n": 3496,
+  "fast_ok": 3493,
+  "full_ok": 3493,
+  "format_fail": 3,
+  "errors": 0
+ },
+ "removed": {
+  "n": 1340,
+  "fast_ok": 1049,
+  "full_ok": 1210,
+  "format_fail": 1,
+  "errors": 0
+ },
+ "recovered_fast": 1049,
+ "recovered_any": 1210
+}

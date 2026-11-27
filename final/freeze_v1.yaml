@@ -1,0 +1,97 @@
+# FROZEN held-out evaluation plan, version 1 (2026-11-26).
+# Written before any held-out (final) result exists and before Session A/B dev results were reviewed for this purpose.
+# The selection uses only the registry (EXPERIMENT_PLAN.md sections 3 and 10): the final-step checkpoint of each pre-registered run.
+# No dev score, no held-out score and no recovery-branch result chooses a checkpoint. Changing this file changes its sha256,
+# which every final evaluation records; posttrain/final_eval.py refuses a lock that does not match.
+version: 1
+frozen: "2026-11-26"
+rule: >-
+  Evaluate the final-step checkpoint (checkpoint/model.safetensors) of each listed run, whose sha256 must equal the
+  weights_sha256 recorded in that run's DONE.json lineage. Never an intermediate, best or re-selected checkpoint.
+  Each checkpoint is evaluated once per listed prompt. A run without DONE.json, or with FAILED.json, is not evaluated.
+engine:            # identical for every checkpoint (configs/eval/final.yaml): same engine, same GPU type, caching off
+  config: configs/eval/final.yaml
+  name: vllm
+  max_model_len: 2048
+  prefix_caching: false
+  gpu_mem: 0.8
+  temperature: 0.0
+  max_tokens: 1024
+  seed: 2026
+  gpu_type: NVIDIA RTX A6000
+sets:
+  gsm8k_test_final: {n: 1319, role: primary}
+  math_val_final: {n: 5000, role: secondary}
+verifier: "2.0.0"   # strict accuracy is the metric; second-verifier and relaxed accuracy are reported beside it
+
+checkpoints:
+  # id: experiment id; dir: folder under $PT_RUNS; stage: lineage stage checked before loading; class: see `classes`
+  - {id: BASE, dir: null, stage: base, prompts: [r1_zero, question_only], class: preregistered}
+  - {id: SFT-exact_full_s0, dir: sft/exact_full_s0, stage: sft, prompts: [r1_zero], class: preregistered}
+  - {id: SFT-reverified_full_s0, dir: sft/reverified_full_s0, stage: sft, prompts: [r1_zero], class: preregistered}
+  - {id: SFT-reverified_sizecontrol_s0, dir: sft/reverified_sizecontrol_s0, stage: sft, prompts: [r1_zero], class: preregistered}
+  - {id: SFT-exact_n512_s0, dir: sft/exact_n512_s0, stage: sft, prompts: [r1_zero], class: preregistered}
+  - {id: SFT-reverified_n512_s0, dir: sft/reverified_n512_s0, stage: sft, prompts: [r1_zero], class: preregistered}
+  - {id: SFT-reverified_n128_s0, dir: sft/reverified_n128_s0, stage: sft, prompts: [r1_zero], class: preregistered}
+  - {id: SFT-reverified_n2048_s0, dir: sft/reverified_n2048_s0, stage: sft, prompts: [r1_zero], class: preregistered}
+  - {id: GRPO-B_sft512_s2026, dir: grpo/B_sft512_s2026, stage: grpo, prompts: [r1_zero], class: preregistered}
+  # Post-hoc diagnostic branches of the failed GRPO-A. Both are evaluated, at step 100, whatever their dev scores; neither is
+  # chosen over the other and neither stands in for GRPO-A_base_s2026.
+  - {id: GRPO-A-replay80-lr1e-5-s2026, dir: recovery/A_replay80_lr1e-5_s2026, stage: grpo, prompts: [r1_zero], class: posthoc}
+  - {id: GRPO-A-recovery80-lr5e-6-s2026, dir: recovery/A_recovery80_lr5e-6_s2026, stage: grpo, prompts: [r1_zero], class: posthoc}
+
+not_evaluated:
+  - {id: GRPO-A_base_s2026, why: "pre-registered run FAILED at step 98 (rollout log-prob gate); it has no final step. Reported as failed. Its step-80 state, the recovery branches and any intermediate state are never substituted."}
+  - {id: SFT-tune_lr1e-5, why: "learning-rate tuning only (dev); not a pre-registered final checkpoint"}
+  - {id: SFT-tune_lr2e-5, why: "learning-rate tuning only (dev)"}
+  - {id: SFT-tune_lr5e-5, why: "learning-rate tuning only (dev)"}
+  - {id: GRPO-tune_lr2e-6, why: "learning-rate tuning only (dev)"}
+  - {id: GRPO-tune_lr5e-6, why: "learning-rate tuning only (dev)"}
+  - {id: GRPO-tune_lr1e-5, why: "learning-rate tuning only (dev)"}
+
+classes:
+  preregistered: listed for final evaluation by the registry before training
+  posthoc: post-hoc diagnostic; reported separately, never pooled with or substituted for a pre-registered result
+
+# Statistics: strict accuracy, paired exact McNemar, paired difference with 95% CI (b minus a), Holm within each family and set.
+# Holm is applied separately to gsm8k_test_final (primary) and math_val_final (secondary).
+families:
+  confirmatory:   # EXPERIMENT_PLAN.md section 3, the four pre-registered final comparisons. m = 4 always.
+    holm_m: 4
+    comparisons:
+      - {name: "C1 data quality, full", a: "SFT-exact_full_s0:r1_zero", b: "SFT-reverified_full_s0:r1_zero"}
+      - {name: "C2 data quality, matched 512", a: "SFT-exact_n512_s0:r1_zero", b: "SFT-reverified_n512_s0:r1_zero"}
+      - {name: "C3 pathway B vs its SFT parent", a: "SFT-reverified_n512_s0:r1_zero", b: "GRPO-B_sft512_s2026:r1_zero"}
+      - {name: "C4 pathway A vs base", a: "BASE:r1_zero", b: "GRPO-A_base_s2026:r1_zero", unavailable: "run failed; counted with p = 1 so the family is not shrunk after the failure"}
+  sft_vs_base:    # EXPERIMENT_PLAN.md section 10: SFT arms against the base model's question-only prompt, same engine
+    holm_m: 7
+    comparisons:
+      - {name: "SFT exact_full vs base question-only", a: "BASE:question_only", b: "SFT-exact_full_s0:r1_zero"}
+      - {name: "SFT reverified_full vs base question-only", a: "BASE:question_only", b: "SFT-reverified_full_s0:r1_zero"}
+      - {name: "SFT sizecontrol vs base question-only", a: "BASE:question_only", b: "SFT-reverified_sizecontrol_s0:r1_zero"}
+      - {name: "SFT exact_n512 vs base question-only", a: "BASE:question_only", b: "SFT-exact_n512_s0:r1_zero"}
+      - {name: "SFT reverified_n512 vs base question-only", a: "BASE:question_only", b: "SFT-reverified_n512_s0:r1_zero"}
+      - {name: "SFT reverified_n128 vs base question-only", a: "BASE:question_only", b: "SFT-reverified_n128_s0:r1_zero"}
+      - {name: "SFT reverified_n2048 vs base question-only", a: "BASE:question_only", b: "SFT-reverified_n2048_s0:r1_zero"}
+  descriptive:    # reported with CIs and unadjusted p; no claim rests on them
+    holm_m: null
+    comparisons:
+      - {name: "composition at matched size", a: "SFT-exact_full_s0:r1_zero", b: "SFT-reverified_sizecontrol_s0:r1_zero"}
+      - {name: "volume", a: "SFT-reverified_sizecontrol_s0:r1_zero", b: "SFT-reverified_full_s0:r1_zero"}
+      - {name: "sample efficiency 128 -> 512", a: "SFT-reverified_n128_s0:r1_zero", b: "SFT-reverified_n512_s0:r1_zero"}
+      - {name: "sample efficiency 512 -> 2048", a: "SFT-reverified_n512_s0:r1_zero", b: "SFT-reverified_n2048_s0:r1_zero"}
+      - {name: "sample efficiency 2048 -> full", a: "SFT-reverified_n2048_s0:r1_zero", b: "SFT-reverified_full_s0:r1_zero"}
+      - {name: "pathway B vs base question-only", a: "BASE:question_only", b: "GRPO-B_sft512_s2026:r1_zero"}
+      - {name: "pathway B vs base r1_zero", a: "BASE:r1_zero", b: "GRPO-B_sft512_s2026:r1_zero"}
+      - {name: "base prompts: question-only vs r1_zero", a: "BASE:r1_zero", b: "BASE:question_only"}
+  posthoc:        # exploratory; own Holm family; never pooled with the families above
+    holm_m: 4
+    comparisons:
+      - {name: "A1 (lr 1e-5) vs base r1_zero", a: "BASE:r1_zero", b: "GRPO-A-replay80-lr1e-5-s2026:r1_zero"}
+      - {name: "A2 (lr 5e-6) vs base r1_zero", a: "BASE:r1_zero", b: "GRPO-A-recovery80-lr5e-6-s2026:r1_zero"}
+      - {name: "A1 vs base question-only", a: "BASE:question_only", b: "GRPO-A-replay80-lr1e-5-s2026:r1_zero"}
+      - {name: "A2 vs A1", a: "GRPO-A-replay80-lr1e-5-s2026:r1_zero", b: "GRPO-A-recovery80-lr5e-6-s2026:r1_zero"}
+
+thresholds:
+  detectable_pp: 1.4   # EXPERIMENT_PLAN.md section 10: smaller GSM8K differences are reported as "not detected"
+  alpha: 0.05

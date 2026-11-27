@@ -1,0 +1,142 @@
+{
+ "finished": 1795734604.3213089,
+ "wall_s": 4513.415258169174,
+ "steps": 100,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 919,
+   "accuracy": 0.919,
+   "ci95": [
+    0.9004424261087147,
+    0.9343506328758902
+   ],
+   "format_rate": 1.0,
+   "clean_format_rate": 0.056,
+   "mean_tokens": 213.426,
+   "truncated": 0,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 919,
+    "format_ok_answer_wrong": 81
+   },
+   "gen_s": 62.89977169036865,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 206,
+   "accuracy": 0.412,
+   "ci95": [
+    0.3696877164049981,
+    0.4556542164564409
+   ],
+   "format_rate": 0.872,
+   "clean_format_rate": 0.072,
+   "mean_tokens": 607.038,
+   "truncated": 64,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 206,
+    "format_ok_answer_wrong": 230,
+    "format_fail_truncated": 60,
+    "format_fail_answer_right": 4
+   },
+   "gen_s": 86.38105249404907,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "grpo",
+  "chain": [
+   "base",
+   "grpo"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "a4055bd25156cf738005631f7e7d60d453fe5317ddcf8b60eb9d0ec47860a006"
+  },
+  "config_sha256": "c7a12182138284a76337e4ecf7060d7b6902ff757dfee26beeffd06445c8bccf",
+  "code_sha256": "c80348598ca8a1f078b36684038447bd8b282c27e3e9246b76e428f862eceb25",
+  "created": 1795734504.545214,
+  "extra": {
+   "steps": 100,
+   "fork": {
+    "id": "GRPO-A-recovery80-lr5e-6-s2026",
+    "purpose": "learning-rate sensitivity from the same verified step-80 model and optimizer state",
+    "posthoc": true,
+    "replaces_registered_run": false,
+    "source_experiment": "GRPO-A_base_s2026",
+    "source_run_dir": "/srv/research/posttrain-v2/runs/grpo/A_base_s2026",
+    "source_config_sha256": "6cb057c285626c201a0bc653ecd5f61efdd32bf0b0cd969edf39d34d418a6d2d",
+    "source_code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+    "source_state": "/srv/research/posttrain-v2/incident_backups/A_base_s2026_failed_step97/state.pt",
+    "source_state_sha256": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+    "source_step": 80,
+    "source_completed_updates": 97,
+    "source_logged_train_steps": [
+     1,
+     97,
+     97
+    ],
+    "source_folder": {
+     "files": 21,
+     "sha256": "f72f6ce7a8830e998931a8f38bba51ff7d63f2bc1f6c85b1644e65e489db5304"
+    },
+    "differences": [
+     {
+      "key": "grpo.save_rollouts_every",
+      "source": 10,
+      "branch": 1,
+      "why": "instrumentation: every step's rollouts are written to disk; no effect on any update or random number"
+     },
+     {
+      "key": "run_dir",
+      "source": "/srv/research/posttrain-v2/runs/grpo/A_base_s2026",
+      "branch": "/srv/research/posttrain-v2/runs/recovery/A_recovery80_lr5e-6_s2026",
+      "why": "new folder"
+     },
+     {
+      "key": "train.lr",
+      "source": 1e-05,
+      "branch": 5e-06,
+      "why": "intervention (learning-rate sensitivity)"
+     },
+     {
+      "key": "train.save_every",
+      "source": 20,
+      "branch": 5,
+      "why": "operational: more resume points inside the branch; no effect on any update"
+     }
+    ],
+    "criteria": {
+     "file": "recovery/diagnostic_criteria.yaml",
+     "sha256": "fa062543327005ae47dbaf13f2a8a8ca064c2ca20c354891c76dea5956e0db98",
+     "version": 1,
+     "frozen": "2026-11-26"
+    }
+   }
+  }
+ },
+ "source_check": {
+  "source_unchanged": true,
+  "source_state_sha256_after": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+  "source_folder_after": {
+   "files": 21,
+   "sha256": "f72f6ce7a8830e998931a8f38bba51ff7d63f2bc1f6c85b1644e65e489db5304"
+  }
+ }
+}

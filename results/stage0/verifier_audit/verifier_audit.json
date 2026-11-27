@@ -1,0 +1,74 @@
+{
+ "raw": 4836,
+ "filtered": 3496,
+ "removed": 1340,
+ "recovered": 1049,
+ "tiers": {
+  "not_recovered": 291,
+  "A_canonical_string": 781,
+  "D_grader_only": 40,
+  "B_exact_number": 148,
+  "C_math_verify": 80
+ },
+ "numeric_conflicts": 0,
+ "rejected_by_fast_but_independently_equal": 118,
+ "rejected_by_fast_but_math_verify_accepts": 169,
+ "recovered_id_sha256": "529690202e601d7d1aaa70448e233ab6afa7da69c6f7adbd1f3dd901830e5d90",
+ "mutation_false_accepts": {
+  "increment": {
+   "n": 4477,
+   "accepted": 1
+  },
+  "append_zero": {
+   "n": 4477,
+   "accepted": 1
+  },
+  "sign_flip": {
+   "n": 3044,
+   "accepted": 0
+  },
+  "swap_first_two_numbers": {
+   "n": 1019,
+   "accepted": 1
+  }
+ },
+ "random_pair_false_accepts": {
+  "n": 19857,
+  "accepted": 1
+ },
+ "adversarial": {
+  "n": 28,
+  "fast_false_accept": [
+   "conflicting units"
+  ],
+  "fast_false_reject": [
+   "evaluated power",
+   "unit"
+  ],
+  "full_false_accept": [
+   "conflicting units",
+   "0.5 vs 50%",
+   "missing base",
+   "missing base",
+   "unreduced (grader policy)",
+   "duplicate list"
+  ]
+ },
+ "format_probe": {
+  "</think> <answer>3</answer> </think> <answer>4</answer>": {
+   "format_reward": 1.0,
+   "answer_reward": 1.0,
+   "reward": 1.0
+  },
+  "</answer> 5 </think> <answer>": {
+   "format_reward": 1.0,
+   "answer_reward": 0.0,
+   "reward": 0.0
+  },
+  "</think> <answer>4": {
+   "format_reward": 0.0,
+   "answer_reward": 0.0,
+   "reward": 0.0
+  }
+ }
+}

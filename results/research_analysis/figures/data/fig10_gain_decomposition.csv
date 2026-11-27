@@ -1,0 +1,11 @@
+set,transition,lost,gained_format_ok_answer_wrong,gained_format_fail_answer_right,gained_format_fail_answer_wrong,gained_format_fail_truncated
+gsm8k_test_final,base: r1_zero -> question-only prompt,57.0,286.0,128.0,271.0,4.0
+gsm8k_test_final,base r1_zero -> SFT re-verified 512,30.0,308.0,141.0,302.0,4.0
+gsm8k_test_final,base question-only -> SFT re-verified 512,169.0,138.0,86.0,28.0,10.0
+gsm8k_test_final,SFT parent -> GRPO-B (C3),60.0,234.0,0,0,3.0
+gsm8k_test_final,SFT exact 512 -> re-verified 512 (C2),171.0,55.0,0,0,3.0
+math_val_final,base: r1_zero -> question-only prompt,169.0,659.0,793.0,691.0,84.0
+math_val_final,base r1_zero -> SFT re-verified 512,139.0,675.0,781.0,739.0,114.0
+math_val_final,base question-only -> SFT re-verified 512,617.0,405.0,111.0,74.0,139.0
+math_val_final,SFT parent -> GRPO-B (C3),256.0,772.0,4.0,11.0,56.0
+math_val_final,SFT exact 512 -> re-verified 512 (C2),470.0,362.0,10.0,14.0,28.0

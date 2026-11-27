@@ -1,0 +1,556 @@
+{
+ "inputs": {
+  "BEFORE_FINAL.sha256": {
+   "sha256": "f56eeb5222241cb52dc1da292aad603ab3e4b99d5f81a7d1d705d21a08fd382a",
+   "bytes": 39229
+  },
+  "post_final_integrity.log": {
+   "sha256": "edc8bb466607f152476f67f475d76bbda7a4d9fe834caba4e9115c7b10b9c60e",
+   "bytes": 23
+  }
+ },
+ "before_final": {
+  "lines": 349,
+  "runs": [
+   "grpo/A_base_s2026",
+   "grpo/B_sft512_s2026",
+   "grpo/tune_lr1e-5",
+   "grpo/tune_lr2e-6",
+   "grpo/tune_lr5e-6",
+   "recovery/A_recovery80_lr5e-6_s2026",
+   "recovery/A_replay80_lr1e-5_s2026",
+   "sft/exact_full_s0",
+   "sft/exact_n512_s0",
+   "sft/reverified_full_s0",
+   "sft/reverified_n128_s0",
+   "sft/reverified_n2048_s0",
+   "sft/reverified_n512_s0",
+   "sft/reverified_sizecontrol_s0",
+   "sft/tune_lr1e-5",
+   "sft/tune_lr2e-5",
+   "sft/tune_lr5e-5"
+  ],
+  "files_per_run": {
+   "grpo/A_base_s2026": 21,
+   "grpo/B_sft512_s2026": 34,
+   "grpo/tune_lr1e-5": 19,
+   "grpo/tune_lr2e-6": 19,
+   "grpo/tune_lr5e-6": 19,
+   "recovery/A_recovery80_lr5e-6_s2026": 38,
+   "recovery/A_replay80_lr1e-5_s2026": 38,
+   "sft/exact_full_s0": 16,
+   "sft/exact_n512_s0": 16,
+   "sft/reverified_full_s0": 17,
+   "sft/reverified_n128_s0": 16,
+   "sft/reverified_n2048_s0": 16,
+   "sft/reverified_n512_s0": 16,
+   "sft/reverified_sizecontrol_s0": 16,
+   "sft/tune_lr1e-5": 16,
+   "sft/tune_lr2e-5": 16,
+   "sft/tune_lr5e-5": 16
+  }
+ },
+ "lock_vs_before_final": [
+  {
+   "checkpoint": "BASE",
+   "path": null,
+   "lock": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b",
+   "before_final": null,
+   "match": null
+  },
+  {
+   "checkpoint": "SFT-exact_full_s0",
+   "path": "sft/exact_full_s0/checkpoint/model.safetensors",
+   "lock": "02c6ba5396a4d113e5b46e9452d748339c39e9d65724aa60187c9e3add7683b1",
+   "before_final": "02c6ba5396a4d113e5b46e9452d748339c39e9d65724aa60187c9e3add7683b1",
+   "match": true
+  },
+  {
+   "checkpoint": "SFT-reverified_full_s0",
+   "path": "sft/reverified_full_s0/checkpoint/model.safetensors",
+   "lock": "02ecf90239277d41f4a2946c115ac9403ba1dd023b29666826b1041d2744b16c",
+   "before_final": "02ecf90239277d41f4a2946c115ac9403ba1dd023b29666826b1041d2744b16c",
+   "match": true
+  },
+  {
+   "checkpoint": "SFT-reverified_sizecontrol_s0",
+   "path": "sft/reverified_sizecontrol_s0/checkpoint/model.safetensors",
+   "lock": "765bcbcbc2daa37d6c2a911f64dc1386920c5d99b6132137326f14e143e2739c",
+   "before_final": "765bcbcbc2daa37d6c2a911f64dc1386920c5d99b6132137326f14e143e2739c",
+   "match": true
+  },
+  {
+   "checkpoint": "SFT-exact_n512_s0",
+   "path": "sft/exact_n512_s0/checkpoint/model.safetensors",
+   "lock": "c4f4b4e94efa551a7eb428bfb8375bc6ea22aa3a2c725bfe6ec7f6af28ebae79",
+   "before_final": "c4f4b4e94efa551a7eb428bfb8375bc6ea22aa3a2c725bfe6ec7f6af28ebae79",
+   "match": true
+  },
+  {
+   "checkpoint": "SFT-reverified_n512_s0",
+   "path": "sft/reverified_n512_s0/checkpoint/model.safetensors",
+   "lock": "f57b1af68b655397ad2b685781106f4029503cd03d065dd7ad8fd2228d6c5dc4",
+   "before_final": "f57b1af68b655397ad2b685781106f4029503cd03d065dd7ad8fd2228d6c5dc4",
+   "match": true
+  },
+  {
+   "checkpoint": "SFT-reverified_n128_s0",
+   "path": "sft/reverified_n128_s0/checkpoint/model.safetensors",
+   "lock": "622f1201d8ae8f7b1d3237bc2b920e5ba46f188523b4b9a2cb804a7a23c2cc34",
+   "before_final": "622f1201d8ae8f7b1d3237bc2b920e5ba46f188523b4b9a2cb804a7a23c2cc34",
+   "match": true
+  },
+  {
+   "checkpoint": "SFT-reverified_n2048_s0",
+   "path": "sft/reverified_n2048_s0/checkpoint/model.safetensors",
+   "lock": "65f61e4c0f5e830bd9dfaa0f2cc7c1a84d7a5b65faddd30705c2d16f574fed31",
+   "before_final": "65f61e4c0f5e830bd9dfaa0f2cc7c1a84d7a5b65faddd30705c2d16f574fed31",
+   "match": true
+  },
+  {
+   "checkpoint": "GRPO-B_sft512_s2026",
+   "path": "grpo/B_sft512_s2026/checkpoint/model.safetensors",
+   "lock": "83dd404abf349f3acc955272b74e6349b873566adb5ca78feda4f55e4836e0ca",
+   "before_final": "83dd404abf349f3acc955272b74e6349b873566adb5ca78feda4f55e4836e0ca",
+   "match": true
+  },
+  {
+   "checkpoint": "GRPO-A-replay80-lr1e-5-s2026",
+   "path": "recovery/A_replay80_lr1e-5_s2026/checkpoint/model.safetensors",
+   "lock": "bf3453c6c71da3a38e3d835dbeda4fa099d59ab698de96522c80ac8cfb347ce1",
+   "before_final": "bf3453c6c71da3a38e3d835dbeda4fa099d59ab698de96522c80ac8cfb347ce1",
+   "match": true
+  },
+  {
+   "checkpoint": "GRPO-A-recovery80-lr5e-6-s2026",
+   "path": "recovery/A_recovery80_lr5e-6_s2026/checkpoint/model.safetensors",
+   "lock": "a4055bd25156cf738005631f7e7d60d453fe5317ddcf8b60eb9d0ec47860a006",
+   "before_final": "a4055bd25156cf738005631f7e7d60d453fe5317ddcf8b60eb9d0ec47860a006",
+   "match": true
+  }
+ ],
+ "manifest_comparison": [
+  {
+   "manifest": "a5_sessions/BEFORE_RECOVERY.sha256",
+   "entries": 273,
+   "in_before_final": 273,
+   "hash_differs": 0,
+   "absent_from_before_final": 0,
+   "absent_examples": [],
+   "differs_examples": []
+  },
+  {
+   "manifest": "a5_sessions/SESSION_A.sha256",
+   "entries": 151,
+   "in_before_final": 151,
+   "hash_differs": 0,
+   "absent_from_before_final": 0,
+   "absent_examples": [],
+   "differs_examples": []
+  },
+  {
+   "manifest": "a5_sessions/SESSION_B.sha256",
+   "entries": 107,
+   "in_before_final": 107,
+   "hash_differs": 0,
+   "absent_from_before_final": 0,
+   "absent_examples": [],
+   "differs_examples": []
+  },
+  {
+   "manifest": "a5_recovery/RECOVERY.sha256",
+   "entries": 74,
+   "in_before_final": 74,
+   "hash_differs": 0,
+   "absent_from_before_final": 0,
+   "absent_examples": [],
+   "differs_examples": []
+  }
+ ],
+ "extra_in_before_final_vs_session_manifests": [
+  "grpo/A_base_s2026/state.pt",
+  "grpo/B_sft512_s2026/checkpoint/model.safetensors",
+  "grpo/tune_lr1e-5/checkpoint/model.safetensors",
+  "grpo/tune_lr2e-6/checkpoint/model.safetensors",
+  "grpo/tune_lr5e-6/checkpoint/model.safetensors",
+  "recovery/A_recovery80_lr5e-6_s2026/checkpoint/model.safetensors",
+  "recovery/A_replay80_lr1e-5_s2026/checkpoint/model.safetensors",
+  "sft/exact_full_s0/checkpoint/model.safetensors",
+  "sft/exact_n512_s0/checkpoint/model.safetensors",
+  "sft/reverified_full_s0/checkpoint/model.safetensors",
+  "sft/reverified_n128_s0/checkpoint/model.safetensors",
+  "sft/reverified_n2048_s0/checkpoint/model.safetensors",
+  "sft/reverified_n512_s0/checkpoint/model.safetensors",
+  "sft/reverified_sizecontrol_s0/checkpoint/model.safetensors",
+  "sft/tune_lr1e-5/checkpoint/model.safetensors",
+  "sft/tune_lr2e-5/checkpoint/model.safetensors",
+  "sft/tune_lr5e-5/checkpoint/model.safetensors"
+ ],
+ "absent_from_before_final_vs_session_manifests": [],
+ "local_rehash": {
+  "rehashed": 332,
+  "mismatched": [],
+  "no_local_copy": [
+   "grpo/A_base_s2026/state.pt",
+   "grpo/B_sft512_s2026/checkpoint/model.safetensors",
+   "grpo/tune_lr1e-5/checkpoint/model.safetensors",
+   "grpo/tune_lr2e-6/checkpoint/model.safetensors",
+   "grpo/tune_lr5e-6/checkpoint/model.safetensors",
+   "recovery/A_recovery80_lr5e-6_s2026/checkpoint/model.safetensors",
+   "recovery/A_replay80_lr1e-5_s2026/checkpoint/model.safetensors",
+   "sft/exact_full_s0/checkpoint/model.safetensors",
+   "sft/exact_n512_s0/checkpoint/model.safetensors",
+   "sft/reverified_full_s0/checkpoint/model.safetensors",
+   "sft/reverified_n128_s0/checkpoint/model.safetensors",
+   "sft/reverified_n2048_s0/checkpoint/model.safetensors",
+   "sft/reverified_n512_s0/checkpoint/model.safetensors",
+   "sft/reverified_sizecontrol_s0/checkpoint/model.safetensors",
+   "sft/tune_lr1e-5/checkpoint/model.safetensors",
+   "sft/tune_lr2e-5/checkpoint/model.safetensors",
+   "sft/tune_lr5e-5/checkpoint/model.safetensors"
+  ]
+ },
+ "no_local_copy_vs_training_records": [
+  {
+   "path": "grpo/A_base_s2026/state.pt",
+   "before_final": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+   "recorded": "73114307c664b55c05b6b6eddb326d0179525c89944dac10daef48f2a424e1bb",
+   "source": "branch run.json state_sha256 (step-80 parent)",
+   "match": true
+  },
+  {
+   "path": "grpo/B_sft512_s2026/checkpoint/model.safetensors",
+   "before_final": "83dd404abf349f3acc955272b74e6349b873566adb5ca78feda4f55e4836e0ca",
+   "recorded": "83dd404abf349f3acc955272b74e6349b873566adb5ca78feda4f55e4836e0ca",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "grpo/tune_lr1e-5/checkpoint/model.safetensors",
+   "before_final": "41ce3ff86d3dbac95fce23de5868b3755ed6f6a463fa015c3ee6ecc9400f3035",
+   "recorded": "41ce3ff86d3dbac95fce23de5868b3755ed6f6a463fa015c3ee6ecc9400f3035",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "grpo/tune_lr2e-6/checkpoint/model.safetensors",
+   "before_final": "c75ca51e83a5efbc49cd0a5731c0a72bbf8d467c4840c448ad009d0c3f3f703b",
+   "recorded": "c75ca51e83a5efbc49cd0a5731c0a72bbf8d467c4840c448ad009d0c3f3f703b",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "grpo/tune_lr5e-6/checkpoint/model.safetensors",
+   "before_final": "fb03a43fd99f8a359fb21057d43b4369c390ce08051faf5502781a46797e096c",
+   "recorded": "fb03a43fd99f8a359fb21057d43b4369c390ce08051faf5502781a46797e096c",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "recovery/A_recovery80_lr5e-6_s2026/checkpoint/model.safetensors",
+   "before_final": "a4055bd25156cf738005631f7e7d60d453fe5317ddcf8b60eb9d0ec47860a006",
+   "recorded": "a4055bd25156cf738005631f7e7d60d453fe5317ddcf8b60eb9d0ec47860a006",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "recovery/A_replay80_lr1e-5_s2026/checkpoint/model.safetensors",
+   "before_final": "bf3453c6c71da3a38e3d835dbeda4fa099d59ab698de96522c80ac8cfb347ce1",
+   "recorded": "bf3453c6c71da3a38e3d835dbeda4fa099d59ab698de96522c80ac8cfb347ce1",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/exact_full_s0/checkpoint/model.safetensors",
+   "before_final": "02c6ba5396a4d113e5b46e9452d748339c39e9d65724aa60187c9e3add7683b1",
+   "recorded": "02c6ba5396a4d113e5b46e9452d748339c39e9d65724aa60187c9e3add7683b1",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/exact_n512_s0/checkpoint/model.safetensors",
+   "before_final": "c4f4b4e94efa551a7eb428bfb8375bc6ea22aa3a2c725bfe6ec7f6af28ebae79",
+   "recorded": "c4f4b4e94efa551a7eb428bfb8375bc6ea22aa3a2c725bfe6ec7f6af28ebae79",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/reverified_full_s0/checkpoint/model.safetensors",
+   "before_final": "02ecf90239277d41f4a2946c115ac9403ba1dd023b29666826b1041d2744b16c",
+   "recorded": "02ecf90239277d41f4a2946c115ac9403ba1dd023b29666826b1041d2744b16c",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/reverified_n128_s0/checkpoint/model.safetensors",
+   "before_final": "622f1201d8ae8f7b1d3237bc2b920e5ba46f188523b4b9a2cb804a7a23c2cc34",
+   "recorded": "622f1201d8ae8f7b1d3237bc2b920e5ba46f188523b4b9a2cb804a7a23c2cc34",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/reverified_n2048_s0/checkpoint/model.safetensors",
+   "before_final": "65f61e4c0f5e830bd9dfaa0f2cc7c1a84d7a5b65faddd30705c2d16f574fed31",
+   "recorded": "65f61e4c0f5e830bd9dfaa0f2cc7c1a84d7a5b65faddd30705c2d16f574fed31",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/reverified_n512_s0/checkpoint/model.safetensors",
+   "before_final": "f57b1af68b655397ad2b685781106f4029503cd03d065dd7ad8fd2228d6c5dc4",
+   "recorded": "f57b1af68b655397ad2b685781106f4029503cd03d065dd7ad8fd2228d6c5dc4",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/reverified_sizecontrol_s0/checkpoint/model.safetensors",
+   "before_final": "765bcbcbc2daa37d6c2a911f64dc1386920c5d99b6132137326f14e143e2739c",
+   "recorded": "765bcbcbc2daa37d6c2a911f64dc1386920c5d99b6132137326f14e143e2739c",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/tune_lr1e-5/checkpoint/model.safetensors",
+   "before_final": "e5957bb836ca0cff45c85089cfbfe44befe35a448c978dbc2e1048a3a2ddf44e",
+   "recorded": "e5957bb836ca0cff45c85089cfbfe44befe35a448c978dbc2e1048a3a2ddf44e",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/tune_lr2e-5/checkpoint/model.safetensors",
+   "before_final": "5a366b209d2801c9d87e6fb9304a506a5fb539f739242702dc4585bb89481347",
+   "recorded": "5a366b209d2801c9d87e6fb9304a506a5fb539f739242702dc4585bb89481347",
+   "source": "DONE.json lineage",
+   "match": true
+  },
+  {
+   "path": "sft/tune_lr5e-5/checkpoint/model.safetensors",
+   "before_final": "aae6c56fb1c426b3e8bb67018fb779bf55f7333f3074d819fd8d9e25e78d8642",
+   "recorded": "aae6c56fb1c426b3e8bb67018fb779bf55f7333f3074d819fd8d9e25e78d8642",
+   "source": "DONE.json lineage",
+   "match": true
+  }
+ ],
+ "checks": [
+  {
+   "check": "present: BEFORE_FINAL.sha256",
+   "ok": true,
+   "detail": "~/a5_final/BEFORE_FINAL.sha256"
+  },
+  {
+   "check": "present: post_final_integrity.log",
+   "ok": true,
+   "detail": "~/a5_final/post_final_integrity.log"
+  },
+  {
+   "check": "log: exactly one line 'TRAINED_RUNS_UNCHANGED'",
+   "ok": true,
+   "detail": "b'TRAINED_RUNS_UNCHANGED\\n'"
+  },
+  {
+   "check": "log: no FAILED / WARNING lines from sha256sum --quiet",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "BEFORE_FINAL: every line is '<sha256>  <path>'",
+   "ok": true,
+   "detail": "bad lines: []"
+  },
+  {
+   "check": "BEFORE_FINAL: no duplicate paths",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "BEFORE_FINAL: paths relative, under sft/ grpo/ recovery/ only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "BEFORE_FINAL: no final_eval outputs listed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: SFT-exact_full_s0",
+   "ok": true,
+   "detail": "sft/exact_full_s0/checkpoint/model.safetensors: lock 02c6ba5396a4d113 vs 02c6ba5396a4d113"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: SFT-reverified_full_s0",
+   "ok": true,
+   "detail": "sft/reverified_full_s0/checkpoint/model.safetensors: lock 02ecf90239277d41 vs 02ecf90239277d41"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: SFT-reverified_sizecontrol_s0",
+   "ok": true,
+   "detail": "sft/reverified_sizecontrol_s0/checkpoint/model.safetensors: lock 765bcbcbc2daa37d vs 765bcbcbc2daa37d"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: SFT-exact_n512_s0",
+   "ok": true,
+   "detail": "sft/exact_n512_s0/checkpoint/model.safetensors: lock c4f4b4e94efa551a vs c4f4b4e94efa551a"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: SFT-reverified_n512_s0",
+   "ok": true,
+   "detail": "sft/reverified_n512_s0/checkpoint/model.safetensors: lock f57b1af68b655397 vs f57b1af68b655397"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: SFT-reverified_n128_s0",
+   "ok": true,
+   "detail": "sft/reverified_n128_s0/checkpoint/model.safetensors: lock 622f1201d8ae8f7b vs 622f1201d8ae8f7b"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: SFT-reverified_n2048_s0",
+   "ok": true,
+   "detail": "sft/reverified_n2048_s0/checkpoint/model.safetensors: lock 65f61e4c0f5e830b vs 65f61e4c0f5e830b"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: GRPO-B_sft512_s2026",
+   "ok": true,
+   "detail": "grpo/B_sft512_s2026/checkpoint/model.safetensors: lock 83dd404abf349f3a vs 83dd404abf349f3a"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: GRPO-A-replay80-lr1e-5-s2026",
+   "ok": true,
+   "detail": "recovery/A_replay80_lr1e-5_s2026/checkpoint/model.safetensors: lock bf3453c6c71da3a3 vs bf3453c6c71da3a3"
+  },
+  {
+   "check": "lock = BEFORE_FINAL weights: GRPO-A-recovery80-lr5e-6-s2026",
+   "ok": true,
+   "detail": "recovery/A_recovery80_lr5e-6_s2026/checkpoint/model.safetensors: lock a4055bd25156cf73 vs a4055bd25156cf73"
+  },
+  {
+   "check": "every locked trained run fully listed (DONE.json, run.json, checkpoint/)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "a5_sessions/BEFORE_RECOVERY.sha256: shared entries hash-identical to BEFORE_FINAL",
+   "ok": true,
+   "detail": "273 shared, 0 differ []"
+  },
+  {
+   "check": "a5_sessions/SESSION_A.sha256: shared entries hash-identical to BEFORE_FINAL",
+   "ok": true,
+   "detail": "151 shared, 0 differ []"
+  },
+  {
+   "check": "a5_sessions/SESSION_B.sha256: shared entries hash-identical to BEFORE_FINAL",
+   "ok": true,
+   "detail": "107 shared, 0 differ []"
+  },
+  {
+   "check": "a5_recovery/RECOVERY.sha256: shared entries hash-identical to BEFORE_FINAL",
+   "ok": true,
+   "detail": "74 shared, 0 differ []"
+  },
+  {
+   "check": "every file in the session/recovery manifests is in BEFORE_FINAL",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "every BEFORE_FINAL file with a local copy re-hashes identically",
+   "ok": true,
+   "detail": "332 re-hashed locally, mismatches []"
+  },
+  {
+   "check": "no local copy, matches training-time record: grpo/A_base_s2026/state.pt",
+   "ok": true,
+   "detail": "73114307c664b55c vs 73114307c664b55c"
+  },
+  {
+   "check": "no local copy, matches training-time record: grpo/B_sft512_s2026/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "83dd404abf349f3a vs 83dd404abf349f3a"
+  },
+  {
+   "check": "no local copy, matches training-time record: grpo/tune_lr1e-5/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "41ce3ff86d3dbac9 vs 41ce3ff86d3dbac9"
+  },
+  {
+   "check": "no local copy, matches training-time record: grpo/tune_lr2e-6/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "c75ca51e83a5efbc vs c75ca51e83a5efbc"
+  },
+  {
+   "check": "no local copy, matches training-time record: grpo/tune_lr5e-6/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "fb03a43fd99f8a35 vs fb03a43fd99f8a35"
+  },
+  {
+   "check": "no local copy, matches training-time record: recovery/A_recovery80_lr5e-6_s2026/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "a4055bd25156cf73 vs a4055bd25156cf73"
+  },
+  {
+   "check": "no local copy, matches training-time record: recovery/A_replay80_lr1e-5_s2026/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "bf3453c6c71da3a3 vs bf3453c6c71da3a3"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/exact_full_s0/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "02c6ba5396a4d113 vs 02c6ba5396a4d113"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/exact_n512_s0/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "c4f4b4e94efa551a vs c4f4b4e94efa551a"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/reverified_full_s0/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "02ecf90239277d41 vs 02ecf90239277d41"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/reverified_n128_s0/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "622f1201d8ae8f7b vs 622f1201d8ae8f7b"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/reverified_n2048_s0/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "65f61e4c0f5e830b vs 65f61e4c0f5e830b"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/reverified_n512_s0/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "f57b1af68b655397 vs f57b1af68b655397"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/reverified_sizecontrol_s0/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "765bcbcbc2daa37d vs 765bcbcbc2daa37d"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/tune_lr1e-5/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "e5957bb836ca0cff vs e5957bb836ca0cff"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/tune_lr2e-5/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "5a366b209d2801c9 vs 5a366b209d2801c9"
+  },
+  {
+   "check": "no local copy, matches training-time record: sft/tune_lr5e-5/checkpoint/model.safetensors",
+   "ok": true,
+   "detail": "aae6c56fb1c426b3 vs aae6c56fb1c426b3"
+  },
+  {
+   "check": "failed GRPO-A_base_s2026 still present and has no DONE.json",
+   "ok": true,
+   "detail": "21 files"
+  }
+ ],
+ "notes": [
+  "`sha256sum -c --quiet` prints nothing for matching files and `&& echo` runs only on exit status 0, so a log holding only TRAINED_RUNS_UNCHANGED is the complete expected output.",
+  "BASE lives outside the runs tree (models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2); it is not in BEFORE_FINAL by design. Its hash is covered by the pre-run `check` and by every summary.json recording the locked hash."
+ ],
+ "failed": 0
+}

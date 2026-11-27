@@ -1,0 +1,187 @@
+{
+ "verifier": {
+  "version": "2.0.0",
+  "verify_py": "b905bcaa4945be2e94286664a5fe9659c30c364ca973b4d90007463de89df106",
+  "grader_py": "f4fa06fed4950d6bd66a2fc40faaa67943327c2064e9d7ced1accdaa19ed25f0"
+ },
+ "totals": {
+  "checked": 8832,
+  "v2 rejects something strict accepts": 0
+ },
+ "by_source": {
+  "eval eval/base_dev/eval/r1_zero_gsm8k_dev.jsonl": {
+   "n": 1000,
+   "formatted": 502,
+   "strict": 208.0,
+   "v2": 208.0,
+   "rejected_but_math_verify_accepts": 146
+  },
+  "eval eval/base_dev/eval/r1_zero_math_dev.jsonl": {
+   "n": 500,
+   "formatted": 163,
+   "strict": 36.0,
+   "v2": 36.0,
+   "rejected_but_math_verify_accepts": 13
+  },
+  "eval pilot/pilot_grpo_base/eval/final_step_gsm8k_dev.jsonl": {
+   "n": 100,
+   "formatted": 92,
+   "strict": 62.0,
+   "v2": 62.0,
+   "rejected_but_math_verify_accepts": 12
+  },
+  "eval pilot/pilot_grpo_base/eval/final_step_math_dev.jsonl": {
+   "n": 100,
+   "formatted": 71,
+   "strict": 20.0,
+   "v2": 20.0,
+   "rejected_but_math_verify_accepts": 5
+  },
+  "rollouts pilot_grpo_base": {
+   "n": 2560,
+   "formatted": 716,
+   "strict": 159.0,
+   "v2": 163.0,
+   "rejected_but_math_verify_accepts": 64
+  },
+  "rollouts pilot_grpo_base_oom_mb8": {
+   "n": 256,
+   "formatted": 29,
+   "strict": 5.0,
+   "v2": 5.0,
+   "rejected_but_math_verify_accepts": 3
+  },
+  "eval sft/pilot_sft/eval/final_step_gsm8k_dev.jsonl": {
+   "n": 1000,
+   "formatted": 947,
+   "strict": 846.0,
+   "v2": 846.0,
+   "rejected_but_math_verify_accepts": 1
+  },
+  "eval sft/pilot_sft/eval/final_step_math_dev.jsonl": {
+   "n": 500,
+   "formatted": 259,
+   "strict": 135.0,
+   "v2": 135.0,
+   "rejected_but_math_verify_accepts": 4
+  },
+  "rollouts grpo_from_sft": {
+   "n": 768,
+   "formatted": 614,
+   "strict": 319.0,
+   "v2": 319.0,
+   "rejected_but_math_verify_accepts": 9
+  },
+  "rollouts grpo_ref": {
+   "n": 1024,
+   "formatted": 152,
+   "strict": 33.0,
+   "v2": 34.0,
+   "rejected_but_math_verify_accepts": 15
+  },
+  "rollouts grpo_resume": {
+   "n": 1024,
+   "formatted": 146,
+   "strict": 34.0,
+   "v2": 35.0,
+   "rejected_but_math_verify_accepts": 19
+  }
+ },
+ "newly_accepted": [
+  {
+   "source": "rollouts pilot_grpo_base",
+   "answer": "Answer is 2.",
+   "gold": "2",
+   "rule": "lead_in",
+   "independent_agrees": true,
+   "methods": [
+    "exact rational",
+    "math-verify"
+   ]
+  },
+  {
+   "source": "rollouts pilot_grpo_base",
+   "answer": "The answer is 255.",
+   "gold": "255",
+   "rule": "lead_in",
+   "independent_agrees": true,
+   "methods": [
+    "exact rational",
+    "math-verify"
+   ]
+  },
+  {
+   "source": "rollouts pilot_grpo_base",
+   "answer": "Therefore, the answer is $17$.",
+   "gold": "17",
+   "rule": "lead_in",
+   "independent_agrees": true,
+   "methods": [
+    "exact rational",
+    "math-verify"
+   ]
+  },
+  {
+   "source": "rollouts pilot_grpo_base",
+   "answer": "The answer is $16$",
+   "gold": "16",
+   "rule": "lead_in",
+   "independent_agrees": true,
+   "methods": [
+    "exact rational",
+    "math-verify"
+   ]
+  },
+  {
+   "source": "rollouts grpo_ref",
+   "answer": "The answer is 255.",
+   "gold": "255",
+   "rule": "lead_in",
+   "independent_agrees": true,
+   "methods": [
+    "exact rational",
+    "math-verify"
+   ]
+  },
+  {
+   "source": "rollouts grpo_resume",
+   "answer": "The answer is 255.",
+   "gold": "255",
+   "rule": "lead_in",
+   "independent_agrees": true,
+   "methods": [
+    "exact rational",
+    "math-verify"
+   ]
+  }
+ ],
+ "newly_accepted_not_confirmed": [],
+ "sft_labels_if_rebuilt": {
+  "not reverified same": 291,
+  "reverified same": 4545
+ },
+ "note_labels": "labels and subsets are NOT rebuilt",
+ "review_disagreements": [
+  {
+   "item": 1,
+   "reference": "2",
+   "strict": 0.0,
+   "v2": 1.0,
+   "rule": "lead_in",
+   "answer": "Answer is 2. "
+  },
+  {
+   "item": 18,
+   "reference": "40,\\!320",
+   "strict": 0.0,
+   "v2": 0.0,
+   "rule": null,
+   "answer": "Answer: $8!$ by dividing by 9"
+  }
+ ],
+ "review_record": {
+  "agree": 18,
+  "n": 20,
+  "result_sha256": "daaeadf92f31b4c1a05181b868e92f254937cd077bf542f70c0914707c544163"
+ }
+}

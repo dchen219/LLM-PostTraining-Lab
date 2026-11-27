@@ -1,0 +1,38 @@
+[project]
+name = "llm-posttraining-lab"
+version = "1.0.0"
+description = "LLM reasoning post-training with SFT and GRPO: reasoning-data re-verification, dual-GPU PyTorch + vLLM RL with verifiable rewards, numerical stability gates and pre-registered benchmark evaluation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11,<3.13"
+# Exact versions used for every reported run: requirements-cloud.lock.txt (install that file for reproduction).
+dependencies = [
+    "torch==2.5.1",
+    "transformers==4.51.3",
+    "vllm==0.7.2",
+    "math-verify[antlr4-13-2]==0.7.0",
+    "pylatexenc==2.10",
+    "sympy",
+    "numpy",
+    "pyyaml",
+    "safetensors",
+    "huggingface-hub",
+]
+
+[project.optional-dependencies]
+analysis = ["scipy", "matplotlib", "markdown-it-py", "pyarrow"]
+test = ["pytest>=8.3.5"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["posttrain*"]
+
+[tool.setuptools.package-data]
+posttrain = ["prompts/*.prompt"]
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "WARNING"

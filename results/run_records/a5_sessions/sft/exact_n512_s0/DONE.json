@@ -1,0 +1,82 @@
+{
+ "finished": 1795647025.7935696,
+ "wall_s": 798.9743826389313,
+ "steps": 32,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 889,
+   "accuracy": 0.889,
+   "ci95": [
+    0.8680215790175441,
+    0.9070010938822441
+   ],
+   "format_rate": 0.999,
+   "clean_format_rate": 0.999,
+   "mean_tokens": 130.399,
+   "truncated": 1,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 889,
+    "format_ok_answer_wrong": 110,
+    "format_fail_truncated": 1
+   },
+   "gen_s": 68.72949051856995,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 162,
+   "accuracy": 0.324,
+   "ci95": [
+    0.2844545847826361,
+    0.3662292809402419
+   ],
+   "format_rate": 0.826,
+   "clean_format_rate": 0.826,
+   "mean_tokens": 485.886,
+   "truncated": 49,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "format_ok_answer_wrong": 251,
+    "correct": 162,
+    "format_fail_truncated": 49,
+    "format_fail_answer_wrong": 32,
+    "format_fail_answer_right": 6
+   },
+   "gen_s": 77.5733642578125,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "sft",
+  "chain": [
+   "base",
+   "sft"
+  ],
+  "parent": {
+   "path": "/srv/research/storage/hf-cache/hub/models--Qwen--Qwen2.5-Math-1.5B/snapshots/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+   "stage": "base",
+   "weights_sha256": {
+    "model.safetensors": "f7aa8d665ab44d3b461bed742fe93cdcedc15d2e31e50dc372c126e6f720857b"
+   },
+   "chain": [
+    "base"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "c4f4b4e94efa551a7eb428bfb8375bc6ea22aa3a2c725bfe6ec7f6af28ebae79"
+  },
+  "config_sha256": "e7ee3354f3d0a934a9d52cf6cc22ed8a9c3a027bead7d63211a7793ca2013671",
+  "code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+  "created": 1795647015.411777,
+  "extra": {
+   "steps": 32,
+   "n_train": 512
+  }
+ }
+}

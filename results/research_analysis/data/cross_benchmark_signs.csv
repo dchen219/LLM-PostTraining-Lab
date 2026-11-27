@@ -1,0 +1,28 @@
+name,family,gsm8k_pp,math_pp,same_sign
+"Direct (A1, post-hoc branch) vs sequential (GRPO-B)",post-hoc (unregistered),0.6065200909780136,2.08,True
+A2 vs A1,post-hoc (frozen),-1.061410159211524,0.16,False
+sample efficiency 2048 -> full,descriptive,-3.9423805913570886,-2.12,True
+SFT exact_full vs base question-only,confirmatory-secondary,15.693707354056102,3.9600000000000004,True
+base prompts: question-only vs r1_zero,descriptive,47.915087187263076,41.160000000000004,True
+SFT exact_n512 vs base question-only,confirmatory-secondary,15.61789234268385,3.36,True
+A1 (lr 1e-5) vs base r1_zero,post-hoc (frozen),67.77862016679302,53.059999999999995,True
+pathway B vs base question-only,descriptive,20.47005307050796,13.98,True
+A1 vs base question-only,post-hoc (frozen),19.863532979529946,11.899999999999999,True
+sample efficiency 128 -> 512,descriptive,11.220621683093253,11.06,True
+Composition at 512 vs at full size: exact n512 -> re-verified n2048,post-hoc (unregistered),-5.307050796057619,0.72,False
+C3 pathway B vs its SFT parent,confirmatory,13.419257012888552,11.74,True
+pathway B vs base r1_zero,descriptive,68.38514025777104,55.14,True
+composition at matched size,descriptive,-6.444275966641396,-0.38,True
+volume,descriptive,-2.8809704321455647,-1.6199999999999999,True
+SFT reverified_n2048 vs base question-only,confirmatory-secondary,10.310841546626232,4.08,True
+SFT sizecontrol vs base question-only,confirmatory-secondary,9.249431387414708,3.58,True
+SFT reverified_n512 vs base question-only,confirmatory-secondary,7.050796057619409,2.2399999999999998,True
+"GRPO-B vs SFT exact n512 (other data source, same size)",post-hoc (unregistered),4.852160727824109,10.620000000000001,True
+sample efficiency 512 -> 2048,descriptive,3.2600454890068233,1.8399999999999999,True
+SFT reverified_full vs base question-only,confirmatory-secondary,6.368460955269144,1.96,True
+"C1 data quality, full",confirmatory,-9.32524639878696,-2.0,True
+A2 (lr 5e-6) vs base r1_zero,post-hoc (frozen),66.71721000758151,53.22,True
+SFT reverified_n128 vs base question-only,confirmatory-secondary,-4.169825625473845,-8.82,True
+"Exact-match scaling 512 -> 3,420",post-hoc (unregistered),0.0758150113722517,0.6,True
+"C2 data quality, matched 512",confirmatory,-8.567096285064443,-1.1199999999999999,True
+"Direct (A2, post-hoc branch) vs sequential (GRPO-B)",post-hoc (unregistered),1.6679302501895377,1.92,True

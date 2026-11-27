@@ -1,0 +1,82 @@
+{
+ "finished": 1795701685.9430892,
+ "wall_s": 13228.815132141113,
+ "steps": 100,
+ "eval": {
+  "gsm8k_dev": {
+   "n": 1000,
+   "correct": 928,
+   "accuracy": 0.928,
+   "ci95": [
+    0.9102878591617453,
+    0.9424363156483045
+   ],
+   "format_rate": 0.998,
+   "clean_format_rate": 0.998,
+   "mean_tokens": 247.219,
+   "truncated": 2,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 928,
+    "format_ok_answer_wrong": 70,
+    "format_fail_truncated": 2
+   },
+   "gen_s": 47.37762093544006,
+   "data_sha256": "3fabaa82ad1f39e858596fcad0e865783983d8442661e7e9b3e7bf5d321ac45f",
+   "file": "eval/final_step_gsm8k_dev.jsonl"
+  },
+  "math_dev": {
+   "n": 500,
+   "correct": 239,
+   "accuracy": 0.478,
+   "ci95": [
+    0.43455017112738104,
+    0.5217853120879786
+   ],
+   "format_rate": 0.85,
+   "clean_format_rate": 0.85,
+   "mean_tokens": 650.744,
+   "truncated": 75,
+   "verifier_errors": 0,
+   "additive_rule": 0,
+   "categories": {
+    "correct": 239,
+    "format_ok_answer_wrong": 186,
+    "format_fail_truncated": 67,
+    "format_fail_answer_right": 8
+   },
+   "gen_s": 59.218255281448364,
+   "data_sha256": "cdc6a2012f2b27914fbe536c47cbffa2ec1aa98f21ffc8233c527f7a1b486d6a",
+   "file": "eval/final_step_math_dev.jsonl"
+  }
+ },
+ "lineage": {
+  "stage": "grpo",
+  "chain": [
+   "base",
+   "sft",
+   "grpo"
+  ],
+  "parent": {
+   "path": "/srv/research/posttrain-v2/runs/sft/reverified_n512_s0/checkpoint",
+   "stage": "sft",
+   "weights_sha256": {
+    "model.safetensors": "f57b1af68b655397ad2b685781106f4029503cd03d065dd7ad8fd2228d6c5dc4"
+   },
+   "chain": [
+    "base",
+    "sft"
+   ]
+  },
+  "weights_sha256": {
+   "model.safetensors": "83dd404abf349f3acc955272b74e6349b873566adb5ca78feda4f55e4836e0ca"
+  },
+  "config_sha256": "5f947b900a5d6cfeb1307a43ff97ad02b3bd86ce26d4dca159a34115bd87d81d",
+  "code_sha256": "739a2df9e838728bfe5720dec2d69bfa29706f8b7053b6fe50babaef84022792",
+  "created": 1795701679.2883048,
+  "extra": {
+   "steps": 100
+  }
+ }
+}

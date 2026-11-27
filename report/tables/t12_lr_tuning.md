@@ -1,0 +1,10 @@
+| Sweep | Learning rate | Steps | GSM8K dev % | MATH dev % | GPU-h |
+|---|---|---|---|---|---|
+| SFT lr tuning | 1e-5 | 32 | 86.1 | 33.4 | 0.37 |
+| SFT lr tuning | 2e-5 | 32 | 85.0 | 27.8 | 0.44 |
+| SFT lr tuning | 5e-5 | 32 | 81.8 | 30.2 | 0.62 |
+| GRPO lr tuning (30 steps, from base) | 2e-6 | 30 | 67.6 | 17.4 | 1.95 |
+| GRPO lr tuning (30 steps, from base) | 5e-6 | 30 | 84.6 | 29.6 | 1.83 |
+| GRPO lr tuning (30 steps, from base) | 1e-5 | 30 | 87.5 | 27.8 | 1.93 |
+
+Rule fixed before tuning (EXPERIMENT_PLAN.md §10): highest final-step GSM8K dev accuracy; if another rate is within 1.0 pp, the smallest such rate. Selected: SFT 1e-5, GRPO 1e-5. Seed 100 (tuning only). Source: DONE.json of each run.

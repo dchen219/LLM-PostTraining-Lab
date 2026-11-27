@@ -1,0 +1,39 @@
+# Diagnostic criteria for the post-hoc recovery branches A1 and A2. Registered 2026-11-26, BEFORE either branch was trained.
+# Diagnostic only: none of these stops, changes or restarts training. The only stops are the existing correctness gates (unchanged).
+# Each branch records this file's sha256 in run.json (config.fork.criteria); scripts/recovery_report.py evaluates exactly these rules.
+version: 1
+frozen: "2026-11-26"
+scope: "training steps 81-100 of each branch; the reward and gap series are the original run's steps 1-80 (shared history up to the fork) followed by the branch's own steps"
+caveat: >-
+  The early-warning rule was derived retrospectively from the single failed run GRPO-A_base_s2026 (it fired at steps 94-97 and at no step
+  from 30 to 93 there). It has not been validated on any other run; with one run per branch, a hit or a miss is descriptive, not evidence
+  of the rule's sensitivity or specificity.
+criteria:
+  early_warning:
+    definition: >-
+      At training step t, for each of k in (rollout_logprob_mad, rollout_logprob_p99): take the values at steps t-20 .. t-1 (exactly 20),
+      m = median, s = 1.4826 * median(|x - m|); z_k(t) = (x_k(t) - m) / s. A warning at t when z_mad(t) >= 3.0 AND z_p99(t) >= 3.0.
+    metrics: [rollout_logprob_mad, rollout_logprob_p99]
+    window: 20
+    window_excludes_current_step: true
+    scale: "1.4826 x median absolute deviation"
+    threshold: 3.0
+    both_required: true
+    reported: "first warning step and all warning steps in 81-100"
+  severe_reward_deterioration:
+    definition: "any training step with reward_mean < 0.30 (mean training reward over the step's 256 rollouts)"
+    metric: reward_mean
+    below: 0.30
+  sustained_reward_deterioration:
+    definition: "at least two consecutive training steps with reward_mean < 0.30"
+    metric: reward_mean
+    below: 0.30
+    consecutive: 2
+    note: "a rollout-gate stop right after the first low step makes this unobservable; it is then reported as 'not observable', not as absent"
+  numerical_failure:
+    definition: "a rollout batch whose mean |sampling - policy| log-prob exceeds 0.05: the existing gate, which stops the branch before any update on that batch"
+    metric: rollout_logprob_mad
+    above: 0.05
+  successful_completion:
+    definition: "the branch reaches step 100 and writes DONE.json, with every correctness gate passed at every step (exact weight check, rollout log-prob gate, finite loss and gradient) and no FAILED.json"
+    steps: 100

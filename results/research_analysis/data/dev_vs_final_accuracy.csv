@@ -1,0 +1,23 @@
+checkpoint,label,set,dev,final
+BASE,Base,gsm8k_test_final,0.218,0.177407126611069
+BASE,Base,math_val_final,0.072,0.174
+SFT-exact_full_s0,SFT exact full,gsm8k_test_final,0.888,0.8134950720242609
+SFT-exact_full_s0,SFT exact full,math_val_final,0.316,0.6252
+SFT-reverified_full_s0,SFT re-verified full,gsm8k_test_final,0.819,0.7202426080363912
+SFT-reverified_full_s0,SFT re-verified full,math_val_final,0.296,0.6052
+SFT-reverified_sizecontrol_s0,SFT re-verified size control,gsm8k_test_final,0.836,0.7490523123578469
+SFT-reverified_sizecontrol_s0,SFT re-verified size control,math_val_final,0.302,0.6214
+SFT-exact_n512_s0,SFT exact n512,gsm8k_test_final,0.889,0.8127369219105383
+SFT-exact_n512_s0,SFT exact n512,math_val_final,0.324,0.6192
+SFT-reverified_n512_s0,SFT re-verified n512,gsm8k_test_final,0.82,0.7270659590598939
+SFT-reverified_n512_s0,SFT re-verified n512,math_val_final,0.302,0.608
+SFT-reverified_n128_s0,SFT re-verified n128,gsm8k_test_final,0.68,0.6148597422289613
+SFT-reverified_n128_s0,SFT re-verified n128,math_val_final,0.236,0.4974
+SFT-reverified_n2048_s0,SFT re-verified n2048,gsm8k_test_final,0.842,0.759666413949962
+SFT-reverified_n2048_s0,SFT re-verified n2048,math_val_final,0.326,0.6264
+GRPO-B_sft512_s2026,GRPO-B (sequential),gsm8k_test_final,0.928,0.8612585291887794
+GRPO-B_sft512_s2026,GRPO-B (sequential),math_val_final,0.478,0.7254
+GRPO-A-replay80-lr1e-5-s2026,"A1 (post-hoc, lr 1e-5)",gsm8k_test_final,0.927,0.8551933282789992
+GRPO-A-replay80-lr1e-5-s2026,"A1 (post-hoc, lr 1e-5)",math_val_final,0.416,0.7046
+GRPO-A-recovery80-lr5e-6-s2026,"A2 (post-hoc, lr 5e-6)",gsm8k_test_final,0.919,0.844579226686884
+GRPO-A-recovery80-lr5e-6-s2026,"A2 (post-hoc, lr 5e-6)",math_val_final,0.412,0.7062

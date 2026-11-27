@@ -1,0 +1,21 @@
+| Run | Class | Data / init | lr | Seed | Optimizer steps | Status | GSM8K dev % (final) | MATH dev % (final) | GPU-h | Held-out evaluated |
+|---|---|---|---|---|---|---|---|---|---|---|
+| SFT-tune_lr1e-5 | lr tuning (dev only) | reverified_n512_s0 | 1e-5 | 100 | 32 | completed | 86.1 | 33.4 | 0.37 | no (tuning) |
+| SFT-tune_lr2e-5 | lr tuning (dev only) | reverified_n512_s0 | 2e-5 | 100 | 32 | completed | 85.0 | 27.8 | 0.44 | no (tuning) |
+| SFT-tune_lr5e-5 | lr tuning (dev only) | reverified_n512_s0 | 5e-5 | 100 | 32 | completed | 81.8 | 30.2 | 0.62 | no (tuning) |
+| SFT-reverified_n128_s0 | pre-registered | reverified_n128_s0 | 1e-5 | 0 | 8 | completed | 68.0 | 23.6 | 0.12 | yes |
+| SFT-reverified_n512_s0 | pre-registered | reverified_n512_s0 | 1e-5 | 0 | 32 | completed | 82.0 | 30.2 | 0.44 | yes |
+| SFT-exact_n512_s0 | pre-registered | exact_n512_s0 | 1e-5 | 0 | 32 | completed | 88.9 | 32.4 | 0.44 | yes |
+| SFT-reverified_n2048_s0 | pre-registered | reverified_n2048_s0 | 1e-5 | 0 | 128 | completed | 84.2 | 32.6 | 1.03 | yes |
+| SFT-reverified_sizecontrol_s0 | pre-registered | reverified_sizecontrol_s0 | 1e-5 | 0 | 214 | completed | 83.6 | 30.2 | 1.57 | yes |
+| SFT-exact_full_s0 | pre-registered | exact_full | 1e-5 | 0 | 214 | completed | 88.8 | 31.6 | 1.83 | yes |
+| SFT-reverified_full_s0 | pre-registered | reverified_full | 1e-5 | 0 | 278 | completed | 81.9 | 29.6 | 2.69 | yes |
+| GRPO-tune_lr2e-6 | lr tuning (dev only) | RL pool, 32×8/step, init base model | 2e-6 | 100 | 30 | completed | 67.6 | 17.4 | 1.95 | no (tuning) |
+| GRPO-tune_lr5e-6 | lr tuning (dev only) | RL pool, 32×8/step, init base model | 5e-6 | 100 | 30 | completed | 84.6 | 29.6 | 1.83 | no (tuning) |
+| GRPO-tune_lr1e-5 | lr tuning (dev only) | RL pool, 32×8/step, init base model | 1e-5 | 100 | 30 | completed | 87.5 | 27.8 | 1.93 | no (tuning) |
+| GRPO-B_sft512_s2026 | pre-registered | RL pool, 32×8/step, init SFT re-verified 512 | 1e-5 | 2026 | 100 | completed | 92.8 | 47.8 | 7.35 | yes |
+| GRPO-A_base_s2026 | pre-registered | RL pool, 32×8/step, init base model | 1e-5 | 2026 | 97 | FAILED at step 98 (rollout gate) | 92.9 (step 75) | 39.8 (step 75) | 6.61 | no (failed; never evaluated) |
+| GRPO-A_replay80_lr1e-5_s2026 | post-hoc diagnostic | RL pool, 32×8/step, fork of GRPO-A step-80 state | 1e-5 | 2026 | 100 | completed | 92.7 | 41.6 | 2.28 | yes |
+| GRPO-A_recovery80_lr5e-6_s2026 | post-hoc diagnostic | RL pool, 32×8/step, fork of GRPO-A step-80 state | 5e-6 | 2026 | 100 | completed | 91.9 | 41.2 | 2.51 | yes |
+
+All 17 documented training runs (15 Tier A + 2 post-hoc branches; branch steps are 81–100 from GRPO-A's step-80 state). Sources: run.json / DONE.json of each run; GRPO-A from its metrics (`analysis.json`, `grpo_dev_curves.csv`).

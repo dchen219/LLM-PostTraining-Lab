@@ -1,0 +1,25 @@
+set,checkpoint,label,strict_pct,ci_lo,ci_hi,cls
+gsm8k_test_final,BASE:r1_zero,"Base, r1_zero prompt",17.7407126611069,15.773660393635867,19.895123319972434,preregistered
+gsm8k_test_final,BASE:question_only,"Base, question-only prompt",65.65579984836998,63.05100809944799,68.16966443437079,preregistered
+gsm8k_test_final,SFT-reverified_n128_s0:r1_zero,"SFT re-verified, 128",61.48597422289613,58.83005128502117,64.07518788627928,preregistered
+gsm8k_test_final,SFT-reverified_n512_s0:r1_zero,"SFT re-verified, 512",72.70659590598939,70.23920621429667,75.0421081870531,preregistered
+gsm8k_test_final,SFT-exact_n512_s0:r1_zero,"SFT exact-match, 512",81.27369219105383,79.07861163981687,83.28713857907053,preregistered
+gsm8k_test_final,SFT-reverified_n2048_s0:r1_zero,"SFT re-verified, 2,048",75.9666413949962,73.58743106941088,78.19504032445317,preregistered
+gsm8k_test_final,SFT-reverified_sizecontrol_s0:r1_zero,"SFT re-verified, 3,420 (size control)",74.90523123578468,72.49541736355582,77.1703982653036,preregistered
+gsm8k_test_final,SFT-exact_full_s0:r1_zero,"SFT exact-match, 3,420 (full)",81.34950720242608,79.15747555093112,83.35946436545662,preregistered
+gsm8k_test_final,SFT-reverified_full_s0:r1_zero,"SFT re-verified, 4,423 (full)",72.02426080363912,69.54052216266476,74.380084961182,preregistered
+gsm8k_test_final,GRPO-B_sft512_s2026:r1_zero,GRPO-B: SFT re-verified 512 + GRPO,86.12585291887794,84.15520281280251,87.88668804610619,preregistered
+gsm8k_test_final,GRPO-A-replay80-lr1e-5-s2026:r1_zero,A1: GRPO-A step 80 + 20 (post-hoc),85.51933282789992,83.51702424458651,87.31534903431954,posthoc
+gsm8k_test_final,GRPO-A-recovery80-lr5e-6-s2026:r1_zero,"A2: GRPO-A step 80 + 20, lr 5e-6 (post-hoc)",84.4579226686884,82.40289565829471,86.31282185560667,posthoc
+math_val_final,BASE:r1_zero,"Base, r1_zero prompt",17.4,16.37431385021064,18.475740316607077,preregistered
+math_val_final,BASE:question_only,"Base, question-only prompt",58.56,57.188494127731445,59.91836281496917,preregistered
+math_val_final,SFT-reverified_n128_s0:r1_zero,"SFT re-verified, 128",49.74,48.354846576799815,51.125552628211615,preregistered
+math_val_final,SFT-reverified_n512_s0:r1_zero,"SFT re-verified, 512",60.8,59.439015634470806,62.144402003515964,preregistered
+math_val_final,SFT-exact_n512_s0:r1_zero,"SFT exact-match, 512",61.919999999999995,60.56539048437657,63.25630750125326,preregistered
+math_val_final,SFT-reverified_n2048_s0:r1_zero,"SFT re-verified, 2,048",62.63999999999999,61.28988825252036,63.970704242308585,preregistered
+math_val_final,SFT-reverified_sizecontrol_s0:r1_zero,"SFT re-verified, 3,420 (size control)",62.13999999999999,60.786731394891525,63.47462880188246,preregistered
+math_val_final,SFT-exact_full_s0:r1_zero,"SFT exact-match, 3,420 (full)",62.519999999999996,61.16911671419965,63.85166002909612,preregistered
+math_val_final,SFT-reverified_full_s0:r1_zero,"SFT re-verified, 4,423 (full)",60.519999999999996,59.15753896806852,61.86630858300748,preregistered
+math_val_final,GRPO-B_sft512_s2026:r1_zero,GRPO-B: SFT re-verified 512 + GRPO,72.54,71.28595750938516,73.75943448693167,preregistered
+math_val_final,GRPO-A-replay80-lr1e-5-s2026:r1_zero,A1: GRPO-A step 80 + 20 (post-hoc),70.46,69.18012010901472,71.70846552739356,posthoc
+math_val_final,GRPO-A-recovery80-lr5e-6-s2026:r1_zero,"A2: GRPO-A step 80 + 20, lr 5e-6 (post-hoc)",70.62,69.34199307234178,71.86634689944408,posthoc
